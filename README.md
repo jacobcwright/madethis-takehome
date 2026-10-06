@@ -25,7 +25,7 @@ The hidden set is broader than the public one. Expect tools, phrasings, and fail
 
 ## What to deliver
 
-A repo (fork or copy of this one) containing:
+A private repo created from this template (use "Use this template", not a fork: forks of a public repo are public) containing:
 
 1. A `Dockerfile` that builds an image with a `verify` executable on `PATH`. We run `verify /input /output`. Details in `INTERFACE.md`.
 2. `predictions.json` at the repo root:
