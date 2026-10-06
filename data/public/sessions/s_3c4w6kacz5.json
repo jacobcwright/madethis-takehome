@@ -1,0 +1,123 @@
+{
+ "session_id": "s_3c4w6kacz5",
+ "business_id": "biz_0018_h8egw",
+ "started_at": "2026-09-25T15:17:14Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-25T15:21:06Z",
+   "content": "headshot.jpg is attached, drop it in assest"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-25T15:21:10Z",
+   "content": "upload_file(name='headshot.jpg', size_kb=12835) -> error",
+   "tool_name": "upload_file",
+   "call_id": "call_15qc6u42oco8",
+   "args": {
+    "name": "headshot.jpg",
+    "size_kb": 12835
+   },
+   "result": {
+    "ok": false,
+    "id": "f_g4xhhjc",
+    "status": "failed",
+    "error": "unsupported file type"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-25T15:21:38Z",
+   "content": "On it, but headshot.jpg didn't upload, unsupported file type. 😕"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-25T15:23:18Z",
+   "content": "push out the changes we discussed"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-25T15:23:26Z",
+   "content": "deploy_site(site='wildsoap.store', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_tg12l09gd47a",
+   "args": {
+    "site": "wildsoap.store",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://wildsoap.store"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-25T15:23:42Z",
+   "content": "All deployed, and wildsoap.store is online. Should I post about it on Instagram?"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-25T15:26:33Z",
+   "content": "aweome"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T15:21:11Z",
+   "entity_type": "file",
+   "entity_id": "f_g4xhhjc",
+   "field": "name",
+   "value": "headshot.jpg"
+  },
+  {
+   "ts": "2026-09-25T15:21:11Z",
+   "entity_type": "file",
+   "entity_id": "f_g4xhhjc",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T15:21:32Z",
+   "entity_type": "file",
+   "entity_id": "f_g4xhhjc",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-25T15:23:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_54f4vs8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T15:23:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_54f4vs8",
+   "field": "url",
+   "value": "https://wildsoap.store"
+  },
+  {
+   "ts": "2026-09-25T15:23:34Z",
+   "entity_type": "deploy",
+   "entity_id": "d_54f4vs8",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-25T15:23:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_54f4vs8",
+   "field": "commit",
+   "value": "c878ec8"
+  }
+ ]
+}

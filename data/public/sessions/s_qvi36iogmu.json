@@ -1,0 +1,686 @@
+{
+ "session_id": "s_qvi36iogmu",
+ "business_id": "biz_0085_jwpsm",
+ "started_at": "2026-09-24T19:13:41Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T19:16:36Z",
+   "content": "Felix got an email from us, what date was that"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-24T19:21:34Z",
+   "content": "Should I pause the ad for now?\n\nThe email to Felix is handled, it went out Tuesday. 🚀"
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-24T19:21:53Z",
+   "content": "pls get IMG_2041.HEIC uploaded"
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-24T19:21:55Z",
+   "content": "upload_file(name='IMG_2041.HEIC', size_kb=13837) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_080xzkpf9ajm",
+   "args": {
+    "name": "IMG_2041.HEIC",
+    "size_kb": 13837
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0085_jwpsm/IMG_2041.HEIC",
+    "name": "IMG_2041.HEIC"
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-24T19:22:34Z",
+   "content": "IMG_2041.HEIC finished uploading. Want me to follow up with them?"
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-24T19:24:36Z",
+   "content": "any chance u could put up a post on Instagram"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-24T19:24:46Z",
+   "content": "post_social(platform='instagram', caption='New drop is live.') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_zgcsgpej2jmy",
+   "args": {
+    "platform": "instagram",
+    "caption": "New drop is live."
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://instagram.com/copperbeads/p/840729181",
+    "platform": "Instagram",
+    "account": "@copperbeads"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-24T19:26:50Z",
+   "content": "🙌 The post is up and live. Sounds good!"
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-24T19:27:34Z",
+   "content": "everyone who ordered should get the shipping update, pls send it out"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-24T19:27:37Z",
+   "content": "send_email(to=['mateop36@icloud.com', 'marisoll68@outlook.com', 'knguyen@hotmail.com', 'felixc84@proton.me', 'reedo34@outlook.com'], subject='Your order is on the way') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_x022hxvrm0hi",
+   "args": {
+    "to": [
+     "mateop36@icloud.com",
+     "marisoll68@outlook.com",
+     "knguyen@hotmail.com",
+     "felixc84@proton.me",
+     "reedo34@outlook.com"
+    ],
+    "subject": "Your order is on the way"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_mdrj82j",
+    "status": "done",
+    "recipients": 5,
+    "subject": "Your order is on the way",
+    "delivered": 5,
+    "bounced": 0
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-24T19:29:39Z",
+   "content": "I'll send you a summary tonight. The whole group of 5 people received it, I sent it to everyone."
+  },
+  {
+   "turn_index": 11,
+   "role": "owner",
+   "ts": "2026-09-24T19:32:02Z",
+   "content": "ad brought in any sales yet?"
+  },
+  {
+   "turn_index": 12,
+   "role": "tool",
+   "ts": "2026-09-24T19:32:10Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_zo2yrrlxe49k",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 24,
+    "orders": [
+     "ord_wu5yn22"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 13,
+   "role": "agent",
+   "ts": "2026-09-24T19:35:09Z",
+   "content": "🚀 You've brought in $24 from 1 orders so far."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T11:07:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_pua2gj6",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-21T11:07:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_pua2gj6",
+   "field": "product",
+   "value": "Wall Calendar"
+  },
+  {
+   "ts": "2026-09-21T11:07:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_pua2gj6",
+   "field": "customer_name",
+   "value": "Marisol Larsen"
+  },
+  {
+   "ts": "2026-09-21T11:07:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_pua2gj6",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T11:07:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_pua2gj6",
+   "field": "customer",
+   "value": "marisoll68@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T08:38:29Z",
+   "entity_type": "deploy",
+   "entity_id": "d_9amjgcm",
+   "field": "commit",
+   "value": "9d43198"
+  },
+  {
+   "ts": "2026-09-22T08:38:29Z",
+   "entity_type": "deploy",
+   "entity_id": "d_9amjgcm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T08:38:29Z",
+   "entity_type": "deploy",
+   "entity_id": "d_9amjgcm",
+   "field": "url",
+   "value": "https://copperbeads.com"
+  },
+  {
+   "ts": "2026-09-22T08:39:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_2v9ejvn",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-22T08:39:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_2v9ejvn",
+   "field": "customer",
+   "value": "marisoll68@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T08:39:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_2v9ejvn",
+   "field": "customer_name",
+   "value": "Marisol Larsen"
+  },
+  {
+   "ts": "2026-09-22T08:39:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_2v9ejvn",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T08:40:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_9amjgcm",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T08:39:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_2v9ejvn",
+   "field": "product",
+   "value": "Dog Treat Sampler"
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_3euv9fk",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_3euv9fk",
+   "field": "customer",
+   "value": "felixc84@proton.me"
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_3euv9fk",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_3euv9fk",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_3euv9fk",
+   "field": "customer_name",
+   "value": "Felix Chen"
+  },
+  {
+   "ts": "2026-09-22T08:49:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_abh4fxk",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-22T08:49:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_abh4fxk",
+   "field": "customer",
+   "value": "knguyen@hotmail.com"
+  },
+  {
+   "ts": "2026-09-22T08:49:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_abh4fxk",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T08:49:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_abh4fxk",
+   "field": "customer_name",
+   "value": "Kwame Nguyen"
+  },
+  {
+   "ts": "2026-09-22T08:50:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3qzzgvc",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-22T08:50:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3qzzgvc",
+   "field": "customer",
+   "value": "marisoll68@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T08:50:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3qzzgvc",
+   "field": "product",
+   "value": "Wall Calendar"
+  },
+  {
+   "ts": "2026-09-22T08:50:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3qzzgvc",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T08:51:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_abh4fxk",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-22T08:53:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_kyu8ejq",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-22T08:53:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_kyu8ejq",
+   "field": "customer_name",
+   "value": "Reed Osei"
+  },
+  {
+   "ts": "2026-09-22T08:53:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_kyu8ejq",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-22T08:49:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_abh4fxk",
+   "field": "product",
+   "value": "Dog Treat Sampler"
+  },
+  {
+   "ts": "2026-09-22T08:50:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3qzzgvc",
+   "field": "customer_name",
+   "value": "Marisol Larsen"
+  },
+  {
+   "ts": "2026-09-22T08:53:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_kyu8ejq",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T08:53:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_kyu8ejq",
+   "field": "customer",
+   "value": "reedo34@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T09:13:49Z",
+   "entity_type": "email",
+   "entity_id": "em_33bery2",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T09:13:49Z",
+   "entity_type": "email",
+   "entity_id": "em_33bery2",
+   "field": "subject",
+   "value": "Your Dog Treat Sampler shipped"
+  },
+  {
+   "ts": "2026-09-22T09:13:49Z",
+   "entity_type": "email",
+   "entity_id": "em_33bery2",
+   "field": "to",
+   "value": "felixc84@proton.me"
+  },
+  {
+   "ts": "2026-09-22T09:14:10Z",
+   "entity_type": "email",
+   "entity_id": "em_33bery2",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T19:36:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_wu5yn22",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-23T19:36:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_wu5yn22",
+   "field": "customer",
+   "value": "knguyen@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T19:36:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_wu5yn22",
+   "field": "customer_name",
+   "value": "Kwame Nguyen"
+  },
+  {
+   "ts": "2026-09-23T19:36:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_wu5yn22",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T19:36:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_wu5yn22",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-24T19:22:12Z",
+   "entity_type": "file",
+   "entity_id": "f_47qhdt3",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-09-24T19:22:15Z",
+   "entity_type": "file",
+   "entity_id": "f_47qhdt3",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-24T19:25:03Z",
+   "entity_type": "post",
+   "entity_id": "post_dq68hy8",
+   "field": "account",
+   "value": "@copperbeads"
+  },
+  {
+   "ts": "2026-09-24T19:25:03Z",
+   "entity_type": "post",
+   "entity_id": "post_dq68hy8",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-24T19:22:12Z",
+   "entity_type": "file",
+   "entity_id": "f_47qhdt3",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-24T19:25:27Z",
+   "entity_type": "post",
+   "entity_id": "post_dq68hy8",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_5n76vhf",
+   "field": "batch",
+   "value": "emb_mdrj82j"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_5n76vhf",
+   "field": "to",
+   "value": "reedo34@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_64n98jb",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_6p7qyb7",
+   "field": "batch",
+   "value": "emb_mdrj82j"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_6p7qyb7",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_6p7qyb7",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_6p7qyb7",
+   "field": "to",
+   "value": "mateop36@icloud.com"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_qbu3evg",
+   "field": "batch",
+   "value": "emb_mdrj82j"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_qbu3evg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_qbu3evg",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_qbu3evg",
+   "field": "to",
+   "value": "knguyen@hotmail.com"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_r55hx6k",
+   "field": "batch",
+   "value": "emb_mdrj82j"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_r55hx6k",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_r55hx6k",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-24T19:28:12Z",
+   "entity_type": "email",
+   "entity_id": "em_5n76vhf",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T19:25:03Z",
+   "entity_type": "post",
+   "entity_id": "post_dq68hy8",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-24T19:28:43Z",
+   "entity_type": "email",
+   "entity_id": "em_r55hx6k",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T19:28:51Z",
+   "entity_type": "email",
+   "entity_id": "em_qbu3evg",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T19:28:56Z",
+   "entity_type": "email",
+   "entity_id": "em_64n98jb",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T19:29:13Z",
+   "entity_type": "email",
+   "entity_id": "em_6p7qyb7",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_64n98jb",
+   "field": "to",
+   "value": "marisoll68@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_5n76vhf",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_5n76vhf",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_64n98jb",
+   "field": "batch",
+   "value": "emb_mdrj82j"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_64n98jb",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-24T19:28:01Z",
+   "entity_type": "email",
+   "entity_id": "em_r55hx6k",
+   "field": "to",
+   "value": "felixc84@proton.me"
+  }
+ ]
+}

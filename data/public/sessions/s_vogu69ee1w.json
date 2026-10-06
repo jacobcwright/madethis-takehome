@@ -1,0 +1,412 @@
+{
+ "session_id": "s_vogu69ee1w",
+ "business_id": "biz_0112_65bfs",
+ "started_at": "2026-09-24T08:57:20Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T08:58:11Z",
+   "content": "pls attah launch-video.mp4"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-24T08:58:18Z",
+   "content": "upload_file(name='launch-video.mp4', size_kb=6273) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_ejcol763feep",
+   "args": {
+    "name": "launch-video.mp4",
+    "size_kb": 6273
+   },
+   "result": {
+    "ok": true,
+    "id": "f_mus2e5m",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0112_65bfs/launch-video.mp4"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-24T08:58:24Z",
+   "content": "On it. launch-video.mp4 is now in your workspace. ✨ Would you like me to follow up with them?"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-24T09:02:13Z",
+   "content": "launch announcement on TikTok pls"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-24T09:02:20Z",
+   "content": "post_social(platform='tiktok', caption='Back in stock') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_hsjvzb0n5l2i",
+   "args": {
+    "platform": "tiktok",
+    "caption": "Back in stock"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_q7sdwt5",
+    "status": "done",
+    "url": "https://tiktok.com/emberleather/p/315167759"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-24T09:02:58Z",
+   "content": "It's up on @emberleather now, posted."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-24T09:06:11Z",
+   "content": "get getember-leather.com for me"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-24T09:06:21Z",
+   "content": "buy_domain(domain='getember-leather.com', years=1) -> error",
+   "tool_name": "buy_domain",
+   "call_id": "call_wg0g9we3dyit",
+   "args": {
+    "domain": "getember-leather.com",
+    "years": 1
+   },
+   "result": {
+    "ok": false,
+    "error": "gateway error (502)",
+    "id": "dom_c5gg9es",
+    "status": "failed"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "tool",
+   "ts": "2026-09-24T09:06:51Z",
+   "content": "buy_domain(domain='getember-leather.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_7bz1i7reqnls",
+   "args": {
+    "domain": "getember-leather.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_nb9jecg",
+    "status": "done",
+    "domain": "getember-leather.com",
+    "price": 24
+   }
+  },
+  {
+   "turn_index": 9,
+   "role": "agent",
+   "ts": "2026-09-24T09:07:09Z",
+   "content": "Want me to also get the .co version? getember-leather.com is now officially yours."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T01:50:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_j8s4qth",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-21T01:50:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_j8s4qth",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-21T01:50:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_j8s4qth",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T01:50:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_j8s4qth",
+   "field": "customer",
+   "value": "rafaelh45@yahoo.com"
+  },
+  {
+   "ts": "2026-09-21T01:50:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_j8s4qth",
+   "field": "customer_name",
+   "value": "Rafael Hughes"
+  },
+  {
+   "ts": "2026-09-21T01:56:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_ek6htxw",
+   "field": "customer_name",
+   "value": "Andre Grant"
+  },
+  {
+   "ts": "2026-09-21T01:56:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_ek6htxw",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-21T01:56:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_ek6htxw",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T01:56:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_ek6htxw",
+   "field": "customer",
+   "value": "andre.grant@proton.me"
+  },
+  {
+   "ts": "2026-09-21T01:56:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_ek6htxw",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-21T02:03:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_7dg8wvc",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-21T02:03:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_7dg8wvc",
+   "field": "customer",
+   "value": "vgrant@me.com"
+  },
+  {
+   "ts": "2026-09-21T02:03:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_7dg8wvc",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-21T02:03:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_7dg8wvc",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T02:03:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_7dg8wvc",
+   "field": "customer_name",
+   "value": "Victor Grant"
+  },
+  {
+   "ts": "2026-09-21T02:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_4gw33wz",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-21T02:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_4gw33wz",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-21T02:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_4gw33wz",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T02:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_4gw33wz",
+   "field": "customer",
+   "value": "andre.grant@proton.me"
+  },
+  {
+   "ts": "2026-09-21T02:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_4gw33wz",
+   "field": "customer_name",
+   "value": "Andre Grant"
+  },
+  {
+   "ts": "2026-09-21T03:33:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a4vgnfv",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-21T03:33:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a4vgnfv",
+   "field": "platform",
+   "value": "Google"
+  },
+  {
+   "ts": "2026-09-21T03:33:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a4vgnfv",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T03:33:25Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a4vgnfv",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-21T03:37:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_4gw33wz",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-21T03:33:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a4vgnfv",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-21T03:38:25Z",
+   "entity_type": "email",
+   "entity_id": "em_ty42vpt",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T03:38:25Z",
+   "entity_type": "email",
+   "entity_id": "em_ty42vpt",
+   "field": "subject",
+   "value": "Launch week: 15% off"
+  },
+  {
+   "ts": "2026-09-21T03:38:25Z",
+   "entity_type": "email",
+   "entity_id": "em_ty42vpt",
+   "field": "to",
+   "value": "pat.osei@icloud.com"
+  },
+  {
+   "ts": "2026-09-21T03:38:48Z",
+   "entity_type": "email",
+   "entity_id": "em_ty42vpt",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T01:57:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a4vgnfv",
+   "field": "spend",
+   "value": 35.2
+  },
+  {
+   "ts": "2026-09-24T08:58:19Z",
+   "entity_type": "file",
+   "entity_id": "f_mus2e5m",
+   "field": "name",
+   "value": "launch-video.mp4"
+  },
+  {
+   "ts": "2026-09-24T08:58:19Z",
+   "entity_type": "file",
+   "entity_id": "f_mus2e5m",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-24T08:58:21Z",
+   "entity_type": "file",
+   "entity_id": "f_mus2e5m",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-24T09:02:22Z",
+   "entity_type": "post",
+   "entity_id": "post_q7sdwt5",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-24T09:02:22Z",
+   "entity_type": "post",
+   "entity_id": "post_q7sdwt5",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-24T09:02:26Z",
+   "entity_type": "post",
+   "entity_id": "post_q7sdwt5",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-24T09:02:22Z",
+   "entity_type": "post",
+   "entity_id": "post_q7sdwt5",
+   "field": "account",
+   "value": "@emberleather"
+  },
+  {
+   "ts": "2026-09-24T09:06:56Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nb9jecg",
+   "field": "domain",
+   "value": "getember-leather.com"
+  },
+  {
+   "ts": "2026-09-24T09:06:56Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nb9jecg",
+   "field": "price",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-24T09:06:59Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nb9jecg",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-24T09:06:56Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nb9jecg",
+   "field": "status",
+   "value": "pending"
+  }
+ ]
+}

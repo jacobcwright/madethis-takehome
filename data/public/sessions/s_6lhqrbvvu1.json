@@ -1,0 +1,355 @@
+{
+ "session_id": "s_6lhqrbvvu1",
+ "business_id": "biz_0076_us3sz",
+ "started_at": "2026-09-26T06:04:08Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-26T06:05:02Z",
+   "content": "Morning! Has the ad brought any sales?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-26T06:05:06Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_u1tqmipnxncq",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 98,
+    "orders": [
+     "ord_897mp45",
+     "ord_fhhwt5r",
+     "ord_qujfc9r",
+     "ord_rvt6yht"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-26T06:05:38Z",
+   "content": "Here's the scoop: Hot Sauce Trio is your top product over the past two days, with 2 sold."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-26T06:06:10Z",
+   "content": "Hi, can you put the new product up on Instagram?"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-26T06:06:19Z",
+   "content": "post_social(platform='instagram', caption='Back in stock') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_z6pb3gtqjhib",
+   "args": {
+    "platform": "instagram",
+    "caption": "Back in stock"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_y228knu",
+    "status": "done",
+    "url": "https://instagram.com/velvetgoods/p/915934476"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-26T06:06:22Z",
+   "content": "Just confirming: the post is published now."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-26T06:08:47Z",
+   "content": "Have any orders come in since yesterday?"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-26T06:08:53Z",
+   "content": "list_orders(status='paid', since='24h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_d9wg8t1abpsr",
+   "args": {
+    "status": "paid",
+    "since": "24h"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 112,
+    "orders": [
+     "ord_897mp45",
+     "ord_rvt6yht",
+     "ord_xj53gm7",
+     "ord_9zft2cf"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-26T06:10:27Z",
+   "content": "Ooh, over the past 24 hours you've brought in $112! Should I send an email to your list?"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-26T06:12:09Z",
+   "content": "awesome"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T21:52:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_qujfc9r",
+   "field": "customer",
+   "value": "olivia.nguyen@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T21:52:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_qujfc9r",
+   "field": "customer_name",
+   "value": "Olivia Nguyen"
+  },
+  {
+   "ts": "2026-09-24T21:52:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_qujfc9r",
+   "field": "product",
+   "value": "Lavender Soy Candle"
+  },
+  {
+   "ts": "2026-09-24T21:52:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_qujfc9r",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T21:52:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_qujfc9r",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-24T23:26:01Z",
+   "entity_type": "order",
+   "entity_id": "ord_fhhwt5r",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-24T23:26:01Z",
+   "entity_type": "order",
+   "entity_id": "ord_fhhwt5r",
+   "field": "customer",
+   "value": "hugo.ortiz@proton.me"
+  },
+  {
+   "ts": "2026-09-24T23:26:01Z",
+   "entity_type": "order",
+   "entity_id": "ord_fhhwt5r",
+   "field": "customer_name",
+   "value": "Hugo Ortiz"
+  },
+  {
+   "ts": "2026-09-24T23:26:01Z",
+   "entity_type": "order",
+   "entity_id": "ord_fhhwt5r",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T23:26:01Z",
+   "entity_type": "order",
+   "entity_id": "ord_fhhwt5r",
+   "field": "product",
+   "value": "Digital Planner"
+  },
+  {
+   "ts": "2026-09-25T07:22:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_rvt6yht",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-25T07:22:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_rvt6yht",
+   "field": "customer",
+   "value": "hugo.ortiz@proton.me"
+  },
+  {
+   "ts": "2026-09-25T07:22:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_rvt6yht",
+   "field": "customer_name",
+   "value": "Hugo Ortiz"
+  },
+  {
+   "ts": "2026-09-25T07:22:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_rvt6yht",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-25T07:22:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_rvt6yht",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T07:29:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_897mp45",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-25T07:29:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_897mp45",
+   "field": "customer",
+   "value": "rosa_1997@gmail.com"
+  },
+  {
+   "ts": "2026-09-25T07:29:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_897mp45",
+   "field": "customer_name",
+   "value": "Rosa Rossi"
+  },
+  {
+   "ts": "2026-09-25T07:29:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_897mp45",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-25T07:29:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_897mp45",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T06:05:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_xj53gm7",
+   "field": "customer",
+   "value": "olivia.nguyen@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T06:05:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_xj53gm7",
+   "field": "customer_name",
+   "value": "Olivia Nguyen"
+  },
+  {
+   "ts": "2026-09-26T06:05:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_xj53gm7",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T06:05:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9zft2cf",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-26T06:05:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9zft2cf",
+   "field": "customer",
+   "value": "rosa_1997@gmail.com"
+  },
+  {
+   "ts": "2026-09-26T06:05:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9zft2cf",
+   "field": "customer_name",
+   "value": "Rosa Rossi"
+  },
+  {
+   "ts": "2026-09-26T06:05:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9zft2cf",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T06:06:19Z",
+   "entity_type": "post",
+   "entity_id": "post_y228knu",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-26T06:06:20Z",
+   "entity_type": "post",
+   "entity_id": "post_y228knu",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-26T06:06:19Z",
+   "entity_type": "post",
+   "entity_id": "post_y228knu",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-26T06:06:19Z",
+   "entity_type": "post",
+   "entity_id": "post_y228knu",
+   "field": "account",
+   "value": "@velvetgoods"
+  },
+  {
+   "ts": "2026-09-26T06:05:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9zft2cf",
+   "field": "product",
+   "value": "Lavender Soy Candle"
+  },
+  {
+   "ts": "2026-09-26T06:05:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_xj53gm7",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-26T06:05:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_xj53gm7",
+   "field": "product",
+   "value": "Lavender Soy Candle"
+  }
+ ]
+}

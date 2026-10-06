@@ -1,0 +1,431 @@
+{
+ "session_id": "s_puvn1x84v9",
+ "business_id": "biz_0104_wj33v",
+ "started_at": "2026-09-29T07:22:16Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-29T07:25:30Z",
+   "content": "want to reach the 5 people who bought this week, can u email them? sorry for the extra work"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-29T07:25:40Z",
+   "content": "send_email(to=['eli_1988@icloud.com', 'chloe.fischer@gmail.com', 'klarsen@outlook.com', 'mreyes@gmail.com', 'tom.quinn@icloud.com'], subject='Quick question about your order') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_dygj8kd9jook",
+   "args": {
+    "to": [
+     "eli_1988@icloud.com",
+     "chloe.fischer@gmail.com",
+     "klarsen@outlook.com",
+     "mreyes@gmail.com",
+     "tom.quinn@icloud.com"
+    ],
+    "subject": "Quick question about your order"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_6fzrb8b",
+    "status": "done",
+    "recipients": 5,
+    "subject": "Quick question about your order",
+    "delivered": 4,
+    "bounced": 1
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-29T07:27:21Z",
+   "content": "Tally: 4 got delivered, 1 bounced (Mateo)... I'll check back with the supplier tomorrow."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-29T07:28:08Z",
+   "content": "Eli email, what date was it? remind me"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-29T07:28:32Z",
+   "content": "Eli got the eamil on Friday."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T22:04:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_gnjy986",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-24T22:04:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_gnjy986",
+   "field": "customer",
+   "value": "mreyes@gmail.com"
+  },
+  {
+   "ts": "2026-09-24T22:04:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_gnjy986",
+   "field": "customer_name",
+   "value": "Mateo Reyes"
+  },
+  {
+   "ts": "2026-09-24T22:04:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_gnjy986",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-24T22:04:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_gnjy986",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T20:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_nchzd48",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-25T20:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_nchzd48",
+   "field": "customer",
+   "value": "klarsen@outlook.com"
+  },
+  {
+   "ts": "2026-09-25T20:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_nchzd48",
+   "field": "customer_name",
+   "value": "Kai Larsen"
+  },
+  {
+   "ts": "2026-09-25T20:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_nchzd48",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-25T20:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_nchzd48",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T23:38:48Z",
+   "entity_type": "email",
+   "entity_id": "em_ehk8zyc",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T23:38:48Z",
+   "entity_type": "email",
+   "entity_id": "em_ehk8zyc",
+   "field": "subject",
+   "value": "Restock alert"
+  },
+  {
+   "ts": "2026-09-25T23:38:48Z",
+   "entity_type": "email",
+   "entity_id": "em_ehk8zyc",
+   "field": "to",
+   "value": "eli_1988@icloud.com"
+  },
+  {
+   "ts": "2026-09-25T23:48:38Z",
+   "entity_type": "email",
+   "entity_id": "em_ehk8zyc",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T23:52:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3yf8pt8",
+   "field": "commit",
+   "value": "38b8b10"
+  },
+  {
+   "ts": "2026-09-25T23:52:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3yf8pt8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T23:52:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3yf8pt8",
+   "field": "url",
+   "value": "https://oliveknits.studio"
+  },
+  {
+   "ts": "2026-09-25T23:53:01Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3yf8pt8",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-26T04:44:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_6p6nhgq",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-26T04:44:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_6p6nhgq",
+   "field": "customer",
+   "value": "eli_1988@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T04:44:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_6p6nhgq",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T04:44:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_6p6nhgq",
+   "field": "product",
+   "value": "Digital Planner"
+  },
+  {
+   "ts": "2026-09-26T04:44:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_6p6nhgq",
+   "field": "customer_name",
+   "value": "Eli Rossi"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_5u5yetw",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_5u5yetw",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_j378war",
+   "field": "batch",
+   "value": "emb_6fzrb8b"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_j378war",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_j378war",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_jhuyafj",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_jhuyafj",
+   "field": "to",
+   "value": "chloe.fischer@gmail.com"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_md3z8g9",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_md3z8g9",
+   "field": "to",
+   "value": "eli_1988@icloud.com"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_rspay27",
+   "field": "batch",
+   "value": "emb_6fzrb8b"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_rspay27",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_rspay27",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T07:26:12Z",
+   "entity_type": "email",
+   "entity_id": "em_jhuyafj",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T07:26:19Z",
+   "entity_type": "email",
+   "entity_id": "em_md3z8g9",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T07:26:21Z",
+   "entity_type": "email",
+   "entity_id": "em_j378war",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-29T07:26:25Z",
+   "entity_type": "email",
+   "entity_id": "em_5u5yetw",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T07:26:50Z",
+   "entity_type": "email",
+   "entity_id": "em_rspay27",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_j378war",
+   "field": "to",
+   "value": "mreyes@gmail.com"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_jhuyafj",
+   "field": "batch",
+   "value": "emb_6fzrb8b"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_md3z8g9",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_5u5yetw",
+   "field": "batch",
+   "value": "emb_6fzrb8b"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_rspay27",
+   "field": "to",
+   "value": "tom.quinn@icloud.com"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_5u5yetw",
+   "field": "to",
+   "value": "klarsen@outlook.com"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_md3z8g9",
+   "field": "batch",
+   "value": "emb_6fzrb8b"
+  },
+  {
+   "ts": "2026-09-29T07:26:11Z",
+   "entity_type": "email",
+   "entity_id": "em_jhuyafj",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-30T04:21:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_gjx5fgn",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-30T04:21:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_gjx5fgn",
+   "field": "customer_name",
+   "value": "Imani Fischer"
+  },
+  {
+   "ts": "2026-09-30T04:21:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_gjx5fgn",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-30T04:21:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_gjx5fgn",
+   "field": "customer",
+   "value": "imani.fischer@icloud.com"
+  },
+  {
+   "ts": "2026-09-30T04:21:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_gjx5fgn",
+   "field": "status",
+   "value": "paid"
+  }
+ ]
+}

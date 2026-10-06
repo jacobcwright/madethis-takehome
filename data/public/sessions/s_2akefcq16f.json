@@ -1,0 +1,244 @@
+{
+ "session_id": "s_2akefcq16f",
+ "business_id": "biz_0157_5ubg4",
+ "started_at": "2026-09-22T21:14:02Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T21:15:15Z",
+   "content": "get the X post out there"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T21:15:25Z",
+   "content": "post_social(platform='x', caption='Back in stock') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_xdfgwmgb0xty",
+   "args": {
+    "platform": "x",
+    "caption": "Back in stock"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_wj27af3",
+    "status": "done",
+    "url": "https://x.com/oliveknitshq/p/528875842"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-22T21:16:00Z",
+   "content": "on it. Your post is up on X now, all set. Might be worth lowering the price to $65 to test demand."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-22T21:16:57Z",
+   "content": "sales lately? how they looking"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-22T21:17:09Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_jmbqvqy2d4oe",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 6,
+    "total": 195,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-22T21:17:25Z",
+   "content": "We've got over 5 orders across the past two days."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-22T21:18:09Z",
+   "content": "thx a lot"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T05:01:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_f52spry",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-22T05:01:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_f52spry",
+   "field": "customer",
+   "value": "elena.nguyen@proton.me"
+  },
+  {
+   "ts": "2026-09-22T05:01:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_f52spry",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-22T05:01:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_f52spry",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:01:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_f52spry",
+   "field": "customer_name",
+   "value": "Elena Nguyen"
+  },
+  {
+   "ts": "2026-09-22T10:47:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_hx87sgt",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-22T10:47:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_hx87sgt",
+   "field": "customer",
+   "value": "lena.osei@proton.me"
+  },
+  {
+   "ts": "2026-09-22T10:47:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_hx87sgt",
+   "field": "customer_name",
+   "value": "Lena Osei"
+  },
+  {
+   "ts": "2026-09-22T10:47:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_hx87sgt",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-22T10:47:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_hx87sgt",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T13:03:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_yhw4wux",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-22T13:03:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_yhw4wux",
+   "field": "customer_name",
+   "value": "Nina Osei"
+  },
+  {
+   "ts": "2026-09-22T13:03:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_yhw4wux",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-22T13:03:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_yhw4wux",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T13:03:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_yhw4wux",
+   "field": "customer",
+   "value": "ninao81@proton.me"
+  },
+  {
+   "ts": "2026-09-22T17:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5xbcc6",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-22T17:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5xbcc6",
+   "field": "customer_name",
+   "value": "Jordan Silva"
+  },
+  {
+   "ts": "2026-09-22T17:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5xbcc6",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-22T17:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5xbcc6",
+   "field": "customer",
+   "value": "jordan.silva@me.com"
+  },
+  {
+   "ts": "2026-09-22T17:57:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5xbcc6",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T21:15:31Z",
+   "entity_type": "post",
+   "entity_id": "post_wj27af3",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-22T21:15:49Z",
+   "entity_type": "post",
+   "entity_id": "post_wj27af3",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-22T21:15:31Z",
+   "entity_type": "post",
+   "entity_id": "post_wj27af3",
+   "field": "account",
+   "value": "@oliveknitshq"
+  },
+  {
+   "ts": "2026-09-22T21:15:31Z",
+   "entity_type": "post",
+   "entity_id": "post_wj27af3",
+   "field": "platform",
+   "value": "X"
+  }
+ ]
+}

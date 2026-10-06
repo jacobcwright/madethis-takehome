@@ -1,0 +1,678 @@
+{
+ "session_id": "s_uqp8ou5nvr",
+ "business_id": "biz_0078_qbfnq",
+ "started_at": "2026-10-01T13:40:28Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-10-01T13:43:10Z",
+   "content": "Ad's a go. $50 daily budget."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-10-01T13:43:19Z",
+   "content": "launch_ad(platform='meta', daily_budget=50) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_yawdoi6cb0tx",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 50,
+    "objective": "sales"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_zfjmbrp",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-10-01T13:43:26Z",
+   "content": "Want the ad paused for now? Your Meta campaign has gone live and is running."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-10-01T13:44:35Z",
+   "content": "grab indigopantry.store for me too"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-10-01T13:44:39Z",
+   "content": "buy_domain(domain='indigopantry.store', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_cw0cxm9yan7q",
+   "args": {
+    "domain": "indigopantry.store",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "indigopantry.store",
+    "price": 19
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-10-01T13:52:29Z",
+   "content": "Pricing looks solid to me. indigopantry.store is bought, all done!"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-10-01T13:54:17Z",
+   "content": "Get that TikTok post out. Thx."
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-10-01T13:54:23Z",
+   "content": "post_social(platform='tiktok', caption='Launch day! 🎉') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_52gjcjg1bfoh",
+   "args": {
+    "platform": "tiktok",
+    "caption": "Launch day! 🎉"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_g9r9fcb",
+    "status": "done",
+    "url": "https://tiktok.com/indigopantry/p/519047654"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-10-01T13:54:57Z",
+   "content": "Your TikTok post is live now 🎉"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-10-01T13:57:27Z",
+   "content": "pls store IMG_2041.HEIC for me"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-10-01T13:57:35Z",
+   "content": "upload_file(name='IMG_2041.HEIC', size_kb=21930) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_r02g0w6nnadj",
+   "args": {
+    "name": "IMG_2041.HEIC",
+    "size_kb": 21930
+   },
+   "result": {
+    "ok": true,
+    "id": "f_uew3n8t",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0078_qbfnq/IMG_2041.HEIC"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-10-01T14:15:24Z",
+   "content": "Orders get another look from me in a few hours. Meanwhile, IMG_2041.HEIC is now saved in your assets."
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-10-01T14:18:38Z",
+   "content": "that earlier one, is it still going?"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-10-01T14:18:46Z",
+   "content": "ad_status(ad_id='ad_zfjmbrp') -> ok",
+   "tool_name": "ad_status",
+   "call_id": "call_y8hrukg4zi54",
+   "args": {
+    "ad_id": "ad_zfjmbrp"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_zfjmbrp",
+    "status": "done",
+    "ad_status": "active",
+    "spend": 32.46,
+    "impressions": 3289,
+    "clicks": 238
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-10-01T14:19:22Z",
+   "content": "Okay, your ad hasn't stopped, it's still going. Want me to raise the ad budget to $30/day?"
+  },
+  {
+   "turn_index": 15,
+   "role": "owner",
+   "ts": "2026-10-01T14:21:54Z",
+   "content": "sounds good"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T09:08:55Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-21T09:08:55Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-21T09:08:55Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T09:11:02Z",
+   "entity_type": "file",
+   "entity_id": "f_2ma3h8e",
+   "field": "name",
+   "value": "sizing-chart.png"
+  },
+  {
+   "ts": "2026-09-21T09:11:02Z",
+   "entity_type": "file",
+   "entity_id": "f_2ma3h8e",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-21T09:08:55Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "daily_budget",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-21T09:09:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-21T09:15:09Z",
+   "entity_type": "file",
+   "entity_id": "f_2ma3h8e",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-21T09:22:51Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "spend",
+   "value": 4.1
+  },
+  {
+   "ts": "2026-09-21T09:28:12Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "status",
+   "value": "paused"
+  },
+  {
+   "ts": "2026-09-21T09:30:18Z",
+   "entity_type": "email",
+   "entity_id": "em_m2q5kms",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T09:30:18Z",
+   "entity_type": "email",
+   "entity_id": "em_m2q5kms",
+   "field": "subject",
+   "value": "Launch week: 15% off"
+  },
+  {
+   "ts": "2026-09-21T09:30:24Z",
+   "entity_type": "email",
+   "entity_id": "em_m2q5kms",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T09:30:18Z",
+   "entity_type": "email",
+   "entity_id": "em_m2q5kms",
+   "field": "to",
+   "value": "andre.sato@proton.me"
+  },
+  {
+   "ts": "2026-09-22T10:07:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_wtgxv5w",
+   "field": "spend",
+   "value": 61.76
+  },
+  {
+   "ts": "2026-09-23T06:52:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_ca3ba3e",
+   "field": "customer",
+   "value": "hannah.sato@yahoo.com"
+  },
+  {
+   "ts": "2026-09-23T06:52:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_ca3ba3e",
+   "field": "customer_name",
+   "value": "Hannah Sato"
+  },
+  {
+   "ts": "2026-09-23T06:52:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_ca3ba3e",
+   "field": "product",
+   "value": "Macrame Hanger"
+  },
+  {
+   "ts": "2026-09-23T06:52:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_ca3ba3e",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T06:52:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_ca3ba3e",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-23T20:27:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_eeqs6fb",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-23T20:27:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_eeqs6fb",
+   "field": "customer",
+   "value": "reed_1980@yahoo.com"
+  },
+  {
+   "ts": "2026-09-23T20:27:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_eeqs6fb",
+   "field": "customer_name",
+   "value": "Reed Lopez"
+  },
+  {
+   "ts": "2026-09-23T20:27:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_eeqs6fb",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-23T20:27:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_eeqs6fb",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T10:16:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_eeqs6fb",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-24T12:00:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_uuerers",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T12:00:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_uuerers",
+   "field": "url",
+   "value": "https://indigopantry.io"
+  },
+  {
+   "ts": "2026-09-24T12:01:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_uuerers",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T12:03:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_srg4uhk",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-24T12:03:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_srg4uhk",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-24T12:03:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_srg4uhk",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T12:00:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_uuerers",
+   "field": "commit",
+   "value": "b746a1c"
+  },
+  {
+   "ts": "2026-09-24T12:03:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_mzaebxz",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-24T12:03:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_mzaebxz",
+   "field": "customer",
+   "value": "rosa.dubois@yahoo.com"
+  },
+  {
+   "ts": "2026-09-24T12:03:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_mzaebxz",
+   "field": "customer_name",
+   "value": "Rosa Dubois"
+  },
+  {
+   "ts": "2026-09-24T12:03:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_mzaebxz",
+   "field": "product",
+   "value": "Air Plant Trio"
+  },
+  {
+   "ts": "2026-09-24T12:03:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_srg4uhk",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-24T12:04:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_z2db2up",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-24T12:04:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_z2db2up",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-24T12:03:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_mzaebxz",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T12:04:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_z2db2up",
+   "field": "customer_name",
+   "value": "Rosa Dubois"
+  },
+  {
+   "ts": "2026-09-24T12:04:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_z2db2up",
+   "field": "customer",
+   "value": "rosa.dubois@yahoo.com"
+  },
+  {
+   "ts": "2026-09-24T12:04:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_z2db2up",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T12:14:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_mzaebxz",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-24T13:58:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_srg4uhk",
+   "field": "status",
+   "value": "rejected"
+  },
+  {
+   "ts": "2026-09-24T19:33:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_ct2nthj",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-24T19:33:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_ct2nthj",
+   "field": "customer",
+   "value": "jordan.rossi@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T19:33:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_ct2nthj",
+   "field": "customer_name",
+   "value": "Jordan Rossi"
+  },
+  {
+   "ts": "2026-09-24T19:33:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_ct2nthj",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T19:33:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_ct2nthj",
+   "field": "product",
+   "value": "Coaching Call"
+  },
+  {
+   "ts": "2026-09-27T11:47:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_qxn5yp4",
+   "field": "amount",
+   "value": 45
+  },
+  {
+   "ts": "2026-09-27T11:47:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_qxn5yp4",
+   "field": "customer",
+   "value": "rosa.dubois@yahoo.com"
+  },
+  {
+   "ts": "2026-09-27T11:47:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_qxn5yp4",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T11:47:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_qxn5yp4",
+   "field": "product",
+   "value": "Lavender Soy Candle"
+  },
+  {
+   "ts": "2026-09-27T11:47:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_qxn5yp4",
+   "field": "customer_name",
+   "value": "Rosa Dubois"
+  },
+  {
+   "ts": "2026-10-01T13:43:20Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zfjmbrp",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-10-01T13:43:24Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zfjmbrp",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-10-01T13:44:58Z",
+   "entity_type": "domain",
+   "entity_id": "dom_d3g3f9c",
+   "field": "domain",
+   "value": "indigopantry.store"
+  },
+  {
+   "ts": "2026-10-01T13:44:58Z",
+   "entity_type": "domain",
+   "entity_id": "dom_d3g3f9c",
+   "field": "price",
+   "value": 19
+  },
+  {
+   "ts": "2026-10-01T13:44:58Z",
+   "entity_type": "domain",
+   "entity_id": "dom_d3g3f9c",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-10-01T13:43:20Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zfjmbrp",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-10-01T13:43:20Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zfjmbrp",
+   "field": "daily_budget",
+   "value": 50
+  },
+  {
+   "ts": "2026-10-01T13:43:20Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zfjmbrp",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-10-01T13:51:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_d3g3f9c",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-10-01T13:54:33Z",
+   "entity_type": "post",
+   "entity_id": "post_g9r9fcb",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-10-01T13:54:33Z",
+   "entity_type": "post",
+   "entity_id": "post_g9r9fcb",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-10-01T13:53:06Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zfjmbrp",
+   "field": "spend",
+   "value": 32.46
+  },
+  {
+   "ts": "2026-10-01T13:54:51Z",
+   "entity_type": "post",
+   "entity_id": "post_g9r9fcb",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-10-01T13:54:33Z",
+   "entity_type": "post",
+   "entity_id": "post_g9r9fcb",
+   "field": "account",
+   "value": "@indigopantry"
+  },
+  {
+   "ts": "2026-10-01T13:57:39Z",
+   "entity_type": "file",
+   "entity_id": "f_uew3n8t",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-10-01T13:57:39Z",
+   "entity_type": "file",
+   "entity_id": "f_uew3n8t",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-10-01T14:09:40Z",
+   "entity_type": "file",
+   "entity_id": "f_uew3n8t",
+   "field": "status",
+   "value": "uploaded"
+  }
+ ]
+}

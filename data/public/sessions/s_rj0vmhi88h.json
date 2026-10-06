@@ -1,0 +1,382 @@
+{
+ "session_id": "s_rj0vmhi88h",
+ "business_id": "biz_0148_q39hc",
+ "started_at": "2026-09-27T11:03:18Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T11:03:34Z",
+   "content": "sales today? any"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T11:03:44Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_mg8uljva5d07",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T11:04:00Z",
+   "content": "0 orders at this point."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T11:07:09Z",
+   "content": "Please write back to Rosa on my behalf, nice"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-27T11:07:15Z",
+   "content": "send_email(to='rosa.rossi@proton.me', subject='Launch week: 15% off') -> error",
+   "tool_name": "send_email",
+   "call_id": "call_zb6q4qg2omio",
+   "args": {
+    "to": "rosa.rossi@proton.me",
+    "subject": "Launch week: 15% off"
+   },
+   "result": {
+    "ok": false,
+    "error": "gateway error (502)",
+    "id": "em_py2w3nc",
+    "status": "failed"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "tool",
+   "ts": "2026-09-27T11:07:58Z",
+   "content": "send_email(to='rosa.rossi@proton.me', subject='Launch week: 15% off') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_dxtyus5b50bw",
+   "args": {
+    "to": "rosa.rossi@proton.me",
+    "subject": "Launch week: 15% off"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_qyk9bv6",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 6,
+   "role": "agent",
+   "ts": "2026-09-27T11:08:14Z",
+   "content": "Done: your reply to Rosa has gone out. Quick qusetion, which of the two taglines do you like better?"
+  },
+  {
+   "turn_index": 7,
+   "role": "owner",
+   "ts": "2026-09-27T11:11:39Z",
+   "content": "pls make the latest changes live"
+  },
+  {
+   "turn_index": 8,
+   "role": "tool",
+   "ts": "2026-09-27T11:11:44Z",
+   "content": "deploy_site(site='brightcandleshop.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_g7lvmec99he7",
+   "args": {
+    "site": "brightcandleshop.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://brightcandleshop.com"
+   }
+  },
+  {
+   "turn_index": 9,
+   "role": "agent",
+   "ts": "2026-09-27T11:12:16Z",
+   "content": "Quick note, brightcandleshop.com is now serving your latest changes. Should I make the headline shorter?"
+  },
+  {
+   "turn_index": 10,
+   "role": "owner",
+   "ts": "2026-09-27T11:13:04Z",
+   "content": "what do sales look like"
+  },
+  {
+   "turn_index": 11,
+   "role": "tool",
+   "ts": "2026-09-27T11:13:15Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_3haupwn3x7rp",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 12,
+   "role": "agent",
+   "ts": "2026-09-27T11:13:27Z",
+   "content": "I'd flag that there are no new orders so far. Happy to draft a follow-up sequence if that sounds useful."
+  },
+  {
+   "turn_index": 13,
+   "role": "owner",
+   "ts": "2026-09-27T11:14:09Z",
+   "content": "ads pls, launch em"
+  },
+  {
+   "turn_index": 14,
+   "role": "tool",
+   "ts": "2026-09-27T11:14:12Z",
+   "content": "launch_ad(platform='meta', daily_budget=30) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_ni4cidigwxit",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 30,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "platform": "Meta",
+    "daily_budget": 30,
+    "spend": 0.0
+   }
+  },
+  {
+   "turn_index": 15,
+   "role": "agent",
+   "ts": "2026-09-27T11:14:34Z",
+   "content": "Next I'll set up the ad audience. The ad is out and running now."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-27T11:08:03Z",
+   "entity_type": "email",
+   "entity_id": "em_qyk9bv6",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T11:08:03Z",
+   "entity_type": "email",
+   "entity_id": "em_qyk9bv6",
+   "field": "subject",
+   "value": "Launch week: 15% off"
+  },
+  {
+   "ts": "2026-09-27T11:08:03Z",
+   "entity_type": "email",
+   "entity_id": "em_qyk9bv6",
+   "field": "to",
+   "value": "rosa.rossi@proton.me"
+  },
+  {
+   "ts": "2026-09-27T11:08:07Z",
+   "entity_type": "email",
+   "entity_id": "em_qyk9bv6",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T11:12:00Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u9qwpqs",
+   "field": "commit",
+   "value": "eb439b6"
+  },
+  {
+   "ts": "2026-09-27T11:12:00Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u9qwpqs",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T11:12:03Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u9qwpqs",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-27T11:14:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hhr67hv",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-27T11:14:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hhr67hv",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-27T11:14:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hhr67hv",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T11:14:19Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hhr67hv",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-27T11:12:00Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u9qwpqs",
+   "field": "url",
+   "value": "https://brightcandleshop.com"
+  },
+  {
+   "ts": "2026-09-27T11:14:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hhr67hv",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-28T08:24:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3zccrf6",
+   "field": "customer",
+   "value": "iwalsh@proton.me"
+  },
+  {
+   "ts": "2026-09-28T08:24:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3zccrf6",
+   "field": "customer_name",
+   "value": "Imani Walsh"
+  },
+  {
+   "ts": "2026-09-28T08:24:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3zccrf6",
+   "field": "product",
+   "value": "Mini Print Set"
+  },
+  {
+   "ts": "2026-09-28T08:24:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3zccrf6",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T08:24:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_3zccrf6",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-28T22:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_axft9j3",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-28T22:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_axft9j3",
+   "field": "customer",
+   "value": "mateo.sato@icloud.com"
+  },
+  {
+   "ts": "2026-09-28T22:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_axft9j3",
+   "field": "customer_name",
+   "value": "Mateo Sato"
+  },
+  {
+   "ts": "2026-09-28T22:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_axft9j3",
+   "field": "product",
+   "value": "Linen Tote"
+  },
+  {
+   "ts": "2026-09-28T22:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_axft9j3",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-30T23:53:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_fay77mn",
+   "field": "amount",
+   "value": 99
+  },
+  {
+   "ts": "2026-09-30T23:53:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_fay77mn",
+   "field": "customer",
+   "value": "mateo.sato@icloud.com"
+  },
+  {
+   "ts": "2026-09-30T23:53:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_fay77mn",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-30T23:53:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_fay77mn",
+   "field": "customer_name",
+   "value": "Mateo Sato"
+  },
+  {
+   "ts": "2026-09-30T23:53:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_fay77mn",
+   "field": "product",
+   "value": "Air Plant Trio"
+  },
+  {
+   "ts": "2026-10-01T01:01:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_fay77mn",
+   "field": "status",
+   "value": "refunded"
+  }
+ ]
+}

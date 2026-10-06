@@ -1,0 +1,574 @@
+{
+ "session_id": "s_ghwph63bt4",
+ "business_id": "biz_0139_27hd7",
+ "started_at": "2026-09-23T13:17:45Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-23T13:20:36Z",
+   "content": "group needs an email about the new date pls"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-23T13:20:43Z",
+   "content": "send_email(to=['hugo_1980@outlook.com', 'rafael.fischer@hotmail.com', 'elena.tanaka@gmail.com', 'kwameo18@gmail.com'], subject='Welcome to Honest Knits Collective!') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_dfphctbh9n52",
+   "args": {
+    "to": [
+     "hugo_1980@outlook.com",
+     "rafael.fischer@hotmail.com",
+     "elena.tanaka@gmail.com",
+     "kwameo18@gmail.com"
+    ],
+    "subject": "Welcome to Honest Knits Collective!"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_euh2v9n",
+    "status": "done",
+    "recipients": 4,
+    "subject": "Welcome to Honest Knits Collective!"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-23T13:31:48Z",
+   "content": "It went to the whole group, all 4 people, and everyone received it ✅ Expect a summary from me tonight."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-23T13:33:31Z",
+   "content": "thoughts on the pricing?"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-23T13:35:23Z",
+   "content": "Give the ad a couple of days before we juge how it's doing."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-23T13:36:47Z",
+   "content": "last week's ad, is it still going?"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-23T13:36:54Z",
+   "content": "ad_status(ad_id='ad_e9j25kj') -> ok",
+   "tool_name": "ad_status",
+   "call_id": "call_dxr12twbqndy",
+   "args": {
+    "ad_id": "ad_e9j25kj"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_e9j25kj",
+    "status": "done",
+    "ad_status": "paused",
+    "spend": 55.02,
+    "impressions": 5866,
+    "clicks": 180
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-23T13:36:59Z",
+   "content": "Should I follow up with them? Heads up, the ad is currently paused, not running. Total spend so far is $55.02."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-23T13:40:13Z",
+   "content": "Facebook post pls, can u?"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-23T13:40:16Z",
+   "content": "post_social(platform='facebook', caption='New drop is live.') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_336h0p2e47tr",
+   "args": {
+    "platform": "facebook",
+    "caption": "New drop is live."
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://facebook.com/honestknits/p/539950166",
+    "platform": "Facebook",
+    "account": "@honestknits"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-23T13:51:59Z",
+   "content": "Starting on the product descriptions now. Your post is live on Facebook as of just now 🎉"
+  },
+  {
+   "turn_index": 11,
+   "role": "owner",
+   "ts": "2026-09-23T13:54:33Z",
+   "content": "awesmoe"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T02:16:57Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fm94fem",
+   "field": "url",
+   "value": "https://honestknits.store"
+  },
+  {
+   "ts": "2026-09-22T02:17:16Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4g69a33",
+   "field": "commit",
+   "value": "7341551"
+  },
+  {
+   "ts": "2026-09-22T02:17:18Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4g69a33",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T02:17:16Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4g69a33",
+   "field": "url",
+   "value": "https://honestknits.store"
+  },
+  {
+   "ts": "2026-09-22T02:16:57Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fm94fem",
+   "field": "commit",
+   "value": "7341551"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_42pcnm5",
+   "field": "batch",
+   "value": "emb_5k63vz6"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_42pcnm5",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_42pcnm5",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_f8yer94",
+   "field": "batch",
+   "value": "emb_5k63vz6"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_f8yer94",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_f8yer94",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_qcb2j4d",
+   "field": "batch",
+   "value": "emb_5k63vz6"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_qcb2j4d",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_rjrhg9s",
+   "field": "batch",
+   "value": "emb_5k63vz6"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_rjrhg9s",
+   "field": "to",
+   "value": "elena.tanaka@gmail.com"
+  },
+  {
+   "ts": "2026-09-22T02:18:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-22T02:18:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "platform",
+   "value": "Google"
+  },
+  {
+   "ts": "2026-09-22T02:18:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-22T02:18:27Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_f8yer94",
+   "field": "to",
+   "value": "kwameo18@gmail.com"
+  },
+  {
+   "ts": "2026-09-22T02:18:57Z",
+   "entity_type": "email",
+   "entity_id": "em_42pcnm5",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_42pcnm5",
+   "field": "to",
+   "value": "rafael.fischer@hotmail.com"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_qcb2j4d",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_rjrhg9s",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T02:17:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fm94fem",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_qcb2j4d",
+   "field": "to",
+   "value": "hugo_1980@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T02:16:57Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fm94fem",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T02:19:56Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-22T02:17:16Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4g69a33",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T02:18:07Z",
+   "entity_type": "email",
+   "entity_id": "em_rjrhg9s",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T02:20:41Z",
+   "entity_type": "email",
+   "entity_id": "em_rjrhg9s",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T02:23:25Z",
+   "entity_type": "email",
+   "entity_id": "em_f8yer94",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T02:23:27Z",
+   "entity_type": "email",
+   "entity_id": "em_qcb2j4d",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T02:32:19Z",
+   "entity_type": "file",
+   "entity_id": "f_dnje5dh",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-09-22T02:32:19Z",
+   "entity_type": "file",
+   "entity_id": "f_dnje5dh",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-22T02:30:23Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "spend",
+   "value": 44.21
+  },
+  {
+   "ts": "2026-09-22T03:03:39Z",
+   "entity_type": "file",
+   "entity_id": "f_dnje5dh",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-22T10:12:41Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "status",
+   "value": "paused"
+  },
+  {
+   "ts": "2026-09-22T13:52:07Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "spend",
+   "value": 55.02
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_58ekfqk",
+   "field": "batch",
+   "value": "emb_euh2v9n"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_58ekfqk",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_58ekfqk",
+   "field": "subject",
+   "value": "Welcome to Honest Knits Collective!"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_58ekfqk",
+   "field": "to",
+   "value": "kwameo18@gmail.com"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_9nt9gyr",
+   "field": "batch",
+   "value": "emb_euh2v9n"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_9nt9gyr",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_9nt9gyr",
+   "field": "to",
+   "value": "elena.tanaka@gmail.com"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_mgbuhrw",
+   "field": "batch",
+   "value": "emb_euh2v9n"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_mgbuhrw",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_mgbuhrw",
+   "field": "to",
+   "value": "rafael.fischer@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_uqgjbm3",
+   "field": "subject",
+   "value": "Welcome to Honest Knits Collective!"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_mgbuhrw",
+   "field": "subject",
+   "value": "Welcome to Honest Knits Collective!"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_uqgjbm3",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_uqgjbm3",
+   "field": "batch",
+   "value": "emb_euh2v9n"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_uqgjbm3",
+   "field": "to",
+   "value": "hugo_1980@outlook.com"
+  },
+  {
+   "ts": "2026-09-23T13:21:09Z",
+   "entity_type": "email",
+   "entity_id": "em_9nt9gyr",
+   "field": "subject",
+   "value": "Welcome to Honest Knits Collective!"
+  },
+  {
+   "ts": "2026-09-23T13:24:47Z",
+   "entity_type": "email",
+   "entity_id": "em_58ekfqk",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T13:24:30Z",
+   "entity_type": "email",
+   "entity_id": "em_uqgjbm3",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T13:28:21Z",
+   "entity_type": "email",
+   "entity_id": "em_9nt9gyr",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T13:29:30Z",
+   "entity_type": "email",
+   "entity_id": "em_mgbuhrw",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T13:40:17Z",
+   "entity_type": "post",
+   "entity_id": "post_zyjcvzv",
+   "field": "account",
+   "value": "@honestknits"
+  },
+  {
+   "ts": "2026-09-23T13:40:17Z",
+   "entity_type": "post",
+   "entity_id": "post_zyjcvzv",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-23T13:40:23Z",
+   "entity_type": "post",
+   "entity_id": "post_zyjcvzv",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-23T13:40:17Z",
+   "entity_type": "post",
+   "entity_id": "post_zyjcvzv",
+   "field": "platform",
+   "value": "Facebook"
+  },
+  {
+   "ts": "2026-09-25T07:40:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_e9j25kj",
+   "field": "spend",
+   "value": 110.1
+  }
+ ]
+}

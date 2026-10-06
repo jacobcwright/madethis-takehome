@@ -1,0 +1,416 @@
+{
+ "session_id": "s_0d27k28dx1",
+ "business_id": "biz_0102_2nrpv",
+ "started_at": "2026-09-24T18:55:36Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T18:58:53Z",
+   "content": "sorry, next up - can we begin advertising?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-24T18:58:56Z",
+   "content": "launch_ad(platform='tiktok', daily_budget=15) -> error",
+   "tool_name": "launch_ad",
+   "call_id": "call_iyo9tomk31so",
+   "args": {
+    "platform": "tiktok",
+    "daily_budget": 15,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": false,
+    "error": "rate limited, retry later"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "tool",
+   "ts": "2026-09-24T18:59:36Z",
+   "content": "launch_ad(platform='tiktok', daily_budget=15) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_ndlp6mxabooh",
+   "args": {
+    "platform": "tiktok",
+    "daily_budget": 15,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_cu4d4qc",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 3,
+   "role": "agent",
+   "ts": "2026-09-24T18:59:40Z",
+   "content": "ad's live and running with a $15 a day budget."
+  },
+  {
+   "turn_index": 4,
+   "role": "owner",
+   "ts": "2026-09-24T19:00:36Z",
+   "content": "coastalskincare.store deploy, can't recall when it was"
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-24T19:00:44Z",
+   "content": "Want me to put together an abandoned cart email? The coastalskincare.store deploy went out yesterday, all good!"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-24T19:03:17Z",
+   "content": "sell anything?"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-24T19:03:25Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_sohi5f0iitat",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 2,
+    "total": 64,
+    "orders": [
+     "ord_x6j87vw",
+     "ord_eehmea7"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-24T19:05:35Z",
+   "content": "Two new sales so far, bringing in $64!"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-24T19:08:57Z",
+   "content": "could u see if any sales came in"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-24T19:08:59Z",
+   "content": "list_orders(status='paid', since='24h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_h4scrig5ism5",
+   "args": {
+    "status": "paid",
+    "since": "24h"
+   },
+   "result": {
+    "ok": true,
+    "count": 2,
+    "total": 64,
+    "orders": [
+     "ord_eehmea7",
+     "ord_rk4ss2e"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-24T19:13:56Z",
+   "content": "Over the last 24 hours, the Leather Keychain is leading with 2 orders! 🔥 Should I post about it on Instagram?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-23T09:55:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h5wm784",
+   "field": "daily_budget",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-23T09:55:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h5wm784",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T09:55:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h5wm784",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-23T09:55:53Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h5wm784",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-23T09:56:40Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h5wm784",
+   "field": "spend",
+   "value": 50.79
+  },
+  {
+   "ts": "2026-09-23T09:55:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h5wm784",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-23T10:04:22Z",
+   "entity_type": "email",
+   "entity_id": "em_5b4d22d",
+   "field": "subject",
+   "value": "Launch week: 15% off"
+  },
+  {
+   "ts": "2026-09-23T10:04:22Z",
+   "entity_type": "email",
+   "entity_id": "em_5b4d22d",
+   "field": "to",
+   "value": "sienna.alvarez@icloud.com"
+  },
+  {
+   "ts": "2026-09-23T10:04:29Z",
+   "entity_type": "email",
+   "entity_id": "em_5b4d22d",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T10:07:16Z",
+   "entity_type": "payout",
+   "entity_id": "po_n9ufnxy",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T10:07:26Z",
+   "entity_type": "payout",
+   "entity_id": "po_n9ufnxy",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T10:04:22Z",
+   "entity_type": "email",
+   "entity_id": "em_5b4d22d",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T10:09:02Z",
+   "entity_type": "file",
+   "entity_id": "f_ng9huhk",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-09-23T10:09:02Z",
+   "entity_type": "file",
+   "entity_id": "f_ng9huhk",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-23T10:07:16Z",
+   "entity_type": "payout",
+   "entity_id": "po_n9ufnxy",
+   "field": "amount",
+   "value": 40.0
+  },
+  {
+   "ts": "2026-09-23T10:12:29Z",
+   "entity_type": "file",
+   "entity_id": "f_ng9huhk",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-23T10:16:14Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m8qcqfy",
+   "field": "url",
+   "value": "https://coastalskincare.store"
+  },
+  {
+   "ts": "2026-09-23T10:16:14Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m8qcqfy",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T10:19:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m8qcqfy",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-23T10:16:14Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m8qcqfy",
+   "field": "commit",
+   "value": "d3db8ad"
+  },
+  {
+   "ts": "2026-09-23T19:03:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_x6j87vw",
+   "field": "amount",
+   "value": 32
+  },
+  {
+   "ts": "2026-09-23T19:03:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_x6j87vw",
+   "field": "customer_name",
+   "value": "Sienna Alvarez"
+  },
+  {
+   "ts": "2026-09-23T19:03:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_x6j87vw",
+   "field": "product",
+   "value": "Leather Keychain"
+  },
+  {
+   "ts": "2026-09-23T19:03:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_x6j87vw",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T19:03:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_x6j87vw",
+   "field": "customer",
+   "value": "sienna.alvarez@icloud.com"
+  },
+  {
+   "ts": "2026-09-24T15:59:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_eehmea7",
+   "field": "amount",
+   "value": 32
+  },
+  {
+   "ts": "2026-09-24T15:59:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_eehmea7",
+   "field": "customer",
+   "value": "marisol.kim@icloud.com"
+  },
+  {
+   "ts": "2026-09-24T15:59:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_eehmea7",
+   "field": "product",
+   "value": "Leather Keychain"
+  },
+  {
+   "ts": "2026-09-24T15:59:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_eehmea7",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T15:59:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_eehmea7",
+   "field": "customer_name",
+   "value": "Marisol Kim"
+  },
+  {
+   "ts": "2026-09-24T18:59:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_cu4d4qc",
+   "field": "daily_budget",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-24T18:59:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_cu4d4qc",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-24T18:59:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_cu4d4qc",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-24T18:59:38Z",
+   "entity_type": "ad",
+   "entity_id": "ad_cu4d4qc",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-24T18:59:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_cu4d4qc",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T19:08:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_rk4ss2e",
+   "field": "amount",
+   "value": 32
+  },
+  {
+   "ts": "2026-09-24T19:08:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_rk4ss2e",
+   "field": "product",
+   "value": "Leather Keychain"
+  },
+  {
+   "ts": "2026-09-24T19:08:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_rk4ss2e",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T19:08:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_rk4ss2e",
+   "field": "customer_name",
+   "value": "Sienna Alvarez"
+  },
+  {
+   "ts": "2026-09-24T19:08:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_rk4ss2e",
+   "field": "customer",
+   "value": "sienna.alvarez@icloud.com"
+  }
+ ]
+}

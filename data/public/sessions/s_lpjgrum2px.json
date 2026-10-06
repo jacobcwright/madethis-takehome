@@ -1,0 +1,385 @@
+{
+ "session_id": "s_lpjgrum2px",
+ "business_id": "biz_0077_sbsab",
+ "started_at": "2026-09-28T21:17:45Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T21:21:33Z",
+   "content": "Let Felix know by email."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-28T21:21:38Z",
+   "content": "send_email(to='felixl68@outlook.com', subject=\"We're live!\") -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_4hqszasbgew6",
+   "args": {
+    "to": "felixl68@outlook.com",
+    "subject": "We're live!"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_y2j783r",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-28T21:21:46Z",
+   "content": "Weekends tend to be slower for this kind of product, but the email to Felix is out the door!"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-28T21:24:43Z",
+   "content": "what's my total so far"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-28T21:24:53Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_dhud6786mnxv",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 3,
+    "total": 83,
+    "orders": [
+     "ord_hazstxe",
+     "ord_gz3wg8c",
+     "ord_qhry3tm"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-28T21:41:30Z",
+   "content": "A summary will reach you tonight, and you've earned $83 snice launch."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-28T21:43:03Z",
+   "content": "is the campaign running yet"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-28T21:43:08Z",
+   "content": "ad_status(ad_id='ad_pmmyu24') -> ok",
+   "tool_name": "ad_status",
+   "call_id": "call_q3i332enh0o2",
+   "args": {
+    "ad_id": "ad_pmmyu24"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_pmmyu24",
+    "status": "done",
+    "ad_status": "active",
+    "spend": 39.68,
+    "impressions": 6634,
+    "clicks": 119
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-28T21:47:49Z",
+   "content": "Fun update 🚀 $39.68 has gone into the campaign so far, and the ads are out serving and spending. Should I follow up with them?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T17:36:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_hazstxe",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-24T17:36:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_hazstxe",
+   "field": "customer",
+   "value": "felixl68@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T17:36:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_hazstxe",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T17:36:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_hazstxe",
+   "field": "customer_name",
+   "value": "Felix Larsen"
+  },
+  {
+   "ts": "2026-09-24T17:36:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_hazstxe",
+   "field": "product",
+   "value": "Beginner Course"
+  },
+  {
+   "ts": "2026-09-25T05:52:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_gz3wg8c",
+   "field": "customer",
+   "value": "amarar25@me.com"
+  },
+  {
+   "ts": "2026-09-25T05:52:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_gz3wg8c",
+   "field": "customer_name",
+   "value": "Amara Rossi"
+  },
+  {
+   "ts": "2026-09-25T05:52:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_gz3wg8c",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-25T05:52:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_gz3wg8c",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T05:52:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_gz3wg8c",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-25T08:28:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_qhry3tm",
+   "field": "customer_name",
+   "value": "Noah Delgado"
+  },
+  {
+   "ts": "2026-09-25T08:28:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_qhry3tm",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T08:28:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_qhry3tm",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-25T08:28:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_qhry3tm",
+   "field": "customer",
+   "value": "noah.delgado@me.com"
+  },
+  {
+   "ts": "2026-09-25T08:28:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_qhry3tm",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-25T11:22:22Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "daily_budget",
+   "value": 50
+  },
+  {
+   "ts": "2026-09-25T11:22:22Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-25T11:22:22Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T11:22:24Z",
+   "entity_type": "email",
+   "entity_id": "em_kpjmsyn",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T11:22:24Z",
+   "entity_type": "email",
+   "entity_id": "em_kpjmsyn",
+   "field": "subject",
+   "value": "Sorry about the delay"
+  },
+  {
+   "ts": "2026-09-25T11:22:24Z",
+   "entity_type": "email",
+   "entity_id": "em_kpjmsyn",
+   "field": "to",
+   "value": "noah.delgado@me.com"
+  },
+  {
+   "ts": "2026-09-25T11:22:22Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-25T11:23:56Z",
+   "entity_type": "email",
+   "entity_id": "em_kpjmsyn",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T11:24:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-25T11:30:52Z",
+   "entity_type": "file",
+   "entity_id": "f_uzjrvpr",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T11:30:52Z",
+   "entity_type": "file",
+   "entity_id": "f_uzjrvpr",
+   "field": "name",
+   "value": "banner_v2.png"
+  },
+  {
+   "ts": "2026-09-25T11:33:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_sg7xuq8",
+   "field": "commit",
+   "value": "f87d9d8"
+  },
+  {
+   "ts": "2026-09-25T11:33:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_sg7xuq8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T11:33:40Z",
+   "entity_type": "deploy",
+   "entity_id": "d_sg7xuq8",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-25T11:30:59Z",
+   "entity_type": "file",
+   "entity_id": "f_uzjrvpr",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T11:33:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_sg7xuq8",
+   "field": "url",
+   "value": "https://pinefitness.shop"
+  },
+  {
+   "ts": "2026-09-25T11:43:19Z",
+   "entity_type": "file",
+   "entity_id": "f_crehcqn",
+   "field": "name",
+   "value": "about-photo.jpeg"
+  },
+  {
+   "ts": "2026-09-25T11:43:19Z",
+   "entity_type": "file",
+   "entity_id": "f_crehcqn",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T11:45:32Z",
+   "entity_type": "file",
+   "entity_id": "f_crehcqn",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T13:08:19Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "spend",
+   "value": 39.68
+  },
+  {
+   "ts": "2026-09-28T21:21:39Z",
+   "entity_type": "email",
+   "entity_id": "em_y2j783r",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-28T21:21:39Z",
+   "entity_type": "email",
+   "entity_id": "em_y2j783r",
+   "field": "subject",
+   "value": "We're live!"
+  },
+  {
+   "ts": "2026-09-28T21:21:39Z",
+   "entity_type": "email",
+   "entity_id": "em_y2j783r",
+   "field": "to",
+   "value": "felixl68@outlook.com"
+  },
+  {
+   "ts": "2026-09-28T21:21:45Z",
+   "entity_type": "email",
+   "entity_id": "em_y2j783r",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-10-01T03:45:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pmmyu24",
+   "field": "spend",
+   "value": 84.13
+  }
+ ]
+}

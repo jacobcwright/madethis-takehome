@@ -1,0 +1,323 @@
+{
+ "session_id": "s_k4dp8yx6uw",
+ "business_id": "biz_0122_cysxb",
+ "started_at": "2026-09-26T15:20:46Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-26T15:23:09Z",
+   "content": "menu.pdf attached, drop in assets"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-26T15:23:17Z",
+   "content": "upload_file(name='menu.pdf', size_kb=16588) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_zoaole9qu78z",
+   "args": {
+    "name": "menu.pdf",
+    "size_kb": 16588
+   },
+   "result": {
+    "ok": true,
+    "id": "f_rvs5zkj",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0122_cysxb/menu.pdf"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-26T15:23:53Z",
+   "content": "Sounds good. menu.pdf is uploaded. Also, the product photos could use more light."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-26T15:27:45Z",
+   "content": "when u get a sec, could u check whether any sales came in?"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-26T15:27:53Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_os6tsuxd3kdd",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-26T15:28:02Z",
+   "content": "Nothing's sold so far. Zero orders have landed yet. Tomorrow I'll circle back with the supplier."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-26T15:30:26Z",
+   "content": "roll out what we disucssed"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-26T15:30:36Z",
+   "content": "deploy_site(site='emberceramics.net', branch='main') -> error",
+   "tool_name": "deploy_site",
+   "call_id": "call_wdbtv47g16s0",
+   "args": {
+    "site": "emberceramics.net",
+    "branch": "main"
+   },
+   "result": {
+    "ok": false,
+    "id": "d_79uwuds",
+    "status": "failed",
+    "error": "deploy timed out after 600s"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-26T15:40:18Z",
+   "content": "Moving on to the product descriptions now. The site deploy errored out, timig out after 600s."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-26T15:41:08Z",
+   "content": "ok thx"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-23T00:45:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ykqzuht",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-23T00:45:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ykqzuht",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-23T00:45:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ykqzuht",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-23T00:45:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ykqzuht",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T00:51:07Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ykqzuht",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-23T01:07:23Z",
+   "entity_type": "post",
+   "entity_id": "post_xv9mqxx",
+   "field": "account",
+   "value": "@emberceramics"
+  },
+  {
+   "ts": "2026-09-23T01:07:23Z",
+   "entity_type": "post",
+   "entity_id": "post_xv9mqxx",
+   "field": "platform",
+   "value": "Facebook"
+  },
+  {
+   "ts": "2026-09-23T01:07:23Z",
+   "entity_type": "post",
+   "entity_id": "post_xv9mqxx",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-23T01:07:28Z",
+   "entity_type": "post",
+   "entity_id": "post_xv9mqxx",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-23T01:13:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a2fnd92",
+   "field": "daily_budget",
+   "value": 40
+  },
+  {
+   "ts": "2026-09-23T01:13:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a2fnd92",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-23T01:13:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a2fnd92",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T01:17:20Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a2fnd92",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-23T01:13:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_a2fnd92",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_dkyyed4",
+   "field": "batch",
+   "value": "emb_y942eh8"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_dkyyed4",
+   "field": "subject",
+   "value": "Welcome to Ember Ceramics Collective!"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_vk2nbeg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_vk2nbeg",
+   "field": "batch",
+   "value": "emb_y942eh8"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_vk2nbeg",
+   "field": "subject",
+   "value": "Welcome to Ember Ceramics Collective!"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_dkyyed4",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_vk2nbeg",
+   "field": "to",
+   "value": "preyes@proton.me"
+  },
+  {
+   "ts": "2026-09-23T01:19:15Z",
+   "entity_type": "email",
+   "entity_id": "em_dkyyed4",
+   "field": "to",
+   "value": "dana.silva@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T01:36:03Z",
+   "entity_type": "email",
+   "entity_id": "em_vk2nbeg",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T01:35:19Z",
+   "entity_type": "email",
+   "entity_id": "em_dkyyed4",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-26T15:23:29Z",
+   "entity_type": "file",
+   "entity_id": "f_rvs5zkj",
+   "field": "name",
+   "value": "menu.pdf"
+  },
+  {
+   "ts": "2026-09-26T15:23:31Z",
+   "entity_type": "file",
+   "entity_id": "f_rvs5zkj",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-26T15:23:29Z",
+   "entity_type": "file",
+   "entity_id": "f_rvs5zkj",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-26T15:31:21Z",
+   "entity_type": "deploy",
+   "entity_id": "d_79uwuds",
+   "field": "commit",
+   "value": "6575bdf"
+  },
+  {
+   "ts": "2026-09-26T15:31:21Z",
+   "entity_type": "deploy",
+   "entity_id": "d_79uwuds",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T15:31:21Z",
+   "entity_type": "deploy",
+   "entity_id": "d_79uwuds",
+   "field": "url",
+   "value": "https://emberceramics.net"
+  },
+  {
+   "ts": "2026-09-26T15:40:02Z",
+   "entity_type": "deploy",
+   "entity_id": "d_79uwuds",
+   "field": "status",
+   "value": "failed"
+  }
+ ]
+}

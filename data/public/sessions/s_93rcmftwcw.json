@@ -1,0 +1,345 @@
+{
+ "session_id": "s_93rcmftwcw",
+ "business_id": "biz_0070_x3shb",
+ "started_at": "2026-09-24T05:55:31Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T05:57:27Z",
+   "content": "sorry, when did that Pinterest post go out again?"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-24T05:59:13Z",
+   "content": "Pinterest post handled on Tuesday!\n💸\nProduct descriptions are what I'm tackling next."
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-24T06:01:40Z",
+   "content": "purchase urbanfitnesshq.com pls"
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-24T06:01:50Z",
+   "content": "buy_domain(domain='urbanfitnesshq.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_ceyilbc31p0p",
+   "args": {
+    "domain": "urbanfitnesshq.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_yp8afef",
+    "status": "done",
+    "domain": "urbanfitnesshq.com",
+    "price": 12
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-24T06:02:00Z",
+   "content": "urbanfitnesshq.com is officially bought. Whenever you've got the new product photos, could you send them over?"
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-24T06:03:52Z",
+   "content": "thanks a lot"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T09:07:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_gb4cac5",
+   "field": "amount",
+   "value": 14
+  },
+  {
+   "ts": "2026-09-21T09:07:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_gb4cac5",
+   "field": "customer",
+   "value": "shughes@outlook.com"
+  },
+  {
+   "ts": "2026-09-21T09:07:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_gb4cac5",
+   "field": "customer_name",
+   "value": "Sam Hughes"
+  },
+  {
+   "ts": "2026-09-21T09:07:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_gb4cac5",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-21T09:07:21Z",
+   "entity_type": "order",
+   "entity_id": "ord_gb4cac5",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T14:12:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_gb4cac5",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-22T08:31:07Z",
+   "entity_type": "order",
+   "entity_id": "ord_u3vgjtv",
+   "field": "amount",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-22T08:31:07Z",
+   "entity_type": "order",
+   "entity_id": "ord_u3vgjtv",
+   "field": "customer",
+   "value": "mateo_1985@icloud.com"
+  },
+  {
+   "ts": "2026-09-22T08:31:07Z",
+   "entity_type": "order",
+   "entity_id": "ord_u3vgjtv",
+   "field": "customer_name",
+   "value": "Mateo Grant"
+  },
+  {
+   "ts": "2026-09-22T08:31:07Z",
+   "entity_type": "order",
+   "entity_id": "ord_u3vgjtv",
+   "field": "product",
+   "value": "Linen Tote"
+  },
+  {
+   "ts": "2026-09-22T08:31:07Z",
+   "entity_type": "order",
+   "entity_id": "ord_u3vgjtv",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_4r9s53b",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_4r9s53b",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_4r9s53b",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-22T08:43:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_4r9s53b",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T08:47:29Z",
+   "entity_type": "ad",
+   "entity_id": "ad_4r9s53b",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-22T08:57:03Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5ackhu2",
+   "field": "commit",
+   "value": "077e057"
+  },
+  {
+   "ts": "2026-09-22T08:57:03Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5ackhu2",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T08:57:03Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5ackhu2",
+   "field": "url",
+   "value": "https://urbanfitness.com"
+  },
+  {
+   "ts": "2026-09-22T09:05:34Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5ackhu2",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T09:16:56Z",
+   "entity_type": "post",
+   "entity_id": "post_mtcdq6e",
+   "field": "account",
+   "value": "@urbanfitness"
+  },
+  {
+   "ts": "2026-09-22T09:16:56Z",
+   "entity_type": "post",
+   "entity_id": "post_mtcdq6e",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-22T09:17:01Z",
+   "entity_type": "post",
+   "entity_id": "post_mtcdq6e",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-22T09:16:56Z",
+   "entity_type": "post",
+   "entity_id": "post_mtcdq6e",
+   "field": "platform",
+   "value": "Pinterest"
+  },
+  {
+   "ts": "2026-09-22T09:22:02Z",
+   "entity_type": "domain",
+   "entity_id": "dom_fgwqjrm",
+   "field": "domain",
+   "value": "urbanfitness.io"
+  },
+  {
+   "ts": "2026-09-22T09:22:02Z",
+   "entity_type": "domain",
+   "entity_id": "dom_fgwqjrm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T09:22:11Z",
+   "entity_type": "domain",
+   "entity_id": "dom_fgwqjrm",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-22T09:22:36Z",
+   "entity_type": "post",
+   "entity_id": "post_fvv4j2b",
+   "field": "account",
+   "value": "@urbanfitness"
+  },
+  {
+   "ts": "2026-09-22T09:22:36Z",
+   "entity_type": "post",
+   "entity_id": "post_fvv4j2b",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-22T09:22:40Z",
+   "entity_type": "post",
+   "entity_id": "post_fvv4j2b",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-22T09:22:02Z",
+   "entity_type": "domain",
+   "entity_id": "dom_fgwqjrm",
+   "field": "price",
+   "value": 12
+  },
+  {
+   "ts": "2026-09-22T09:25:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mq423za",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-22T09:25:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mq423za",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-22T09:25:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mq423za",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-22T09:25:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mq423za",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T09:26:26Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mq423za",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-22T09:22:36Z",
+   "entity_type": "post",
+   "entity_id": "post_fvv4j2b",
+   "field": "platform",
+   "value": "LinkedIn"
+  },
+  {
+   "ts": "2026-09-24T06:01:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yp8afef",
+   "field": "domain",
+   "value": "urbanfitnesshq.com"
+  },
+  {
+   "ts": "2026-09-24T06:01:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yp8afef",
+   "field": "price",
+   "value": 12
+  },
+  {
+   "ts": "2026-09-24T06:01:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yp8afef",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T06:01:58Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yp8afef",
+   "field": "status",
+   "value": "registered"
+  }
+ ]
+}

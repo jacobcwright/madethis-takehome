@@ -1,0 +1,279 @@
+{
+ "session_id": "s_52yjsubqdv",
+ "business_id": "biz_0057_ts43t",
+ "started_at": "2026-09-26T00:34:22Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-26T00:35:28Z",
+   "content": "can u get the Instagram post published"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-26T00:35:38Z",
+   "content": "post_social(platform='instagram', caption='New drop is live.') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_d1tp9b1zm0v3",
+   "args": {
+    "platform": "instagram",
+    "caption": "New drop is live."
+   },
+   "result": {
+    "ok": true,
+    "id": "post_nvb2msj",
+    "status": "done",
+    "url": "https://instagram.com/urbanleatherhq/p/791299178"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-26T00:35:45Z",
+   "content": "It's published on @urbanleatherhq! 🎉 Another look at orders in a few hours."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-26T00:39:14Z",
+   "content": "send it out"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-26T00:39:20Z",
+   "content": "deploy_site(site='urbanleatherhq.net', branch='main') -> error",
+   "tool_name": "deploy_site",
+   "call_id": "call_qqrc5wrk84zr",
+   "args": {
+    "site": "urbanleatherhq.net",
+    "branch": "main"
+   },
+   "result": {
+    "ok": false,
+    "id": "d_mj4sntn",
+    "status": "failed",
+    "error": "build failed: Module not found: './components/Hero'"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-26T00:39:59Z",
+   "content": "The deploy hit an error, so the site hasn't been updated yet."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T03:06:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3wb9b2a",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-24T03:06:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3wb9b2a",
+   "field": "to",
+   "value": "rafael.grant@gmail.com"
+  },
+  {
+   "ts": "2026-09-24T03:06:32Z",
+   "entity_type": "email",
+   "entity_id": "em_3wb9b2a",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T03:06:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3wb9b2a",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T03:16:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_xj7v8te",
+   "field": "url",
+   "value": "https://urbanleatherhq.net"
+  },
+  {
+   "ts": "2026-09-24T03:16:56Z",
+   "entity_type": "ad",
+   "entity_id": "ad_9cr9e3k",
+   "field": "daily_budget",
+   "value": 50
+  },
+  {
+   "ts": "2026-09-24T03:16:56Z",
+   "entity_type": "ad",
+   "entity_id": "ad_9cr9e3k",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-24T03:16:56Z",
+   "entity_type": "ad",
+   "entity_id": "ad_9cr9e3k",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-24T03:16:56Z",
+   "entity_type": "ad",
+   "entity_id": "ad_9cr9e3k",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T03:17:01Z",
+   "entity_type": "ad",
+   "entity_id": "ad_9cr9e3k",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-24T03:16:09Z",
+   "entity_type": "deploy",
+   "entity_id": "d_xj7v8te",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T03:16:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_xj7v8te",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T03:16:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_xj7v8te",
+   "field": "commit",
+   "value": "cb85f77"
+  },
+  {
+   "ts": "2026-09-24T03:22:36Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sgjdfgf",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-24T03:22:36Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sgjdfgf",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-24T03:22:36Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sgjdfgf",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-24T03:22:38Z",
+   "entity_type": "email",
+   "entity_id": "em_3nexsyk",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T03:22:38Z",
+   "entity_type": "email",
+   "entity_id": "em_3nexsyk",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-24T03:22:36Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sgjdfgf",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T03:22:38Z",
+   "entity_type": "email",
+   "entity_id": "em_3nexsyk",
+   "field": "to",
+   "value": "kai.byrne@proton.me"
+  },
+  {
+   "ts": "2026-09-24T03:33:34Z",
+   "entity_type": "email",
+   "entity_id": "em_3nexsyk",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T03:33:44Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sgjdfgf",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-26T00:35:39Z",
+   "entity_type": "post",
+   "entity_id": "post_nvb2msj",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-26T00:35:43Z",
+   "entity_type": "post",
+   "entity_id": "post_nvb2msj",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-26T00:35:39Z",
+   "entity_type": "post",
+   "entity_id": "post_nvb2msj",
+   "field": "account",
+   "value": "@urbanleatherhq"
+  },
+  {
+   "ts": "2026-09-26T00:35:39Z",
+   "entity_type": "post",
+   "entity_id": "post_nvb2msj",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-26T00:39:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_mj4sntn",
+   "field": "commit",
+   "value": "a2cf989"
+  },
+  {
+   "ts": "2026-09-26T00:39:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_mj4sntn",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T00:39:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_mj4sntn",
+   "field": "url",
+   "value": "https://urbanleatherhq.net"
+  },
+  {
+   "ts": "2026-09-26T00:39:39Z",
+   "entity_type": "deploy",
+   "entity_id": "d_mj4sntn",
+   "field": "status",
+   "value": "failed"
+  }
+ ]
+}

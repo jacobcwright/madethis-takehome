@@ -1,0 +1,394 @@
+{
+ "session_id": "s_iery2nxfo2",
+ "business_id": "biz_0060_3bjjj",
+ "started_at": "2026-09-28T08:39:33Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T08:39:57Z",
+   "content": "thinking of giving the business a new name lol"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-28T08:52:26Z",
+   "content": "Product photos could use more light.\n\nAfter that, the ad audience setup."
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-28T08:55:44Z",
+   "content": "Could you see whether any sales have come through."
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-28T08:55:46Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_tp6l4bo3qr86",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 19,
+    "orders": [
+     "ord_9mnkgwv"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-28T08:55:54Z",
+   "content": "Your take for the week is $19."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-28T08:59:37Z",
+   "content": "pls add about-photo.jpeg as an attachment"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-28T08:59:47Z",
+   "content": "upload_file(name='about-photo.jpeg', size_kb=2710) -> error",
+   "tool_name": "upload_file",
+   "call_id": "call_qmia0jl0txtu",
+   "args": {
+    "name": "about-photo.jpeg",
+    "size_kb": 2710
+   },
+   "result": {
+    "ok": false,
+    "status": "failed",
+    "error": "unsupported file type",
+    "name": "about-photo.jpeg"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-28T09:17:20Z",
+   "content": "I'll look at orders again in a few hours. about-photo.jpeg didn't upload, the file type isn't supported."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-28T09:21:00Z",
+   "content": "send it out"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-28T09:21:10Z",
+   "content": "deploy_site(site='pinetutoring.studio', branch='main') -> error",
+   "tool_name": "deploy_site",
+   "call_id": "call_kecbyxx7u2xe",
+   "args": {
+    "site": "pinetutoring.studio",
+    "branch": "main"
+   },
+   "result": {
+    "ok": false,
+    "id": "d_3p7er8e",
+    "status": "failed",
+    "error": "build failed: Type error in app/page.tsx"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-28T09:25:57Z",
+   "content": "Bad news: the deployment errored out. Build failed with a Type error in app/page.tsx. Want me to follow up with them?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-26T22:19:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-26T22:19:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-26T22:19:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-26T22:19:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T22:19:38Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-26T22:20:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "spend",
+   "value": 35.46
+  },
+  {
+   "ts": "2026-09-26T22:23:30Z",
+   "entity_type": "domain",
+   "entity_id": "dom_adv8apc",
+   "field": "domain",
+   "value": "pinetutoringshop.com"
+  },
+  {
+   "ts": "2026-09-26T22:23:30Z",
+   "entity_type": "domain",
+   "entity_id": "dom_adv8apc",
+   "field": "price",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-26T22:23:30Z",
+   "entity_type": "domain",
+   "entity_id": "dom_adv8apc",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T22:22:57Z",
+   "entity_type": "ad",
+   "entity_id": "ad_ex6kfmr",
+   "field": "spend",
+   "value": 64.81
+  },
+  {
+   "ts": "2026-09-26T22:23:32Z",
+   "entity_type": "domain",
+   "entity_id": "dom_adv8apc",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-26T22:28:51Z",
+   "entity_type": "email",
+   "entity_id": "em_qeqfmmt",
+   "field": "subject",
+   "value": "We're live!"
+  },
+  {
+   "ts": "2026-09-26T22:28:51Z",
+   "entity_type": "email",
+   "entity_id": "em_qeqfmmt",
+   "field": "to",
+   "value": "gracem75@proton.me"
+  },
+  {
+   "ts": "2026-09-26T22:28:51Z",
+   "entity_type": "email",
+   "entity_id": "em_qeqfmmt",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-26T22:39:23Z",
+   "entity_type": "email",
+   "entity_id": "em_qeqfmmt",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-26T22:59:53Z",
+   "entity_type": "order",
+   "entity_id": "ord_t67kcut",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-26T22:59:53Z",
+   "entity_type": "order",
+   "entity_id": "ord_t67kcut",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-26T22:59:53Z",
+   "entity_type": "order",
+   "entity_id": "ord_t67kcut",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T22:59:53Z",
+   "entity_type": "order",
+   "entity_id": "ord_t67kcut",
+   "field": "customer",
+   "value": "elid75@hotmail.com"
+  },
+  {
+   "ts": "2026-09-26T22:59:53Z",
+   "entity_type": "order",
+   "entity_id": "ord_t67kcut",
+   "field": "customer_name",
+   "value": "Eli Delgado"
+  },
+  {
+   "ts": "2026-09-26T23:13:33Z",
+   "entity_type": "payout",
+   "entity_id": "po_n2fzv38",
+   "field": "amount",
+   "value": 850.0
+  },
+  {
+   "ts": "2026-09-26T23:14:25Z",
+   "entity_type": "payout",
+   "entity_id": "po_n2fzv38",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T23:13:33Z",
+   "entity_type": "payout",
+   "entity_id": "po_n2fzv38",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T23:19:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hqkg9dk",
+   "field": "commit",
+   "value": "f8eebdf"
+  },
+  {
+   "ts": "2026-09-26T23:19:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hqkg9dk",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T23:19:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hqkg9dk",
+   "field": "url",
+   "value": "https://pinetutoring.studio"
+  },
+  {
+   "ts": "2026-09-26T23:19:22Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hqkg9dk",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-27T14:18:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_9mnkgwv",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-27T14:18:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_9mnkgwv",
+   "field": "customer_name",
+   "value": "Omar Haddad"
+  },
+  {
+   "ts": "2026-09-27T14:18:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_9mnkgwv",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-27T14:18:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_9mnkgwv",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T14:18:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_9mnkgwv",
+   "field": "customer",
+   "value": "omar.haddad@hotmail.com"
+  },
+  {
+   "ts": "2026-09-28T03:35:39Z",
+   "entity_type": "order",
+   "entity_id": "ord_t67kcut",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-28T08:59:48Z",
+   "entity_type": "file",
+   "entity_id": "f_j7sbkm4",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-28T08:59:48Z",
+   "entity_type": "file",
+   "entity_id": "f_j7sbkm4",
+   "field": "name",
+   "value": "about-photo.jpeg"
+  },
+  {
+   "ts": "2026-09-28T09:14:45Z",
+   "entity_type": "file",
+   "entity_id": "f_j7sbkm4",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-28T09:21:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3p7er8e",
+   "field": "url",
+   "value": "https://pinetutoring.studio"
+  },
+  {
+   "ts": "2026-09-28T09:24:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3p7er8e",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-28T09:21:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3p7er8e",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T09:21:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3p7er8e",
+   "field": "commit",
+   "value": "28db7a3"
+  }
+ ]
+}

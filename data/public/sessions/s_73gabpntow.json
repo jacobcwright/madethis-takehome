@@ -1,0 +1,210 @@
+{
+ "session_id": "s_73gabpntow",
+ "business_id": "biz_0100_drutq",
+ "started_at": "2026-09-23T13:46:03Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-23T13:47:54Z",
+   "content": "sorry, could u write back to Ivy for me?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-23T13:48:04Z",
+   "content": "send_email(to='ivyo98@hotmail.com', subject='Your order is on the way') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_zaie9k1p9v9t",
+   "args": {
+    "to": "ivyo98@hotmail.com",
+    "subject": "Your order is on the way"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_t7k5mmg",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-23T13:48:48Z",
+   "content": "Summary coming your way tonight. The email has landed with Ivy, sent!"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-23T13:49:16Z",
+   "content": "we need the newest changes live, can u do that pls"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-23T13:49:25Z",
+   "content": "deploy_site(site='blue-soap.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_w26c5w72apq0",
+   "args": {
+    "site": "blue-soap.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_5wdh8zr",
+    "status": "done",
+    "url": "https://blue-soap.com"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-23T13:53:33Z",
+   "content": "I'm planning to refresh the pricing page later today. blue-soap.com/ is published and reachable."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-23T13:56:58Z",
+   "content": "sorry, anything new come in since yesterday? thx"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-23T13:57:07Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_5zqnovlckim6",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 45,
+    "orders": [
+     "ord_bgz38mf"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-23T13:59:54Z",
+   "content": "Which of the two taglines do you like better? Sales at the store sit at $45 for now."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-23T14:00:29Z",
+   "content": "sorry, any news yet?"
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-23T14:12:06Z",
+   "content": "once you sign off on the caption, I'll schedule a post for Friday. blue-soap.com/ is live, deployment's finished, like I said!"
+  },
+  {
+   "turn_index": 11,
+   "role": "owner",
+   "ts": "2026-09-23T14:15:22Z",
+   "content": "cool"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "amount",
+   "value": 45
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "customer",
+   "value": "chloe.silva@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "customer_name",
+   "value": "Chloe Silva"
+  },
+  {
+   "ts": "2026-09-23T13:48:09Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-23T13:48:09Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "to",
+   "value": "ivyo98@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T13:48:37Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T13:50:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "commit",
+   "value": "e4afb2f"
+  },
+  {
+   "ts": "2026-09-23T13:50:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "url",
+   "value": "https://blue-soap.com"
+  },
+  {
+   "ts": "2026-09-23T13:50:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T13:48:09Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T13:51:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "status",
+   "value": "done"
+  }
+ ]
+}

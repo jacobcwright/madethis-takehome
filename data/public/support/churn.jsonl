@@ -1,0 +1,22 @@
+{"business_id": "biz_0112_65bfs", "churned_at": "2026-09-26T16:24:15Z", "reason": "payout was reported as sent and never arrived", "last_session_id": "s_iipz931nef", "plan": "starter"}
+{"business_id": "biz_0167_4zhfn", "churned_at": "2026-09-26T16:28:18Z", "reason": "payout was reported as sent and never arrived", "last_session_id": "s_14us1lm5t7", "plan": "starter"}
+{"business_id": "biz_0040_z3kk9", "churned_at": "2026-09-27T19:21:30Z", "reason": "cannot trust the revenue it reports", "last_session_id": "s_10rnpf9c23", "plan": "starter"}
+{"business_id": "biz_0091_mnr94", "churned_at": "2026-09-27T20:31:41Z", "reason": "payout was reported as sent and never arrived", "last_session_id": "s_4l07jtmal8", "plan": "starter"}
+{"business_id": "biz_0140_rvugn", "churned_at": "2026-09-28T03:10:34Z", "reason": "payout was reported as sent and never arrived", "last_session_id": "s_hv3b4qkinh", "plan": "starter"}
+{"business_id": "biz_0005_39m4h", "churned_at": "2026-09-29T23:28:31Z", "reason": "assistant said it emailed customers and it hadn't", "last_session_id": "s_pd6onhw0zq", "plan": "growth"}
+{"business_id": "biz_0043_34rcb", "churned_at": "2026-09-29T23:30:05Z", "reason": "said I had sales that never existed", "last_session_id": "s_w3ommn5xtp", "plan": "starter"}
+{"business_id": "biz_0044_upaf5", "churned_at": "2026-09-30T04:49:18Z", "reason": "assistant said it emailed customers and it hadn't", "last_session_id": "s_827fevu5yp", "plan": "starter"}
+{"business_id": "biz_0002_axg2x", "churned_at": "2026-09-30T09:18:19Z", "reason": "said I had sales that never existed", "last_session_id": "s_89whh81w7u", "plan": "starter"}
+{"business_id": "biz_0114_svvaz", "churned_at": "2026-09-30T14:52:12Z", "reason": "payout was reported as sent and never arrived", "last_session_id": "s_cw9cc7v67o", "plan": "starter"}
+{"business_id": "biz_0108_625hc", "churned_at": "2026-10-01T11:30:38Z", "reason": "cannot trust the revenue it reports", "last_session_id": "s_8nzpblbkgi", "plan": "starter"}
+{"business_id": "biz_0000_8qw8m", "churned_at": "2026-10-01T12:35:04Z", "reason": "said I had sales that never existed", "last_session_id": "s_mcodkx8ipq", "plan": "growth"}
+{"business_id": "biz_0033_r4swj", "churned_at": "2026-10-01T21:26:43Z", "reason": "said I had sales that never existed", "last_session_id": "s_ghv59tmjne", "plan": "starter"}
+{"business_id": "biz_0018_h8egw", "churned_at": "2026-10-02T18:44:28Z", "reason": "said I had sales that never existed", "last_session_id": "s_cl98anrb3c", "plan": "growth"}
+{"business_id": "biz_0170_szmce", "churned_at": "2026-10-04T14:07:55Z", "reason": "site was not actually live when it said it was", "last_session_id": "s_dsavp6j3qi", "plan": "starter"}
+{"business_id": "biz_0078_qbfnq", "churned_at": "2026-10-04T19:09:28Z", "reason": "closing the business", "last_session_id": "s_uqp8ou5nvr", "plan": "starter"}
+{"business_id": "biz_0148_q39hc", "churned_at": "2026-10-05T08:11:11Z", "reason": "said I had sales that never existed", "last_session_id": "s_5x65lr92so", "plan": "starter"}
+{"business_id": "biz_0015_gaafa", "churned_at": "2026-10-05T11:59:30Z", "reason": "cannot trust the revenue it reports", "last_session_id": "s_kd62895sc8", "plan": "growth"}
+{"business_id": "biz_0009_mabky", "churned_at": "2026-10-06T01:17:21Z", "reason": "cannot trust the revenue it reports", "last_session_id": "s_rqfv6s9c0v", "plan": "starter"}
+{"business_id": "biz_0155_q9w5g", "churned_at": "2026-10-06T01:39:39Z", "reason": "site was not actually live when it said it was", "last_session_id": "s_ogpaf0atlg", "plan": "starter"}
+{"business_id": "biz_0006_8au2e", "churned_at": "2026-10-07T02:36:07Z", "reason": "cannot trust the revenue it reports", "last_session_id": "s_cfttyubvlm", "plan": "growth"}
+{"business_id": "biz_0087_4gtk8", "churned_at": "2026-10-09T13:50:09Z", "reason": "site was not actually live when it said it was", "last_session_id": "s_qqlce2o1r8", "plan": "starter"}

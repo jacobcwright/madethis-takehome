@@ -1,0 +1,603 @@
+{
+ "session_id": "s_rt6li84rhe",
+ "business_id": "biz_0000_8qw8m",
+ "started_at": "2026-10-01T11:54:47Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-10-01T11:56:59Z",
+   "content": "harbor-threadshq.com is the domain i want, buy it pls"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-10-01T11:57:09Z",
+   "content": "buy_domain(domain='harbor-threadshq.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_yc5j84yc1jpl",
+   "args": {
+    "domain": "harbor-threadshq.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "harbor-threadshq.com",
+    "price": 79
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-10-01T11:57:16Z",
+   "content": "Guess what, harbor-threadshq.com is bought and ours now."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-10-01T12:00:32Z",
+   "content": "sorry if this is a hassle, could u shoot the welcoe email over to Ivy"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-10-01T12:00:37Z",
+   "content": "send_email(to='ivy_1981@me.com', subject='Restock alert') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_e439hpf8x54u",
+   "args": {
+    "to": "ivy_1981@me.com",
+    "subject": "Restock alert"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "ivy_1981@me.com",
+    "subject": "Restock alert"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-10-01T12:20:23Z",
+   "content": "Your \"Restock alert\" email reached Ivy, confirmed. Shall I send it to your whole list too?"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-10-01T12:21:34Z",
+   "content": "order count rn?"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-10-01T12:21:38Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_iusvqp9iutq0",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-10-01T12:25:54Z",
+   "content": "Nothing has sold yet, sorry 🫤 On the bright side, the Threads algorithm is pushing video at the moment. I'll watch it and tell you if anything shifts."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-10-01T12:26:39Z",
+   "content": "pls ship it live"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-10-01T12:26:42Z",
+   "content": "deploy_site(site='harbor-threads.net', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_a458zjd0dx2n",
+   "args": {
+    "site": "harbor-threads.net",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_u3mfc9g",
+    "status": "done",
+    "url": "https://harbor-threads.net"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-10-01T12:27:14Z",
+   "content": "Heads up, your website is now live!"
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-10-01T12:28:29Z",
+   "content": "sorry, could u hang onto headshot.jpg for me"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-10-01T12:28:33Z",
+   "content": "upload_file(name='headshot.jpg', size_kb=9912) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_2synzt44js30",
+   "args": {
+    "name": "headshot.jpg",
+    "size_kb": 9912
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0000_8qw8m/headshot.jpg",
+    "name": "headshot.jpg"
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-10-01T12:35:41Z",
+   "content": "Nice, headshot.jpg is uploaded. Want me to raise the ad budget to $30/day?"
+  },
+  {
+   "turn_index": 15,
+   "role": "owner",
+   "ts": "2026-10-01T12:38:19Z",
+   "content": "get the ad out there"
+  },
+  {
+   "turn_index": 16,
+   "role": "tool",
+   "ts": "2026-10-01T12:38:25Z",
+   "content": "launch_ad(platform='tiktok', daily_budget=10) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_2ja3ad9rapf9",
+   "args": {
+    "platform": "tiktok",
+    "daily_budget": 10,
+    "objective": "traffic"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_52kv9kk",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 17,
+   "role": "agent",
+   "ts": "2026-10-01T12:38:51Z",
+   "content": "Your campaign is running now, with a $10 daily budget behind it.\n\nShould I share a post on Instagram too?"
+  },
+  {
+   "turn_index": 18,
+   "role": "owner",
+   "ts": "2026-10-01T12:39:12Z",
+   "content": "ad's sitll going right?"
+  },
+  {
+   "turn_index": 19,
+   "role": "agent",
+   "ts": "2026-10-01T12:39:34Z",
+   "content": "Your ad is up and running now, nice!"
+  },
+  {
+   "turn_index": 20,
+   "role": "owner",
+   "ts": "2026-10-01T12:40:23Z",
+   "content": "can u write back to Caleb for me"
+  },
+  {
+   "turn_index": 21,
+   "role": "tool",
+   "ts": "2026-10-01T12:40:34Z",
+   "content": "send_email(to='caleb.lopez@icloud.com', subject='Restock alert') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_ydvnf8zvs9er",
+   "args": {
+    "to": "caleb.lopez@icloud.com",
+    "subject": "Restock alert"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "caleb.lopez@icloud.com",
+    "subject": "Restock alert"
+   }
+  },
+  {
+   "turn_index": 22,
+   "role": "agent",
+   "ts": "2026-10-01T12:41:53Z",
+   "content": "Your \"Restock alert\" email landed with Caleb. Discount code is what I'll tackle next."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T18:15:22Z",
+   "entity_type": "deploy",
+   "entity_id": "d_v4hjezt",
+   "field": "commit",
+   "value": "42322bb"
+  },
+  {
+   "ts": "2026-09-24T18:15:22Z",
+   "entity_type": "deploy",
+   "entity_id": "d_v4hjezt",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T18:15:22Z",
+   "entity_type": "deploy",
+   "entity_id": "d_v4hjezt",
+   "field": "url",
+   "value": "https://harbor-threads.net"
+  },
+  {
+   "ts": "2026-09-24T18:15:32Z",
+   "entity_type": "deploy",
+   "entity_id": "d_v4hjezt",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T18:19:45Z",
+   "entity_type": "email",
+   "entity_id": "em_wx538wp",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T18:19:45Z",
+   "entity_type": "email",
+   "entity_id": "em_wx538wp",
+   "field": "subject",
+   "value": "A little thank you"
+  },
+  {
+   "ts": "2026-09-24T18:19:45Z",
+   "entity_type": "email",
+   "entity_id": "em_wx538wp",
+   "field": "to",
+   "value": "caleb.lopez@icloud.com"
+  },
+  {
+   "ts": "2026-09-24T18:20:24Z",
+   "entity_type": "email",
+   "entity_id": "em_wx538wp",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-28T00:28:07Z",
+   "entity_type": "payout",
+   "entity_id": "po_m735fad",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T00:28:07Z",
+   "entity_type": "payout",
+   "entity_id": "po_m735fad",
+   "field": "amount",
+   "value": 850.0
+  },
+  {
+   "ts": "2026-09-28T00:32:31Z",
+   "entity_type": "payout",
+   "entity_id": "po_m735fad",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T00:39:48Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-28T00:39:48Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-28T00:39:48Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-28T00:41:01Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-28T00:42:19Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "status",
+   "value": "paused"
+  },
+  {
+   "ts": "2026-09-28T00:43:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "spend",
+   "value": 39.91
+  },
+  {
+   "ts": "2026-09-28T00:39:48Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g4wxksk",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T00:46:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_gfuavgs",
+   "field": "commit",
+   "value": "06b7d6e"
+  },
+  {
+   "ts": "2026-09-28T00:46:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_gfuavgs",
+   "field": "url",
+   "value": "https://harbor-threads.net"
+  },
+  {
+   "ts": "2026-09-28T00:46:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_gfuavgs",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T00:58:17Z",
+   "entity_type": "file",
+   "entity_id": "f_6z3n7k2",
+   "field": "name",
+   "value": "hero.png"
+  },
+  {
+   "ts": "2026-09-28T00:58:17Z",
+   "entity_type": "file",
+   "entity_id": "f_6z3n7k2",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-28T00:58:20Z",
+   "entity_type": "file",
+   "entity_id": "f_6z3n7k2",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-28T01:01:14Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5egeesn",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T01:01:14Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5egeesn",
+   "field": "url",
+   "value": "https://harbor-threads.net"
+  },
+  {
+   "ts": "2026-09-28T01:01:16Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5egeesn",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-28T01:01:14Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5egeesn",
+   "field": "commit",
+   "value": "00f4cbb"
+  },
+  {
+   "ts": "2026-09-28T02:15:49Z",
+   "entity_type": "deploy",
+   "entity_id": "d_gfuavgs",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-10-01T11:57:10Z",
+   "entity_type": "domain",
+   "entity_id": "dom_t4df5k9",
+   "field": "domain",
+   "value": "harbor-threadshq.com"
+  },
+  {
+   "ts": "2026-10-01T11:57:10Z",
+   "entity_type": "domain",
+   "entity_id": "dom_t4df5k9",
+   "field": "price",
+   "value": 79
+  },
+  {
+   "ts": "2026-10-01T11:57:10Z",
+   "entity_type": "domain",
+   "entity_id": "dom_t4df5k9",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-10-01T11:57:15Z",
+   "entity_type": "domain",
+   "entity_id": "dom_t4df5k9",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-10-01T12:00:45Z",
+   "entity_type": "email",
+   "entity_id": "em_47pcjp9",
+   "field": "to",
+   "value": "ivy_1981@me.com"
+  },
+  {
+   "ts": "2026-10-01T12:00:45Z",
+   "entity_type": "email",
+   "entity_id": "em_47pcjp9",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-10-01T12:01:22Z",
+   "entity_type": "email",
+   "entity_id": "em_47pcjp9",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-10-01T12:00:45Z",
+   "entity_type": "email",
+   "entity_id": "em_47pcjp9",
+   "field": "subject",
+   "value": "Restock alert"
+  },
+  {
+   "ts": "2026-10-01T12:26:57Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u3mfc9g",
+   "field": "commit",
+   "value": "531efe7"
+  },
+  {
+   "ts": "2026-10-01T12:26:57Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u3mfc9g",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-10-01T12:26:57Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u3mfc9g",
+   "field": "url",
+   "value": "https://harbor-threads.net"
+  },
+  {
+   "ts": "2026-10-01T12:28:52Z",
+   "entity_type": "file",
+   "entity_id": "f_sbrcj4q",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-10-01T12:27:01Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u3mfc9g",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-10-01T12:28:52Z",
+   "entity_type": "file",
+   "entity_id": "f_sbrcj4q",
+   "field": "name",
+   "value": "headshot.jpg"
+  },
+  {
+   "ts": "2026-10-01T12:32:50Z",
+   "entity_type": "file",
+   "entity_id": "f_sbrcj4q",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-10-01T12:38:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_52kv9kk",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-10-01T12:38:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_52kv9kk",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-10-01T12:38:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_52kv9kk",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-10-01T12:38:35Z",
+   "entity_type": "ad",
+   "entity_id": "ad_52kv9kk",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-10-01T12:38:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_52kv9kk",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-10-01T12:41:04Z",
+   "entity_type": "email",
+   "entity_id": "em_3ngryyg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-10-01T12:41:04Z",
+   "entity_type": "email",
+   "entity_id": "em_3ngryyg",
+   "field": "subject",
+   "value": "Restock alert"
+  },
+  {
+   "ts": "2026-10-01T12:41:12Z",
+   "entity_type": "email",
+   "entity_id": "em_3ngryyg",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-10-01T12:41:04Z",
+   "entity_type": "email",
+   "entity_id": "em_3ngryyg",
+   "field": "to",
+   "value": "caleb.lopez@icloud.com"
+  }
+ ]
+}

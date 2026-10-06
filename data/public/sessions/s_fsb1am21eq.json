@@ -1,0 +1,415 @@
+{
+ "session_id": "s_fsb1am21eq",
+ "business_id": "biz_0026_e89bw",
+ "started_at": "2026-09-24T12:23:52Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T12:26:25Z",
+   "content": "the $500 payout, which day was that"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-24T12:26:28Z",
+   "content": "Which of the two taglines do you like better? The $500 payout got done on Monday!"
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-24T12:29:33Z",
+   "content": "hero.png for the hero pls"
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-24T12:29:40Z",
+   "content": "upload_file(name='hero.png', size_kb=12004) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_rqac6tafakof",
+   "args": {
+    "name": "hero.png",
+    "size_kb": 12004
+   },
+   "result": {
+    "ok": true,
+    "id": "f_fmymfn2",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0026_e89bw/hero.png"
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-24T12:33:03Z",
+   "content": "You'll find Hero.png in your files now."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-24T12:35:42Z",
+   "content": "make the new homepage go live"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-24T12:35:51Z",
+   "content": "deploy_site(site='honest-threads.co', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_ia8qhdc9wqfi",
+   "args": {
+    "site": "honest-threads.co",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://honest-threads.co"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-24T12:36:15Z",
+   "content": "Your newest changes are published on honest-threads.co!"
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-24T12:39:37Z",
+   "content": "nice one"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T18:46:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_d7aptkc",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-21T18:46:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_d7aptkc",
+   "field": "platform",
+   "value": "Google"
+  },
+  {
+   "ts": "2026-09-21T18:46:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_d7aptkc",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T18:46:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_d7aptkc",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-21T18:47:41Z",
+   "entity_type": "ad",
+   "entity_id": "ad_d7aptkc",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-21T18:53:23Z",
+   "entity_type": "deploy",
+   "entity_id": "d_n6vedsq",
+   "field": "commit",
+   "value": "1b0e872"
+  },
+  {
+   "ts": "2026-09-21T18:53:23Z",
+   "entity_type": "deploy",
+   "entity_id": "d_n6vedsq",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T18:53:23Z",
+   "entity_type": "deploy",
+   "entity_id": "d_n6vedsq",
+   "field": "url",
+   "value": "https://honest-threads.co"
+  },
+  {
+   "ts": "2026-09-21T18:53:52Z",
+   "entity_type": "email",
+   "entity_id": "em_k6a63rc",
+   "field": "subject",
+   "value": "Welcome to Honest Threads Co!"
+  },
+  {
+   "ts": "2026-09-21T18:53:52Z",
+   "entity_type": "email",
+   "entity_id": "em_k6a63rc",
+   "field": "to",
+   "value": "pdelgado@icloud.com"
+  },
+  {
+   "ts": "2026-09-21T18:53:52Z",
+   "entity_type": "email",
+   "entity_id": "em_k6a63rc",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T18:56:03Z",
+   "entity_type": "deploy",
+   "entity_id": "d_n6vedsq",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_8tfzqmz",
+   "field": "batch",
+   "value": "emb_q7wcdze"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_8tfzqmz",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_8tfzqmz",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_8tfzqmz",
+   "field": "to",
+   "value": "chughes@me.com"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_dtbrexg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_dtbrexg",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_dtbrexg",
+   "field": "to",
+   "value": "sosei@yahoo.com"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_vt4bzss",
+   "field": "batch",
+   "value": "emb_q7wcdze"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_vt4bzss",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_vt4bzss",
+   "field": "to",
+   "value": "theo.khan@me.com"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_xs69jnz",
+   "field": "batch",
+   "value": "emb_q7wcdze"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_xs69jnz",
+   "field": "to",
+   "value": "danao76@proton.me"
+  },
+  {
+   "ts": "2026-09-21T18:56:07Z",
+   "entity_type": "email",
+   "entity_id": "em_k6a63rc",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T18:58:29Z",
+   "entity_type": "email",
+   "entity_id": "em_8tfzqmz",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_vt4bzss",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_xs69jnz",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-21T19:01:00Z",
+   "entity_type": "email",
+   "entity_id": "em_xs69jnz",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_xs69jnz",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T18:58:14Z",
+   "entity_type": "email",
+   "entity_id": "em_dtbrexg",
+   "field": "batch",
+   "value": "emb_q7wcdze"
+  },
+  {
+   "ts": "2026-09-21T18:58:36Z",
+   "entity_type": "email",
+   "entity_id": "em_vt4bzss",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T19:07:27Z",
+   "entity_type": "email",
+   "entity_id": "em_dtbrexg",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T19:13:04Z",
+   "entity_type": "payout",
+   "entity_id": "po_vcqe3mm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T19:13:27Z",
+   "entity_type": "payout",
+   "entity_id": "po_vcqe3mm",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T19:15:01Z",
+   "entity_type": "deploy",
+   "entity_id": "d_pg5dxuh",
+   "field": "commit",
+   "value": "5b3c624"
+  },
+  {
+   "ts": "2026-09-21T19:15:01Z",
+   "entity_type": "deploy",
+   "entity_id": "d_pg5dxuh",
+   "field": "url",
+   "value": "https://honest-threads.co"
+  },
+  {
+   "ts": "2026-09-21T19:13:04Z",
+   "entity_type": "payout",
+   "entity_id": "po_vcqe3mm",
+   "field": "amount",
+   "value": 500.0
+  },
+  {
+   "ts": "2026-09-21T19:15:01Z",
+   "entity_type": "deploy",
+   "entity_id": "d_pg5dxuh",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T19:16:55Z",
+   "entity_type": "deploy",
+   "entity_id": "d_pg5dxuh",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T12:30:24Z",
+   "entity_type": "file",
+   "entity_id": "f_fmymfn2",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-24T12:30:24Z",
+   "entity_type": "file",
+   "entity_id": "f_fmymfn2",
+   "field": "name",
+   "value": "hero.png"
+  },
+  {
+   "ts": "2026-09-24T12:31:30Z",
+   "entity_type": "file",
+   "entity_id": "f_fmymfn2",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-24T12:35:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_s9zegvz",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T12:36:09Z",
+   "entity_type": "deploy",
+   "entity_id": "d_s9zegvz",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T12:35:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_s9zegvz",
+   "field": "url",
+   "value": "https://honest-threads.co"
+  },
+  {
+   "ts": "2026-09-24T12:35:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_s9zegvz",
+   "field": "commit",
+   "value": "9da2545"
+  }
+ ]
+}

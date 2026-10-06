@@ -1,0 +1,215 @@
+{
+ "session_id": "s_wwlxew1147",
+ "business_id": "biz_0084_wsqsd",
+ "started_at": "2026-09-25T01:52:19Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-25T01:55:58Z",
+   "content": "how are things"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-25T01:56:19Z",
+   "content": "Feels like a solid start for launch week."
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-25T01:59:22Z",
+   "content": "payot time pls, want the cash lanedd in my bank"
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-25T01:59:32Z",
+   "content": "request_payout(amount=120.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_xuifghf90vxl",
+   "args": {
+    "amount": 120.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_2ehee8e",
+    "status": "done",
+    "amount": 120.0,
+    "arrival": "in 1-2 business days"
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-25T02:17:03Z",
+   "content": "Got it. I'll look at orders again in a few hours. Your $120 payout has been paid out."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-25T02:18:43Z",
+   "content": "buying humbleknitshq.com is what i want, pls grab it"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-25T02:18:48Z",
+   "content": "buy_domain(domain='humbleknitshq.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_1phryfg2kcb7",
+   "args": {
+    "domain": "humbleknitshq.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_8t7c2cm",
+    "status": "done",
+    "domain": "humbleknitshq.com",
+    "price": 27
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-25T02:36:16Z",
+   "content": "all set, you now own Humbleknitshq.com, the registration went through. whenever you've got the new product photos, could you send them my way?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-23T10:34:10Z",
+   "entity_type": "deploy",
+   "entity_id": "d_zgc5cc3",
+   "field": "commit",
+   "value": "2b76df3"
+  },
+  {
+   "ts": "2026-09-23T10:34:13Z",
+   "entity_type": "deploy",
+   "entity_id": "d_zgc5cc3",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-23T10:34:10Z",
+   "entity_type": "deploy",
+   "entity_id": "d_zgc5cc3",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T10:34:10Z",
+   "entity_type": "deploy",
+   "entity_id": "d_zgc5cc3",
+   "field": "url",
+   "value": "https://humbleknits.co"
+  },
+  {
+   "ts": "2026-09-23T10:38:16Z",
+   "entity_type": "email",
+   "entity_id": "em_qmpsxkn",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-23T10:38:16Z",
+   "entity_type": "email",
+   "entity_id": "em_qmpsxkn",
+   "field": "to",
+   "value": "reed.brooks@yahoo.com"
+  },
+  {
+   "ts": "2026-09-23T10:38:20Z",
+   "entity_type": "email",
+   "entity_id": "em_qmpsxkn",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T10:38:16Z",
+   "entity_type": "email",
+   "entity_id": "em_qmpsxkn",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T10:41:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_2z4xec2",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T10:41:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_2z4xec2",
+   "field": "url",
+   "value": "https://humbleknits.co"
+  },
+  {
+   "ts": "2026-09-23T10:42:00Z",
+   "entity_type": "deploy",
+   "entity_id": "d_2z4xec2",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-23T10:41:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_2z4xec2",
+   "field": "commit",
+   "value": "2e91128"
+  },
+  {
+   "ts": "2026-09-25T02:00:07Z",
+   "entity_type": "payout",
+   "entity_id": "po_2ehee8e",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T02:00:07Z",
+   "entity_type": "payout",
+   "entity_id": "po_2ehee8e",
+   "field": "amount",
+   "value": 120.0
+  },
+  {
+   "ts": "2026-09-25T02:16:28Z",
+   "entity_type": "payout",
+   "entity_id": "po_2ehee8e",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T02:18:52Z",
+   "entity_type": "domain",
+   "entity_id": "dom_8t7c2cm",
+   "field": "domain",
+   "value": "humbleknitshq.com"
+  },
+  {
+   "ts": "2026-09-25T02:18:52Z",
+   "entity_type": "domain",
+   "entity_id": "dom_8t7c2cm",
+   "field": "price",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-25T02:18:52Z",
+   "entity_type": "domain",
+   "entity_id": "dom_8t7c2cm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T02:21:32Z",
+   "entity_type": "domain",
+   "entity_id": "dom_8t7c2cm",
+   "field": "status",
+   "value": "registered"
+  }
+ ]
+}

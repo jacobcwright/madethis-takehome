@@ -1,0 +1,831 @@
+{
+ "session_id": "s_tkxk0j4j1e",
+ "business_id": "biz_0045_4dqkk",
+ "started_at": "2026-09-29T14:13:51Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-29T14:15:26Z",
+   "content": "Shipping update needs to go to all the customers who ordered pls! 📦"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-29T14:15:37Z",
+   "content": "send_email(to=['biancam87@hotmail.com', 'pat.patel@hotmail.com', 'reed.silva@outlook.com'], subject='Order update') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_mk7g79j40jd4",
+   "args": {
+    "to": [
+     "biancam87@hotmail.com",
+     "pat.patel@hotmail.com",
+     "reed.silva@outlook.com"
+    ],
+    "subject": "Order update"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_jvrhsr5",
+    "status": "done",
+    "recipients": 3,
+    "subject": "Order update"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-29T14:16:25Z",
+   "content": "Out of 3 sent, 2 landed and Reed's address bounced."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-29T14:18:09Z",
+   "content": "sorry, could u kick off the ad campaign? perfect, thx"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-29T14:18:13Z",
+   "content": "launch_ad(platform='meta', daily_budget=30) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_69zprv7mvjfs",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 30,
+    "objective": "traffic"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "platform": "Meta",
+    "daily_budget": 30,
+    "spend": 0.0
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-29T14:30:42Z",
+   "content": "ad's live, spending $30 a day 💸"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-29T14:33:39Z",
+   "content": "Is last week's ad still going? 🙂"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-29T14:33:50Z",
+   "content": "ad_status(ad_id='ad_zpw9y8k') -> ok",
+   "tool_name": "ad_status",
+   "call_id": "call_meefh2dp4tnf",
+   "args": {
+    "ad_id": "ad_zpw9y8k"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_zpw9y8k",
+    "status": "done",
+    "ad_status": "active",
+    "spend": 44.76,
+    "impressions": 8979,
+    "clicks": 125
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-29T14:46:12Z",
+   "content": "Ads are running and spending. Total ad spend is now $44.76."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-29T14:49:43Z",
+   "content": "need the delay news emailed to all my customerrs pls"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-29T14:49:55Z",
+   "content": "send_email(to=['mateo.sato@gmail.com', 'reed.silva@outlook.com'], subject='Quick question about your order') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_pkok6b14rq86",
+   "args": {
+    "to": [
+     "mateo.sato@gmail.com",
+     "reed.silva@outlook.com"
+    ],
+    "subject": "Quick question about your order"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_wxsev4g",
+    "status": "done",
+    "recipients": 2,
+    "subject": "Quick question about your order",
+    "delivered": 2,
+    "bounced": 0
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-29T14:50:17Z",
+   "content": "Good news: all 2 emails got through, none of them bounced. Now, which tagline wins for you, out of the two?"
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-09-29T14:53:33Z",
+   "content": "pls put something up on Facebook 😊"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-09-29T14:53:39Z",
+   "content": "post_social(platform='facebook', caption='Back in stock') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_f7cmry1wuqeo",
+   "args": {
+    "platform": "facebook",
+    "caption": "Back in stock"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_b2m4t8g",
+    "status": "done",
+    "url": "https://facebook.com/harborknits/p/931488569"
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-09-29T14:57:46Z",
+   "content": "Your Facebook post just went up. If anything changes, I'll watch it and tell you."
+  },
+  {
+   "turn_index": 15,
+   "role": "owner",
+   "ts": "2026-09-29T15:01:41Z",
+   "content": "anything sell yet?"
+  },
+  {
+   "turn_index": 16,
+   "role": "tool",
+   "ts": "2026-09-29T15:01:46Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_sis1no1wzngu",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 2,
+    "total": 38,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 17,
+   "role": "agent",
+   "ts": "2026-09-29T15:02:04Z",
+   "content": "Should I add a discount code for launch week? Sales are around $40 so far!"
+  },
+  {
+   "turn_index": 18,
+   "role": "owner",
+   "ts": "2026-09-29T15:02:57Z",
+   "content": "ads on pls! 🙌"
+  },
+  {
+   "turn_index": 19,
+   "role": "tool",
+   "ts": "2026-09-29T15:03:02Z",
+   "content": "launch_ad(platform='meta', daily_budget=15) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_ij2yzceq4l1w",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 15,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_yhrk28g",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 20,
+   "role": "agent",
+   "ts": "2026-09-29T15:03:32Z",
+   "content": "Should I post about it on Instagram? The ad is live, spending $15/day."
+  },
+  {
+   "turn_index": 21,
+   "role": "owner",
+   "ts": "2026-09-29T15:05:10Z",
+   "content": "could u circle back with Pat"
+  },
+  {
+   "turn_index": 22,
+   "role": "tool",
+   "ts": "2026-09-29T15:05:14Z",
+   "content": "send_email(to='pat.patel@hotmail.com', subject='Quick question about your order') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_yot0vl2uqaqk",
+   "args": {
+    "to": "pat.patel@hotmail.com",
+    "subject": "Quick question about your order"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "pat.patel@hotmail.com",
+    "subject": "Quick question about your order"
+   }
+  },
+  {
+   "turn_index": 23,
+   "role": "agent",
+   "ts": "2026-09-29T15:05:30Z",
+   "content": "Your email to Pat Patel is sent! Shall I follow up with them?"
+  },
+  {
+   "turn_index": 24,
+   "role": "owner",
+   "ts": "2026-09-29T15:08:34Z",
+   "content": "thx so much"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-23T22:33:14Z",
+   "entity_type": "payout",
+   "entity_id": "po_jhycc5v",
+   "field": "amount",
+   "value": 500.0
+  },
+  {
+   "ts": "2026-09-23T22:36:26Z",
+   "entity_type": "file",
+   "entity_id": "f_z5gkd5n",
+   "field": "name",
+   "value": "about-photo.jpeg"
+  },
+  {
+   "ts": "2026-09-23T22:36:26Z",
+   "entity_type": "file",
+   "entity_id": "f_z5gkd5n",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-23T22:33:14Z",
+   "entity_type": "payout",
+   "entity_id": "po_jhycc5v",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T22:33:20Z",
+   "entity_type": "payout",
+   "entity_id": "po_jhycc5v",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T22:37:40Z",
+   "entity_type": "file",
+   "entity_id": "f_z5gkd5n",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_ewn3gaq",
+   "field": "batch",
+   "value": "emb_hwa5yz3"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_ewn3gaq",
+   "field": "subject",
+   "value": "A little thank you"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_ewn3gaq",
+   "field": "to",
+   "value": "reed.silva@outlook.com"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_r2g676g",
+   "field": "subject",
+   "value": "A little thank you"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_r2g676g",
+   "field": "to",
+   "value": "pat.patel@hotmail.com"
+  },
+  {
+   "ts": "2026-09-25T19:25:00Z",
+   "entity_type": "email",
+   "entity_id": "em_ewn3gaq",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T19:25:11Z",
+   "entity_type": "email",
+   "entity_id": "em_r2g676g",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_r2g676g",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_ewn3gaq",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T19:28:07Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ypd9xq3",
+   "field": "commit",
+   "value": "24b861d"
+  },
+  {
+   "ts": "2026-09-25T19:28:07Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ypd9xq3",
+   "field": "url",
+   "value": "https://harborknits.com"
+  },
+  {
+   "ts": "2026-09-25T19:28:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ypd9xq3",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-25T19:24:53Z",
+   "entity_type": "email",
+   "entity_id": "em_r2g676g",
+   "field": "batch",
+   "value": "emb_hwa5yz3"
+  },
+  {
+   "ts": "2026-09-25T19:28:07Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ypd9xq3",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T15:54:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_gkheunr",
+   "field": "amount",
+   "value": 45
+  },
+  {
+   "ts": "2026-09-28T15:54:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_gkheunr",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T15:54:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_gkheunr",
+   "field": "product",
+   "value": "Recipe eBook"
+  },
+  {
+   "ts": "2026-09-28T15:54:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_gkheunr",
+   "field": "customer_name",
+   "value": "Pat Patel"
+  },
+  {
+   "ts": "2026-09-28T15:54:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_gkheunr",
+   "field": "customer",
+   "value": "pat.patel@hotmail.com"
+  },
+  {
+   "ts": "2026-09-28T17:55:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_gkheunr",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-28T21:39:09Z",
+   "entity_type": "order",
+   "entity_id": "ord_xsvjznx",
+   "field": "customer_name",
+   "value": "Pat Patel"
+  },
+  {
+   "ts": "2026-09-28T21:39:09Z",
+   "entity_type": "order",
+   "entity_id": "ord_xsvjznx",
+   "field": "product",
+   "value": "Monthly Box"
+  },
+  {
+   "ts": "2026-09-28T21:39:09Z",
+   "entity_type": "order",
+   "entity_id": "ord_xsvjznx",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T21:39:09Z",
+   "entity_type": "order",
+   "entity_id": "ord_xsvjznx",
+   "field": "customer",
+   "value": "pat.patel@hotmail.com"
+  },
+  {
+   "ts": "2026-09-28T21:39:09Z",
+   "entity_type": "order",
+   "entity_id": "ord_xsvjznx",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-29T02:27:18Z",
+   "entity_type": "order",
+   "entity_id": "ord_pthrygh",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-29T02:27:18Z",
+   "entity_type": "order",
+   "entity_id": "ord_pthrygh",
+   "field": "product",
+   "value": "Monthly Box"
+  },
+  {
+   "ts": "2026-09-29T02:27:18Z",
+   "entity_type": "order",
+   "entity_id": "ord_pthrygh",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T02:27:18Z",
+   "entity_type": "order",
+   "entity_id": "ord_pthrygh",
+   "field": "customer_name",
+   "value": "Bianca Moreau"
+  },
+  {
+   "ts": "2026-09-29T02:27:18Z",
+   "entity_type": "order",
+   "entity_id": "ord_pthrygh",
+   "field": "customer",
+   "value": "biancam87@hotmail.com"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_cpg2254",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_cpg2254",
+   "field": "to",
+   "value": "biancam87@hotmail.com"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_jrqmaqz",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_jrqmaqz",
+   "field": "to",
+   "value": "pat.patel@hotmail.com"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_x83vajg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_x83vajg",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_x83vajg",
+   "field": "to",
+   "value": "reed.silva@outlook.com"
+  },
+  {
+   "ts": "2026-09-29T14:16:03Z",
+   "entity_type": "email",
+   "entity_id": "em_x83vajg",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-29T14:16:12Z",
+   "entity_type": "email",
+   "entity_id": "em_cpg2254",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T14:16:13Z",
+   "entity_type": "email",
+   "entity_id": "em_jrqmaqz",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T14:18:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zpw9y8k",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_x83vajg",
+   "field": "batch",
+   "value": "emb_jvrhsr5"
+  },
+  {
+   "ts": "2026-09-29T14:18:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zpw9y8k",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_jrqmaqz",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_cpg2254",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_cpg2254",
+   "field": "batch",
+   "value": "emb_jvrhsr5"
+  },
+  {
+   "ts": "2026-09-29T14:15:46Z",
+   "entity_type": "email",
+   "entity_id": "em_jrqmaqz",
+   "field": "batch",
+   "value": "emb_jvrhsr5"
+  },
+  {
+   "ts": "2026-09-29T14:18:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zpw9y8k",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-29T14:18:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zpw9y8k",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-29T14:27:35Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zpw9y8k",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-29T14:33:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_zpw9y8k",
+   "field": "spend",
+   "value": 44.76
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_jxv4k85",
+   "field": "batch",
+   "value": "emb_wxsev4g"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_jxv4k85",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_jxv4k85",
+   "field": "to",
+   "value": "reed.silva@outlook.com"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_rfaydw2",
+   "field": "batch",
+   "value": "emb_wxsev4g"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_rfaydw2",
+   "field": "to",
+   "value": "mateo.sato@gmail.com"
+  },
+  {
+   "ts": "2026-09-29T14:50:10Z",
+   "entity_type": "email",
+   "entity_id": "em_rfaydw2",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T14:50:17Z",
+   "entity_type": "email",
+   "entity_id": "em_jxv4k85",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_jxv4k85",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_rfaydw2",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T14:50:00Z",
+   "entity_type": "email",
+   "entity_id": "em_rfaydw2",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T14:53:54Z",
+   "entity_type": "post",
+   "entity_id": "post_b2m4t8g",
+   "field": "account",
+   "value": "@harborknits"
+  },
+  {
+   "ts": "2026-09-29T14:53:54Z",
+   "entity_type": "post",
+   "entity_id": "post_b2m4t8g",
+   "field": "platform",
+   "value": "Facebook"
+  },
+  {
+   "ts": "2026-09-29T14:53:54Z",
+   "entity_type": "post",
+   "entity_id": "post_b2m4t8g",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-29T14:55:23Z",
+   "entity_type": "post",
+   "entity_id": "post_b2m4t8g",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-29T15:03:13Z",
+   "entity_type": "ad",
+   "entity_id": "ad_yhrk28g",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-29T15:03:13Z",
+   "entity_type": "ad",
+   "entity_id": "ad_yhrk28g",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-29T15:03:20Z",
+   "entity_type": "ad",
+   "entity_id": "ad_yhrk28g",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-29T15:03:13Z",
+   "entity_type": "ad",
+   "entity_id": "ad_yhrk28g",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-29T15:05:14Z",
+   "entity_type": "email",
+   "entity_id": "em_mqbqwe2",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-29T15:05:25Z",
+   "entity_type": "email",
+   "entity_id": "em_mqbqwe2",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T15:05:14Z",
+   "entity_type": "email",
+   "entity_id": "em_mqbqwe2",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-29T15:03:13Z",
+   "entity_type": "ad",
+   "entity_id": "ad_yhrk28g",
+   "field": "daily_budget",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-29T15:05:14Z",
+   "entity_type": "email",
+   "entity_id": "em_mqbqwe2",
+   "field": "to",
+   "value": "pat.patel@hotmail.com"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{"refund_id": "RF-928", "business_id": "biz_0167_4zhfn", "ts": "2026-09-24T05:37:36Z", "amount": 149, "reason": "cannot trust the revenue it reports", "session_id": "s_14us1lm5t7"}
+{"refund_id": "RF-917", "business_id": "biz_0112_65bfs", "ts": "2026-09-24T13:25:53Z", "amount": 149, "reason": "payout was reported as sent and never arrived", "session_id": "s_iipz931nef"}
+{"refund_id": "RF-913", "business_id": "biz_0069_96qar", "ts": "2026-09-24T21:23:42Z", "amount": 29, "reason": "embarrassed in front of a customer", "session_id": "s_ywjo7dhiwj"}
+{"refund_id": "RF-905", "business_id": "biz_0011_ctk59", "ts": "2026-09-26T11:49:30Z", "amount": 29, "reason": "payout was reported as sent and never arrived", "session_id": "s_8h3yy2eusc"}
+{"refund_id": "RF-909", "business_id": "biz_0033_r4swj", "ts": "2026-09-26T15:05:18Z", "amount": 49, "reason": "said I had sales that never existed", "session_id": "s_ghv59tmjne"}
+{"refund_id": "RF-910", "business_id": "biz_0043_34rcb", "ts": "2026-09-26T15:12:39Z", "amount": 29, "reason": "cannot trust the revenue it reports", "session_id": "s_w3ommn5xtp"}
+{"refund_id": "RF-915", "business_id": "biz_0108_625hc", "ts": "2026-09-26T21:09:00Z", "amount": 149, "reason": "cannot trust the revenue it reports", "session_id": "s_8nzpblbkgi"}
+{"refund_id": "RF-903", "business_id": "biz_0002_axg2x", "ts": "2026-09-28T08:16:38Z", "amount": 99, "reason": "said I had sales that never existed", "session_id": "s_89whh81w7u"}
+{"refund_id": "RF-911", "business_id": "biz_0044_upaf5", "ts": "2026-09-28T08:56:07Z", "amount": 79, "reason": "assistant said it emailed customers and it hadn't", "session_id": "s_827fevu5yp"}
+{"refund_id": "RF-918", "business_id": "biz_0118_etstt", "ts": "2026-09-28T13:08:29Z", "amount": 149, "reason": "ad status reporting was wrong", "session_id": "s_pw53sb0eb0"}
+{"refund_id": "RF-902", "business_id": "biz_0001_faae9", "ts": "2026-09-29T21:09:32Z", "amount": 79, "reason": "cannot trust the revenue it reports", "session_id": "s_fkopyx64zb"}
+{"refund_id": "RF-919", "business_id": "biz_0129_h6mz4", "ts": "2026-09-29T23:05:32Z", "amount": 149, "reason": "assistant said it emailed customers and it hadn't", "session_id": "s_xkmlplevwu"}
+{"refund_id": "RF-916", "business_id": "biz_0108_625hc", "ts": "2026-09-30T04:21:36Z", "amount": 99, "reason": "payout was reported as sent and never arrived", "session_id": "s_u38l71wb20"}
+{"refund_id": "RF-912", "business_id": "biz_0062_ju9hc", "ts": "2026-09-30T07:11:25Z", "amount": 99, "reason": "payout was reported as sent and never arrived", "session_id": "s_thrm2ki6yf"}
+{"refund_id": "RF-921", "business_id": "biz_0144_e5d4d", "ts": "2026-09-30T16:18:02Z", "amount": 49, "reason": "domain purchase never happened", "session_id": "s_p3wcbuxaiz"}
+{"refund_id": "RF-924", "business_id": "biz_0152_3dc8b", "ts": "2026-09-30T21:01:48Z", "amount": 49, "reason": "said I had sales that never existed", "session_id": "s_ccsn0rj3c3"}
+{"refund_id": "RF-901", "business_id": "biz_0000_8qw8m", "ts": "2026-10-01T02:57:17Z", "amount": 99, "reason": "said I had sales that never existed", "session_id": "s_mcodkx8ipq"}
+{"refund_id": "RF-925", "business_id": "biz_0155_q9w5g", "ts": "2026-10-01T14:30:28Z", "amount": 79, "reason": "site was not actually live when it said it was", "session_id": "s_ogpaf0atlg"}
+{"refund_id": "RF-908", "business_id": "biz_0018_h8egw", "ts": "2026-10-01T15:37:17Z", "amount": 49, "reason": "said I had sales that never existed", "session_id": "s_cl98anrb3c"}
+{"refund_id": "RF-914", "business_id": "biz_0095_7naxv", "ts": "2026-10-02T02:12:06Z", "amount": 79, "reason": "payout was reported as sent and never arrived", "session_id": "s_5zy247aalo"}
+{"refund_id": "RF-906", "business_id": "biz_0015_gaafa", "ts": "2026-10-02T09:30:15Z", "amount": 49, "reason": "said I had sales that never existed", "session_id": "s_kd62895sc8"}
+{"refund_id": "RF-927", "business_id": "biz_0163_5fdpp", "ts": "2026-10-02T22:27:35Z", "amount": 29, "reason": "assistant said it emailed customers and it hadn't", "session_id": "s_rpmcdi2m45"}
+{"refund_id": "RF-920", "business_id": "biz_0139_27hd7", "ts": "2026-10-02T23:38:53Z", "amount": 79, "reason": "cannot trust the revenue it reports", "session_id": "s_ywvu252wh7"}
+{"refund_id": "RF-922", "business_id": "biz_0145_3hx4q", "ts": "2026-10-03T05:07:21Z", "amount": 29, "reason": "site was not actually live when it said it was", "session_id": "s_5h04sz5u6j"}
+{"refund_id": "RF-904", "business_id": "biz_0006_8au2e", "ts": "2026-10-03T07:53:10Z", "amount": 99, "reason": "cannot trust the revenue it reports", "session_id": "s_cfttyubvlm"}
+{"refund_id": "RF-923", "business_id": "biz_0148_q39hc", "ts": "2026-10-04T09:04:50Z", "amount": 79, "reason": "cannot trust the revenue it reports", "session_id": "s_5x65lr92so"}
+{"refund_id": "RF-926", "business_id": "biz_0160_4j2tg", "ts": "2026-10-04T17:50:32Z", "amount": 29, "reason": "site was not actually live when it said it was", "session_id": "s_yhh22c8mjh"}
+{"refund_id": "RF-907", "business_id": "biz_0015_gaafa", "ts": "2026-10-05T21:30:09Z", "amount": 79, "reason": "cannot trust the revenue it reports", "session_id": "s_5ewurb9bsc"}

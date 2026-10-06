@@ -1,0 +1,936 @@
+{
+ "session_id": "s_tdlgoeqdxd",
+ "business_id": "biz_0121_mvfv5",
+ "started_at": "2026-09-28T17:52:32Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T17:53:16Z",
+   "content": "ads. go."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-28T17:53:26Z",
+   "content": "launch_ad(platform='tiktok', daily_budget=40) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_vbbmkk2x7d0b",
+   "args": {
+    "platform": "tiktok",
+    "daily_budget": 40,
+    "objective": "sales"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "platform": "TikTok",
+    "daily_budget": 40,
+    "spend": 0.0
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-28T17:56:50Z",
+   "content": "Campaign's launched and running, just wrapped that up.\n🥳"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-28T17:57:43Z",
+   "content": "hope im not bugging u, how are sales doing?"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-28T17:57:48Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_o2l5v380gg0h",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-28T17:58:19Z",
+   "content": "Hmm, no oders yet, you're at 0."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-28T17:59:40Z",
+   "content": "locked in?"
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-28T18:04:14Z",
+   "content": "Quick check on the ad: it's still up and running, no problems. Want me to raise the daily budget to $30/day?"
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-28T18:05:31Z",
+   "content": "publish site rn pls"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-28T18:05:40Z",
+   "content": "deploy_site(site='velvetbotanicals.com', branch='main') -> error",
+   "tool_name": "deploy_site",
+   "call_id": "call_px9a7356lxlr",
+   "args": {
+    "site": "velvetbotanicals.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": false,
+    "error": "rate limited, retry later",
+    "id": "d_2h8rywt",
+    "status": "failed"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-28T18:06:21Z",
+   "content": "deploy_site(site='velvetbotanicals.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_ev0thc6y1a66",
+   "args": {
+    "site": "velvetbotanicals.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_rqvb2ck",
+    "status": "done",
+    "url": "https://velvetbotanicals.com"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-28T18:06:35Z",
+   "content": "Velvetbotanicals.com is online and working."
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-09-28T18:07:36Z",
+   "content": "LinkedIn, post it"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-09-28T18:07:38Z",
+   "content": "post_social(platform='linkedin', caption='Weekend sale, 15% off') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_p4h76ocd5dl7",
+   "args": {
+    "platform": "linkedin",
+    "caption": "Weekend sale, 15% off"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://linkedin.com/velvetbotanical/p/323851871",
+    "platform": "LinkedIn",
+    "account": "@velvetbotanical"
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-09-28T18:08:02Z",
+   "content": "Your LinkedIn post is up, and I can draft a follow-up sequence if you want."
+  },
+  {
+   "turn_index": 15,
+   "role": "owner",
+   "ts": "2026-09-28T18:08:54Z",
+   "content": "catalog.pdf, keep a copy pls"
+  },
+  {
+   "turn_index": 16,
+   "role": "tool",
+   "ts": "2026-09-28T18:08:59Z",
+   "content": "upload_file(name='catalog.pdf', size_kb=3100) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_cl07329srco5",
+   "args": {
+    "name": "catalog.pdf",
+    "size_kb": 3100
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0121_mvfv5/catalog.pdf",
+    "name": "catalog.pdf"
+   }
+  },
+  {
+   "turn_index": 17,
+   "role": "agent",
+   "ts": "2026-09-28T18:16:47Z",
+   "content": "💪 catalog.pdf is upladed"
+  },
+  {
+   "turn_index": 18,
+   "role": "owner",
+   "ts": "2026-09-28T18:18:47Z",
+   "content": "thx, pls purchase thevelvetbotanicals.co"
+  },
+  {
+   "turn_index": 19,
+   "role": "tool",
+   "ts": "2026-09-28T18:18:56Z",
+   "content": "buy_domain(domain='thevelvetbotanicals.co', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_sf73do3ast6q",
+   "args": {
+    "domain": "thevelvetbotanicals.co",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "thevelvetbotanicals.co",
+    "price": 15
+   }
+  },
+  {
+   "turn_index": 20,
+   "role": "agent",
+   "ts": "2026-09-28T18:23:51Z",
+   "content": "Okay, you now own thevelvetbotanicals.co, it's registered! Want me to grab the .co version as well?"
+  },
+  {
+   "turn_index": 21,
+   "role": "owner",
+   "ts": "2026-09-28T18:26:37Z",
+   "content": "much appreciated"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T10:37:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_2zn2qp2",
+   "field": "customer",
+   "value": "leah.bauer@gmail.com"
+  },
+  {
+   "ts": "2026-09-21T10:37:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_2zn2qp2",
+   "field": "customer_name",
+   "value": "Leah Bauer"
+  },
+  {
+   "ts": "2026-09-21T10:37:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_2zn2qp2",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T10:37:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_2zn2qp2",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-21T10:37:58Z",
+   "entity_type": "order",
+   "entity_id": "ord_2zn2qp2",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-21T13:24:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_nw6g67b",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-21T13:24:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_nw6g67b",
+   "field": "customer",
+   "value": "leah.bauer@gmail.com"
+  },
+  {
+   "ts": "2026-09-21T13:24:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_nw6g67b",
+   "field": "customer_name",
+   "value": "Leah Bauer"
+  },
+  {
+   "ts": "2026-09-21T13:24:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_nw6g67b",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-21T13:24:40Z",
+   "entity_type": "order",
+   "entity_id": "ord_nw6g67b",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T00:02:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_e63dqym",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-22T00:02:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_e63dqym",
+   "field": "customer",
+   "value": "jordan_1993@icloud.com"
+  },
+  {
+   "ts": "2026-09-22T00:02:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_e63dqym",
+   "field": "customer_name",
+   "value": "Jordan Dubois"
+  },
+  {
+   "ts": "2026-09-22T00:02:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_e63dqym",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T00:02:46Z",
+   "entity_type": "order",
+   "entity_id": "ord_e63dqym",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-22T00:29:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_u74ejmy",
+   "field": "customer",
+   "value": "rosal47@me.com"
+  },
+  {
+   "ts": "2026-09-22T00:29:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_u74ejmy",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-22T00:29:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_u74ejmy",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T00:29:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_u74ejmy",
+   "field": "customer_name",
+   "value": "Rosa Lopez"
+  },
+  {
+   "ts": "2026-09-22T00:29:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_u74ejmy",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-22T05:19:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9twmr3s",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-22T05:19:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9twmr3s",
+   "field": "customer",
+   "value": "omar_2000@gmail.com"
+  },
+  {
+   "ts": "2026-09-22T05:19:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9twmr3s",
+   "field": "customer_name",
+   "value": "Omar Grant"
+  },
+  {
+   "ts": "2026-09-22T05:19:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9twmr3s",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-22T05:19:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_9twmr3s",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:20:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_txw3vn2",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-22T05:20:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_txw3vn2",
+   "field": "customer",
+   "value": "rosal47@me.com"
+  },
+  {
+   "ts": "2026-09-22T05:20:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_txw3vn2",
+   "field": "customer_name",
+   "value": "Rosa Lopez"
+  },
+  {
+   "ts": "2026-09-22T05:20:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_txw3vn2",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-22T05:20:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_txw3vn2",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:21:33Z",
+   "entity_type": "payout",
+   "entity_id": "po_tjb2d8p",
+   "field": "amount",
+   "value": 850.0
+  },
+  {
+   "ts": "2026-09-22T05:21:37Z",
+   "entity_type": "payout",
+   "entity_id": "po_tjb2d8p",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:23:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_fx3847c",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-22T05:23:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_fx3847c",
+   "field": "customer_name",
+   "value": "Omar Bauer"
+  },
+  {
+   "ts": "2026-09-22T05:24:05Z",
+   "entity_type": "post",
+   "entity_id": "post_vpurytz",
+   "field": "account",
+   "value": "@velvetbotanical"
+  },
+  {
+   "ts": "2026-09-22T05:24:05Z",
+   "entity_type": "post",
+   "entity_id": "post_vpurytz",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-22T05:24:05Z",
+   "entity_type": "post",
+   "entity_id": "post_vpurytz",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-22T05:21:33Z",
+   "entity_type": "payout",
+   "entity_id": "po_tjb2d8p",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T05:23:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_fx3847c",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:26:39Z",
+   "entity_type": "post",
+   "entity_id": "post_vpurytz",
+   "field": "status",
+   "value": "removed"
+  },
+  {
+   "ts": "2026-09-22T05:23:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_fx3847c",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-22T05:24:05Z",
+   "entity_type": "post",
+   "entity_id": "post_vpurytz",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-22T05:23:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_fx3847c",
+   "field": "customer",
+   "value": "omar.bauer@hotmail.com"
+  },
+  {
+   "ts": "2026-09-22T12:47:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_n8958aj",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-22T12:47:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_n8958aj",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T12:47:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_n8958aj",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-22T12:47:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_n8958aj",
+   "field": "customer_name",
+   "value": "Rosa Lopez"
+  },
+  {
+   "ts": "2026-09-22T12:47:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_n8958aj",
+   "field": "customer",
+   "value": "rosal47@me.com"
+  },
+  {
+   "ts": "2026-09-23T02:13:23Z",
+   "entity_type": "order",
+   "entity_id": "ord_227ghs8",
+   "field": "customer_name",
+   "value": "Omar Grant"
+  },
+  {
+   "ts": "2026-09-23T02:13:23Z",
+   "entity_type": "order",
+   "entity_id": "ord_227ghs8",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-23T02:13:23Z",
+   "entity_type": "order",
+   "entity_id": "ord_227ghs8",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T02:13:23Z",
+   "entity_type": "order",
+   "entity_id": "ord_227ghs8",
+   "field": "customer",
+   "value": "omar_2000@gmail.com"
+  },
+  {
+   "ts": "2026-09-23T02:13:23Z",
+   "entity_type": "order",
+   "entity_id": "ord_227ghs8",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-23T16:45:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_f4au65f",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-23T16:45:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_f4au65f",
+   "field": "customer",
+   "value": "omar.bauer@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T16:45:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_f4au65f",
+   "field": "customer_name",
+   "value": "Omar Bauer"
+  },
+  {
+   "ts": "2026-09-23T16:45:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_f4au65f",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-23T16:45:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_f4au65f",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T04:17:39Z",
+   "entity_type": "order",
+   "entity_id": "ord_krau4yc",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-26T04:17:39Z",
+   "entity_type": "order",
+   "entity_id": "ord_krau4yc",
+   "field": "customer",
+   "value": "jordan_1993@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T04:17:39Z",
+   "entity_type": "order",
+   "entity_id": "ord_krau4yc",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T04:17:39Z",
+   "entity_type": "order",
+   "entity_id": "ord_krau4yc",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-26T04:17:39Z",
+   "entity_type": "order",
+   "entity_id": "ord_krau4yc",
+   "field": "customer_name",
+   "value": "Jordan Dubois"
+  },
+  {
+   "ts": "2026-09-26T05:15:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vv6fdph",
+   "field": "commit",
+   "value": "ad0f16f"
+  },
+  {
+   "ts": "2026-09-26T05:15:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vv6fdph",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T05:15:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vv6fdph",
+   "field": "url",
+   "value": "https://velvetbotanicals.com"
+  },
+  {
+   "ts": "2026-09-26T05:19:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vv6fdph",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T05:32:34Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mmt8kwb",
+   "field": "daily_budget",
+   "value": 50
+  },
+  {
+   "ts": "2026-09-26T05:32:34Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mmt8kwb",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T05:32:34Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mmt8kwb",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-26T05:33:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mmt8kwb",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-26T05:32:34Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mmt8kwb",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-26T05:35:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_mmt8kwb",
+   "field": "spend",
+   "value": 57.89
+  },
+  {
+   "ts": "2026-09-26T05:50:23Z",
+   "entity_type": "domain",
+   "entity_id": "dom_qhk72dv",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T05:50:23Z",
+   "entity_type": "domain",
+   "entity_id": "dom_qhk72dv",
+   "field": "price",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-26T05:50:28Z",
+   "entity_type": "domain",
+   "entity_id": "dom_qhk72dv",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-26T05:50:23Z",
+   "entity_type": "domain",
+   "entity_id": "dom_qhk72dv",
+   "field": "domain",
+   "value": "getvelvetbotanicals.com"
+  },
+  {
+   "ts": "2026-09-26T08:04:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_py4ejjs",
+   "field": "amount",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-26T08:04:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_py4ejjs",
+   "field": "customer",
+   "value": "omar_2000@gmail.com"
+  },
+  {
+   "ts": "2026-09-26T08:04:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_py4ejjs",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-26T08:04:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_py4ejjs",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T08:04:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_py4ejjs",
+   "field": "customer_name",
+   "value": "Omar Grant"
+  },
+  {
+   "ts": "2026-09-26T15:51:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_227ghs8",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-27T00:47:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_f4au65f",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-28T17:53:53Z",
+   "entity_type": "ad",
+   "entity_id": "ad_86t2ktn",
+   "field": "daily_budget",
+   "value": 40
+  },
+  {
+   "ts": "2026-09-28T17:53:53Z",
+   "entity_type": "ad",
+   "entity_id": "ad_86t2ktn",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-28T17:53:53Z",
+   "entity_type": "ad",
+   "entity_id": "ad_86t2ktn",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-28T17:53:53Z",
+   "entity_type": "ad",
+   "entity_id": "ad_86t2ktn",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T17:55:17Z",
+   "entity_type": "ad",
+   "entity_id": "ad_86t2ktn",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-28T18:06:28Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rqvb2ck",
+   "field": "commit",
+   "value": "bc451c0"
+  },
+  {
+   "ts": "2026-09-28T18:06:28Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rqvb2ck",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T18:06:28Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rqvb2ck",
+   "field": "url",
+   "value": "https://velvetbotanicals.com"
+  },
+  {
+   "ts": "2026-09-28T18:06:34Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rqvb2ck",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-28T18:07:43Z",
+   "entity_type": "post",
+   "entity_id": "post_rghdaqn",
+   "field": "platform",
+   "value": "LinkedIn"
+  },
+  {
+   "ts": "2026-09-28T18:07:43Z",
+   "entity_type": "post",
+   "entity_id": "post_rghdaqn",
+   "field": "account",
+   "value": "@velvetbotanical"
+  },
+  {
+   "ts": "2026-09-28T18:07:43Z",
+   "entity_type": "post",
+   "entity_id": "post_rghdaqn",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-28T18:07:58Z",
+   "entity_type": "post",
+   "entity_id": "post_rghdaqn",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-28T18:19:26Z",
+   "entity_type": "domain",
+   "entity_id": "dom_7f87wtc",
+   "field": "domain",
+   "value": "thevelvetbotanicals.co"
+  },
+  {
+   "ts": "2026-09-28T18:19:26Z",
+   "entity_type": "domain",
+   "entity_id": "dom_7f87wtc",
+   "field": "price",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-28T18:20:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_7f87wtc",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-28T18:19:26Z",
+   "entity_type": "domain",
+   "entity_id": "dom_7f87wtc",
+   "field": "status",
+   "value": "pending"
+  }
+ ]
+}

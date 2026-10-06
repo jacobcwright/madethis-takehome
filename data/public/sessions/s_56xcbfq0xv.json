@@ -1,0 +1,272 @@
+{
+ "session_id": "s_56xcbfq0xv",
+ "business_id": "biz_0132_ywy6w",
+ "started_at": "2026-09-27T21:30:49Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T21:34:18Z",
+   "content": "Dropping in sizing-chart.png, pleae file it under assets."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T21:34:30Z",
+   "content": "upload_file(name='sizing-chart.png', size_kb=22143) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_l3hxgoy0jmcd",
+   "args": {
+    "name": "sizing-chart.png",
+    "size_kb": 22143
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0132_ywy6w/sizing-chart.png",
+    "name": "sizing-chart.png"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T21:40:48Z",
+   "content": "Discount code is next on my list. sizing-chart.png is up!"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T21:43:28Z",
+   "content": "for my notes, when was the X post?"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-27T21:45:16Z",
+   "content": "The X post has been finished since Thursday.\n✅"
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-27T21:46:50Z",
+   "content": "order total pls, how many do i have"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-27T21:46:57Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_r2ul16wan36f",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 19,
+    "orders": [
+     "ord_338vhqn"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-27T21:47:33Z",
+   "content": "Should I pause the ad for now? There's 1 new order."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-27T21:50:27Z",
+   "content": "nice 👌"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-23T08:51:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_5wwffvy",
+   "field": "customer",
+   "value": "felixn70@gmail.com"
+  },
+  {
+   "ts": "2026-09-23T08:51:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_5wwffvy",
+   "field": "product",
+   "value": "Meal Prep Guide"
+  },
+  {
+   "ts": "2026-09-23T08:51:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_5wwffvy",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T08:51:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_5wwffvy",
+   "field": "customer_name",
+   "value": "Felix Novak"
+  },
+  {
+   "ts": "2026-09-23T08:51:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_5wwffvy",
+   "field": "amount",
+   "value": 59
+  },
+  {
+   "ts": "2026-09-24T10:20:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_qjj8ng7",
+   "field": "amount",
+   "value": 59
+  },
+  {
+   "ts": "2026-09-24T10:20:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_qjj8ng7",
+   "field": "customer",
+   "value": "hugo.chen@me.com"
+  },
+  {
+   "ts": "2026-09-24T10:20:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_qjj8ng7",
+   "field": "product",
+   "value": "Meal Prep Guide"
+  },
+  {
+   "ts": "2026-09-24T10:20:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_qjj8ng7",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T10:20:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_qjj8ng7",
+   "field": "customer_name",
+   "value": "Hugo Chen"
+  },
+  {
+   "ts": "2026-09-24T10:37:40Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qmzxrm6",
+   "field": "commit",
+   "value": "6f02166"
+  },
+  {
+   "ts": "2026-09-24T10:37:40Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qmzxrm6",
+   "field": "url",
+   "value": "https://indigolabs.com"
+  },
+  {
+   "ts": "2026-09-24T10:37:50Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qmzxrm6",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T10:37:40Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qmzxrm6",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T10:49:47Z",
+   "entity_type": "post",
+   "entity_id": "post_kn6a3c4",
+   "field": "account",
+   "value": "@indigolabs"
+  },
+  {
+   "ts": "2026-09-24T10:49:47Z",
+   "entity_type": "post",
+   "entity_id": "post_kn6a3c4",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-24T10:49:50Z",
+   "entity_type": "post",
+   "entity_id": "post_kn6a3c4",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-24T10:49:47Z",
+   "entity_type": "post",
+   "entity_id": "post_kn6a3c4",
+   "field": "platform",
+   "value": "X"
+  },
+  {
+   "ts": "2026-09-27T01:15:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_338vhqn",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-27T01:15:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_338vhqn",
+   "field": "customer",
+   "value": "pnguyen@gmail.com"
+  },
+  {
+   "ts": "2026-09-27T01:15:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_338vhqn",
+   "field": "customer_name",
+   "value": "Priya Nguyen"
+  },
+  {
+   "ts": "2026-09-27T01:15:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_338vhqn",
+   "field": "product",
+   "value": "Enamel Pin"
+  },
+  {
+   "ts": "2026-09-27T01:15:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_338vhqn",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T21:34:53Z",
+   "entity_type": "file",
+   "entity_id": "f_dz55n5w",
+   "field": "name",
+   "value": "sizing-chart.png"
+  },
+  {
+   "ts": "2026-09-27T21:36:30Z",
+   "entity_type": "file",
+   "entity_id": "f_dz55n5w",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-27T21:34:53Z",
+   "entity_type": "file",
+   "entity_id": "f_dz55n5w",
+   "field": "status",
+   "value": "uploading"
+  }
+ ]
+}

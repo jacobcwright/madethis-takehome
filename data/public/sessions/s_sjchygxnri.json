@@ -1,0 +1,181 @@
+{
+ "session_id": "s_sjchygxnri",
+ "business_id": "biz_0073_fkstn",
+ "started_at": "2026-09-24T17:12:54Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T17:15:24Z",
+   "content": "hero.png is uploaded. Please add it."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-24T17:15:27Z",
+   "content": "upload_file(name='hero.png', size_kb=17354) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_okon8fslc5zo",
+   "args": {
+    "name": "hero.png",
+    "size_kb": 17354
+   },
+   "result": {
+    "ok": true,
+    "id": "f_hmrbf3y",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0073_fkstn/hero.png"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-24T17:19:55Z",
+   "content": "hero.png is uploaded."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-24T17:22:54Z",
+   "content": "next up, tell Diego it shipped"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-24T17:22:57Z",
+   "content": "send_email(to='diegob54@me.com', subject='Order update') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_385ei8pveuak",
+   "args": {
+    "to": "diegob54@me.com",
+    "subject": "Order update"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_skctr9v",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-24T17:23:02Z",
+   "content": "Understood. That email landed! ✅ When you get a chance, could you send over the new product photos?"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-24T17:24:41Z",
+   "content": "Morning! Please get the newest changes live."
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-24T17:24:51Z",
+   "content": "deploy_site(site='copperjournal.net', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_0umee6r5spqh",
+   "args": {
+    "site": "copperjournal.net",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_cadhdvf",
+    "status": "pending",
+    "url": "https://copperjournal.net"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-24T17:37:10Z",
+   "content": "Sorry, not the news I wanted: the deployment is still sitting in the queue. Orders get another look from me in a few hours."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-24T17:39:31Z",
+   "content": "nice"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T17:15:29Z",
+   "entity_type": "file",
+   "entity_id": "f_hmrbf3y",
+   "field": "name",
+   "value": "hero.png"
+  },
+  {
+   "ts": "2026-09-24T17:15:29Z",
+   "entity_type": "file",
+   "entity_id": "f_hmrbf3y",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-24T17:15:55Z",
+   "entity_type": "file",
+   "entity_id": "f_hmrbf3y",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-24T17:22:57Z",
+   "entity_type": "email",
+   "entity_id": "em_skctr9v",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-24T17:22:57Z",
+   "entity_type": "email",
+   "entity_id": "em_skctr9v",
+   "field": "to",
+   "value": "diegob54@me.com"
+  },
+  {
+   "ts": "2026-09-24T17:23:00Z",
+   "entity_type": "email",
+   "entity_id": "em_skctr9v",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T17:22:57Z",
+   "entity_type": "email",
+   "entity_id": "em_skctr9v",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T17:25:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cadhdvf",
+   "field": "commit",
+   "value": "83e6ec7"
+  },
+  {
+   "ts": "2026-09-24T17:25:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cadhdvf",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T17:25:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cadhdvf",
+   "field": "url",
+   "value": "https://copperjournal.net"
+  },
+  {
+   "ts": "2026-09-24T18:56:59Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cadhdvf",
+   "field": "status",
+   "value": "done"
+  }
+ ]
+}

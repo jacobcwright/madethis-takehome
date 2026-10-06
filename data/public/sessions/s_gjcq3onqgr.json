@@ -1,0 +1,559 @@
+{
+ "session_id": "s_gjcq3onqgr",
+ "business_id": "biz_0163_5fdpp",
+ "started_at": "2026-09-24T16:50:34Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-24T16:53:18Z",
+   "content": "hey morning! pls deploy"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-24T16:53:24Z",
+   "content": "deploy_site(site='embertutoring.shop', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_ywgyl5a5tkuz",
+   "args": {
+    "site": "embertutoring.shop",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_3rrtevp",
+    "status": "done",
+    "url": "https://embertutoring.shop"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-24T16:53:55Z",
+   "content": "embertutoring.shop is up and live. 🚀 Should be good for conversions."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-24T16:57:13Z",
+   "content": "that ad we drafted, go ahead and run it"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-24T16:57:23Z",
+   "content": "launch_ad(platform='meta', daily_budget=10) -> error",
+   "tool_name": "launch_ad",
+   "call_id": "call_zv72ityjl12q",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 10,
+    "objective": "sales"
+   },
+   "result": {
+    "ok": false,
+    "id": "ad_vwh2gh4",
+    "status": "failed",
+    "error": "ad account not connected"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-24T16:57:56Z",
+   "content": "I'll watch it and tell you if anything changes. Sadly the ad got rejected, ad account not connected!"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-24T16:59:03Z",
+   "content": "yep depploy it now"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-24T16:59:11Z",
+   "content": "deploy_site(site='embertutoring.shop', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_9dm1glgth0r1",
+   "args": {
+    "site": "embertutoring.shop",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://embertutoring.shop"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-24T16:59:54Z",
+   "content": "On it.\nThe website's live now.\nWant an abandoned cart email set up?"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-24T17:01:17Z",
+   "content": "whats the status"
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-24T17:16:41Z",
+   "content": "💸 embertutoring.shop is up and reachable, go take a look! Orders get another check from me in a few hours."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T10:17:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jf33kqn",
+   "field": "commit",
+   "value": "b3536a6"
+  },
+  {
+   "ts": "2026-09-21T10:17:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jf33kqn",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T10:17:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jf33kqn",
+   "field": "url",
+   "value": "https://embertutoring.shop"
+  },
+  {
+   "ts": "2026-09-21T10:20:39Z",
+   "entity_type": "post",
+   "entity_id": "post_une7nt2",
+   "field": "account",
+   "value": "@embertutoring"
+  },
+  {
+   "ts": "2026-09-21T10:20:39Z",
+   "entity_type": "post",
+   "entity_id": "post_une7nt2",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-21T10:22:40Z",
+   "entity_type": "email",
+   "entity_id": "em_5nf6wsm",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T10:22:40Z",
+   "entity_type": "email",
+   "entity_id": "em_5nf6wsm",
+   "field": "to",
+   "value": "bianca_1987@icloud.com"
+  },
+  {
+   "ts": "2026-09-21T10:22:40Z",
+   "entity_type": "email",
+   "entity_id": "em_5nf6wsm",
+   "field": "subject",
+   "value": "Restock alert"
+  },
+  {
+   "ts": "2026-09-21T10:20:40Z",
+   "entity_type": "post",
+   "entity_id": "post_une7nt2",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-21T10:20:39Z",
+   "entity_type": "post",
+   "entity_id": "post_une7nt2",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-21T10:22:42Z",
+   "entity_type": "email",
+   "entity_id": "em_5nf6wsm",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T10:26:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_8f4tk66",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-21T10:26:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_8f4tk66",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-21T10:26:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_8f4tk66",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T10:26:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_8f4tk66",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-21T10:26:58Z",
+   "entity_type": "ad",
+   "entity_id": "ad_8f4tk66",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-21T10:31:31Z",
+   "entity_type": "ad",
+   "entity_id": "ad_8f4tk66",
+   "field": "spend",
+   "value": 47.35
+  },
+  {
+   "ts": "2026-09-21T10:36:18Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hund27h",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-21T10:36:18Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hund27h",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-21T10:36:18Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hund27h",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T10:38:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hund27h",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-21T10:36:18Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hund27h",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-21T11:46:20Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jf33kqn",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T16:53:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rrtevp",
+   "field": "commit",
+   "value": "3117af1"
+  },
+  {
+   "ts": "2026-09-24T16:53:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rrtevp",
+   "field": "url",
+   "value": "https://embertutoring.shop"
+  },
+  {
+   "ts": "2026-09-24T16:53:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rrtevp",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T16:53:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rrtevp",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T16:57:25Z",
+   "entity_type": "ad",
+   "entity_id": "ad_vwh2gh4",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-24T16:57:25Z",
+   "entity_type": "ad",
+   "entity_id": "ad_vwh2gh4",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-24T16:57:25Z",
+   "entity_type": "ad",
+   "entity_id": "ad_vwh2gh4",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T16:57:28Z",
+   "entity_type": "ad",
+   "entity_id": "ad_vwh2gh4",
+   "field": "status",
+   "value": "rejected"
+  },
+  {
+   "ts": "2026-09-24T16:57:25Z",
+   "entity_type": "ad",
+   "entity_id": "ad_vwh2gh4",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-24T16:59:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_j9mmfrs",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T16:59:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_j9mmfrs",
+   "field": "url",
+   "value": "https://embertutoring.shop"
+  },
+  {
+   "ts": "2026-09-24T16:59:25Z",
+   "entity_type": "deploy",
+   "entity_id": "d_j9mmfrs",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T16:59:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_j9mmfrs",
+   "field": "commit",
+   "value": "c9eb014"
+  },
+  {
+   "ts": "2026-09-26T08:50:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_pez8b6u",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-26T08:50:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_pez8b6u",
+   "field": "customer",
+   "value": "aisha.kim@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T08:50:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_pez8b6u",
+   "field": "customer_name",
+   "value": "Aisha Kim"
+  },
+  {
+   "ts": "2026-09-26T08:50:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_pez8b6u",
+   "field": "product",
+   "value": "Digital Planner"
+  },
+  {
+   "ts": "2026-09-26T08:50:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_pez8b6u",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T11:40:51Z",
+   "entity_type": "order",
+   "entity_id": "ord_pez8b6u",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-26T22:10:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_54pvcyz",
+   "field": "amount",
+   "value": 22
+  },
+  {
+   "ts": "2026-09-26T22:10:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_54pvcyz",
+   "field": "product",
+   "value": "Yoga Flow Video"
+  },
+  {
+   "ts": "2026-09-26T22:10:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_54pvcyz",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T22:10:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_54pvcyz",
+   "field": "customer",
+   "value": "aisha.patel@me.com"
+  },
+  {
+   "ts": "2026-09-26T22:10:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_54pvcyz",
+   "field": "customer_name",
+   "value": "Aisha Patel"
+  },
+  {
+   "ts": "2026-09-27T06:24:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_kez8568",
+   "field": "amount",
+   "value": 22
+  },
+  {
+   "ts": "2026-09-27T06:24:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_kez8568",
+   "field": "customer",
+   "value": "rosa.fischer@outlook.com"
+  },
+  {
+   "ts": "2026-09-27T06:24:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_kez8568",
+   "field": "product",
+   "value": "Yoga Flow Video"
+  },
+  {
+   "ts": "2026-09-27T06:24:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_kez8568",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T06:24:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_kez8568",
+   "field": "customer_name",
+   "value": "Rosa Fischer"
+  },
+  {
+   "ts": "2026-09-27T07:00:04Z",
+   "entity_type": "ad",
+   "entity_id": "ad_hund27h",
+   "field": "spend",
+   "value": 19.44
+  },
+  {
+   "ts": "2026-09-27T16:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_mmccr2a",
+   "field": "amount",
+   "value": 99
+  },
+  {
+   "ts": "2026-09-27T16:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_mmccr2a",
+   "field": "customer",
+   "value": "bianca_1987@icloud.com"
+  },
+  {
+   "ts": "2026-09-27T16:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_mmccr2a",
+   "field": "customer_name",
+   "value": "Bianca Dubois"
+  },
+  {
+   "ts": "2026-09-27T16:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_mmccr2a",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T16:18:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_mmccr2a",
+   "field": "product",
+   "value": "Linen Tote"
+  },
+  {
+   "ts": "2026-09-27T18:07:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_89ckvhn",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-27T18:07:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_89ckvhn",
+   "field": "customer",
+   "value": "rosa.fischer@outlook.com"
+  },
+  {
+   "ts": "2026-09-27T18:07:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_89ckvhn",
+   "field": "customer_name",
+   "value": "Rosa Fischer"
+  },
+  {
+   "ts": "2026-09-27T18:07:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_89ckvhn",
+   "field": "product",
+   "value": "Digital Planner"
+  },
+  {
+   "ts": "2026-09-27T18:07:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_89ckvhn",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T18:55:08Z",
+   "entity_type": "order",
+   "entity_id": "ord_mmccr2a",
+   "field": "status",
+   "value": "refunded"
+  }
+ ]
+}

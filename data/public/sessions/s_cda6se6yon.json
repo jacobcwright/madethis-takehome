@@ -1,0 +1,370 @@
+{
+ "session_id": "s_cda6se6yon",
+ "business_id": "biz_0123_w49y9",
+ "started_at": "2026-09-26T12:26:52Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-26T12:28:03Z",
+   "content": "site deploy pls"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-26T12:28:09Z",
+   "content": "deploy_site(site='northern-candle.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_n234fonxyl2q",
+   "args": {
+    "site": "northern-candle.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://northern-candle.com"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-26T12:28:31Z",
+   "content": "Your site now has the fix up and running!"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-26T12:31:26Z",
+   "content": "ok, sorry for the wait, go ahead and ship it"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-26T12:31:31Z",
+   "content": "deploy_site(site='northern-candle.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_kgqkt2gzsojv",
+   "args": {
+    "site": "northern-candle.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://northern-candle.com"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-26T12:34:54Z",
+   "content": "Sounds good. Your site is published and reachable at https://northern-candle.com, nice! Tomorrow I'll follow up with the supplier."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-26T12:37:09Z",
+   "content": "folow up w/ Elena too"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-26T12:37:15Z",
+   "content": "send_email(to='edubois@hotmail.com', subject=\"We're live!\") -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_cunfq6snmcy0",
+   "args": {
+    "to": "edubois@hotmail.com",
+    "subject": "We're live!"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "edubois@hotmail.com",
+    "subject": "We're live!"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-26T12:46:51Z",
+   "content": "Yes, the details are on their way to Elena by email."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-26T12:28:11Z",
+   "entity_type": "deploy",
+   "entity_id": "d_km2cd8c",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T12:28:11Z",
+   "entity_type": "deploy",
+   "entity_id": "d_km2cd8c",
+   "field": "url",
+   "value": "https://northern-candle.com"
+  },
+  {
+   "ts": "2026-09-26T12:28:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_km2cd8c",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T12:28:11Z",
+   "entity_type": "deploy",
+   "entity_id": "d_km2cd8c",
+   "field": "commit",
+   "value": "8c80e88"
+  },
+  {
+   "ts": "2026-09-26T12:31:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ea9acgt",
+   "field": "commit",
+   "value": "a5d57c4"
+  },
+  {
+   "ts": "2026-09-26T12:31:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ea9acgt",
+   "field": "url",
+   "value": "https://northern-candle.com"
+  },
+  {
+   "ts": "2026-09-26T12:32:03Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ea9acgt",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T12:31:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ea9acgt",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T12:37:36Z",
+   "entity_type": "email",
+   "entity_id": "em_rcb7a4m",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-26T12:37:36Z",
+   "entity_type": "email",
+   "entity_id": "em_rcb7a4m",
+   "field": "to",
+   "value": "edubois@hotmail.com"
+  },
+  {
+   "ts": "2026-09-26T12:37:36Z",
+   "entity_type": "email",
+   "entity_id": "em_rcb7a4m",
+   "field": "subject",
+   "value": "We're live!"
+  },
+  {
+   "ts": "2026-09-26T12:40:14Z",
+   "entity_type": "email",
+   "entity_id": "em_rcb7a4m",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T12:23:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_pgpb8af",
+   "field": "customer_name",
+   "value": "Felix Osei"
+  },
+  {
+   "ts": "2026-09-27T12:23:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_pgpb8af",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T12:23:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_pgpb8af",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-27T12:23:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_pgpb8af",
+   "field": "customer",
+   "value": "felix_1997@hotmail.com"
+  },
+  {
+   "ts": "2026-09-27T12:23:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_pgpb8af",
+   "field": "product",
+   "value": "Digital Planner"
+  },
+  {
+   "ts": "2026-09-27T15:17:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_2cz6dzq",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-27T15:17:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_2cz6dzq",
+   "field": "customer_name",
+   "value": "Pat Bauer"
+  },
+  {
+   "ts": "2026-09-27T15:17:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_2cz6dzq",
+   "field": "product",
+   "value": "Oat Milk Latte Bundle"
+  },
+  {
+   "ts": "2026-09-27T15:17:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_2cz6dzq",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T15:17:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_2cz6dzq",
+   "field": "customer",
+   "value": "patb59@me.com"
+  },
+  {
+   "ts": "2026-09-27T19:38:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_2avxm49",
+   "field": "amount",
+   "value": 22
+  },
+  {
+   "ts": "2026-09-27T19:38:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_2avxm49",
+   "field": "customer",
+   "value": "edubois@hotmail.com"
+  },
+  {
+   "ts": "2026-09-27T19:38:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_2avxm49",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-27T19:38:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_2avxm49",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T19:38:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_2avxm49",
+   "field": "customer_name",
+   "value": "Elena Dubois"
+  },
+  {
+   "ts": "2026-09-27T19:49:49Z",
+   "entity_type": "order",
+   "entity_id": "ord_pgpb8af",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-27T20:23:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_d4kykx4",
+   "field": "amount",
+   "value": 59
+  },
+  {
+   "ts": "2026-09-27T20:23:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_d4kykx4",
+   "field": "customer_name",
+   "value": "Felix Osei"
+  },
+  {
+   "ts": "2026-09-27T20:23:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_d4kykx4",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T20:23:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_d4kykx4",
+   "field": "customer",
+   "value": "felix_1997@hotmail.com"
+  },
+  {
+   "ts": "2026-09-27T20:23:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_d4kykx4",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-27T21:52:35Z",
+   "entity_type": "order",
+   "entity_id": "ord_d4kykx4",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-27T23:58:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_9quydkx",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-27T23:58:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_9quydkx",
+   "field": "customer_name",
+   "value": "Elena Dubois"
+  },
+  {
+   "ts": "2026-09-27T23:58:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_9quydkx",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T23:58:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_9quydkx",
+   "field": "product",
+   "value": "Oat Milk Latte Bundle"
+  },
+  {
+   "ts": "2026-09-27T23:58:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_9quydkx",
+   "field": "customer",
+   "value": "edubois@hotmail.com"
+  }
+ ]
+}

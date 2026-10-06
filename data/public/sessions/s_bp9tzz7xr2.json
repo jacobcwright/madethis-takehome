@@ -1,0 +1,618 @@
+{
+ "session_id": "s_bp9tzz7xr2",
+ "business_id": "biz_0140_rvugn",
+ "started_at": "2026-09-27T05:00:31Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T05:00:47Z",
+   "content": "my balance needs to go to my bank"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T05:00:50Z",
+   "content": "request_payout(amount=1200.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_bej1b6kbp959",
+   "args": {
+    "amount": 1200.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_cs6e6m6",
+    "status": "done",
+    "amount": 1200.0,
+    "arrival": "tomorrow"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T05:06:27Z",
+   "content": "You've been paid out $1,200."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T05:06:43Z",
+   "content": "slow weekend, what's your take on it?"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-27T05:10:08Z",
+   "content": "A shorter checkout flow would be my suggestion."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-27T05:13:12Z",
+   "content": "pls look at orders 🙂"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-27T05:13:19Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_b5tmt0e9fajj",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 162,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-27T05:15:37Z",
+   "content": "Sure!\n\nThis week you've pulled in over $140, more than $140 in fact\n\n🔥\n\nMy advice is to wait on a second ad until results come in."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-27T05:16:21Z",
+   "content": "yep, go live with it"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-27T05:16:33Z",
+   "content": "deploy_site(site='honesttutoringco.io', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_ckgyxboy8ljk",
+   "args": {
+    "site": "honesttutoringco.io",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_4eyj98a",
+    "status": "done",
+    "url": "https://honesttutoringco.io"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-27T05:30:47Z",
+   "content": "Want me to post about it on Instagram? Your site is now published at https://honesttutoringco.io."
+  },
+  {
+   "turn_index": 11,
+   "role": "owner",
+   "ts": "2026-09-27T05:34:35Z",
+   "content": "welcome email for Grace pls, send it 😊"
+  },
+  {
+   "turn_index": 12,
+   "role": "tool",
+   "ts": "2026-09-27T05:34:45Z",
+   "content": "send_email(to='graces80@icloud.com', subject='Launch week: 15% off') -> error",
+   "tool_name": "send_email",
+   "call_id": "call_kock98sv346d",
+   "args": {
+    "to": "graces80@icloud.com",
+    "subject": "Launch week: 15% off"
+   },
+   "result": {
+    "ok": false,
+    "id": "em_s7jyt6b",
+    "status": "failed",
+    "error": "daily send quota exceeded"
+   }
+  },
+  {
+   "turn_index": 13,
+   "role": "agent",
+   "ts": "2026-09-27T05:34:54Z",
+   "content": "No luck yet, sending the email to graces80@icloud.com failed..."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T18:06:06Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jjaxkgm",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-25T18:06:06Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jjaxkgm",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-25T18:06:06Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jjaxkgm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:06:10Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jjaxkgm",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-25T18:06:06Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jjaxkgm",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-25T18:06:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jjaxkgm",
+   "field": "spend",
+   "value": 57.51
+  },
+  {
+   "ts": "2026-09-25T18:12:33Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7jcj3ss",
+   "field": "commit",
+   "value": "818e305"
+  },
+  {
+   "ts": "2026-09-25T18:12:33Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7jcj3ss",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:14:21Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rpjrzpd",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:14:21Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rpjrzpd",
+   "field": "url",
+   "value": "https://honesttutoringco.io"
+  },
+  {
+   "ts": "2026-09-25T18:12:35Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7jcj3ss",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-25T18:12:33Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7jcj3ss",
+   "field": "url",
+   "value": "https://honesttutoringco.io"
+  },
+  {
+   "ts": "2026-09-25T18:14:21Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rpjrzpd",
+   "field": "commit",
+   "value": "b310206"
+  },
+  {
+   "ts": "2026-09-25T18:24:25Z",
+   "entity_type": "deploy",
+   "entity_id": "d_rpjrzpd",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-25T18:27:31Z",
+   "entity_type": "payout",
+   "entity_id": "po_c7aqbvu",
+   "field": "amount",
+   "value": 500.0
+  },
+  {
+   "ts": "2026-09-25T18:27:31Z",
+   "entity_type": "payout",
+   "entity_id": "po_c7aqbvu",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:34:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_yv76e6j",
+   "field": "commit",
+   "value": "a459386"
+  },
+  {
+   "ts": "2026-09-25T18:34:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_yv76e6j",
+   "field": "url",
+   "value": "https://honesttutoringco.io"
+  },
+  {
+   "ts": "2026-09-25T18:34:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_yv76e6j",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:40:19Z",
+   "entity_type": "payout",
+   "entity_id": "po_c7aqbvu",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T18:40:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_yv76e6j",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T03:05:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_fycrpcv",
+   "field": "amount",
+   "value": 35
+  },
+  {
+   "ts": "2026-09-26T03:05:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_fycrpcv",
+   "field": "customer",
+   "value": "grace.osei@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T03:05:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_fycrpcv",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T03:05:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_fycrpcv",
+   "field": "customer_name",
+   "value": "Grace Osei"
+  },
+  {
+   "ts": "2026-09-26T03:05:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_fycrpcv",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-26T04:03:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_rwt2fvx",
+   "field": "amount",
+   "value": 35
+  },
+  {
+   "ts": "2026-09-26T04:03:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_rwt2fvx",
+   "field": "customer_name",
+   "value": "Omar Hughes"
+  },
+  {
+   "ts": "2026-09-26T04:03:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_rwt2fvx",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-26T04:03:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_rwt2fvx",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T04:03:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_rwt2fvx",
+   "field": "customer",
+   "value": "omarh9@me.com"
+  },
+  {
+   "ts": "2026-09-26T07:30:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_sm2x73r",
+   "field": "customer",
+   "value": "graces80@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T07:30:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_sm2x73r",
+   "field": "product",
+   "value": "Oat Milk Latte Bundle"
+  },
+  {
+   "ts": "2026-09-26T07:30:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_sm2x73r",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T07:30:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_sm2x73r",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-26T07:30:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_sm2x73r",
+   "field": "customer_name",
+   "value": "Grace Silva"
+  },
+  {
+   "ts": "2026-09-26T11:31:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_yu6wnk5",
+   "field": "customer",
+   "value": "rachel_1998@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T11:31:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_yu6wnk5",
+   "field": "product",
+   "value": "Oat Milk Latte Bundle"
+  },
+  {
+   "ts": "2026-09-26T11:31:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_yu6wnk5",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T11:31:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_yu6wnk5",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-26T11:31:43Z",
+   "entity_type": "order",
+   "entity_id": "ord_yu6wnk5",
+   "field": "customer_name",
+   "value": "Rachel Reyes"
+  },
+  {
+   "ts": "2026-09-26T14:11:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_geqstm4",
+   "field": "customer",
+   "value": "reedk14@proton.me"
+  },
+  {
+   "ts": "2026-09-26T14:11:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_geqstm4",
+   "field": "customer_name",
+   "value": "Reed Kim"
+  },
+  {
+   "ts": "2026-09-26T14:11:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_geqstm4",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-26T14:11:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_geqstm4",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-26T14:11:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_geqstm4",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T04:53:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_rwt2fvx",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-27T05:01:12Z",
+   "entity_type": "payout",
+   "entity_id": "po_cs6e6m6",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T05:01:12Z",
+   "entity_type": "payout",
+   "entity_id": "po_cs6e6m6",
+   "field": "amount",
+   "value": 1200.0
+  },
+  {
+   "ts": "2026-09-27T05:05:45Z",
+   "entity_type": "payout",
+   "entity_id": "po_cs6e6m6",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T05:17:11Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4eyj98a",
+   "field": "commit",
+   "value": "9f99142"
+  },
+  {
+   "ts": "2026-09-27T05:17:11Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4eyj98a",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T05:17:11Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4eyj98a",
+   "field": "url",
+   "value": "https://honesttutoringco.io"
+  },
+  {
+   "ts": "2026-09-27T05:21:31Z",
+   "entity_type": "deploy",
+   "entity_id": "d_4eyj98a",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-27T05:34:48Z",
+   "entity_type": "email",
+   "entity_id": "em_s7jyt6b",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T05:34:48Z",
+   "entity_type": "email",
+   "entity_id": "em_s7jyt6b",
+   "field": "subject",
+   "value": "Launch week: 15% off"
+  },
+  {
+   "ts": "2026-09-27T05:34:52Z",
+   "entity_type": "email",
+   "entity_id": "em_s7jyt6b",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-27T05:34:48Z",
+   "entity_type": "email",
+   "entity_id": "em_s7jyt6b",
+   "field": "to",
+   "value": "graces80@icloud.com"
+  },
+  {
+   "ts": "2026-09-30T20:30:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_fxqfsdh",
+   "field": "customer",
+   "value": "omar.reyes@icloud.com"
+  },
+  {
+   "ts": "2026-09-30T20:30:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_fxqfsdh",
+   "field": "customer_name",
+   "value": "Omar Reyes"
+  },
+  {
+   "ts": "2026-09-30T20:30:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_fxqfsdh",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-30T20:30:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_fxqfsdh",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-30T20:30:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_fxqfsdh",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-30T21:00:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_pqp48wr",
+   "field": "amount",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-30T21:00:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_pqp48wr",
+   "field": "customer",
+   "value": "omar.reyes@icloud.com"
+  },
+  {
+   "ts": "2026-09-30T21:00:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_pqp48wr",
+   "field": "customer_name",
+   "value": "Omar Reyes"
+  },
+  {
+   "ts": "2026-09-30T21:00:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_pqp48wr",
+   "field": "product",
+   "value": "Oat Milk Latte Bundle"
+  },
+  {
+   "ts": "2026-09-30T21:00:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_pqp48wr",
+   "field": "status",
+   "value": "paid"
+  }
+ ]
+}

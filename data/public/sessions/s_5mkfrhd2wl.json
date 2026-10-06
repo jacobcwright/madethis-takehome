@@ -1,0 +1,205 @@
+{
+ "session_id": "s_5mkfrhd2wl",
+ "business_id": "biz_0097_npws9",
+ "started_at": "2026-09-28T13:08:21Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T13:11:40Z",
+   "content": "tell me how many orders i've got"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-28T13:11:45Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_qluul4t3lrro",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 89,
+    "orders": [
+     "ord_8y6wj4w"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-28T13:19:18Z",
+   "content": "Discount code is next on my list. 1 sales so far, $89 total."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-28T13:20:09Z",
+   "content": "site live yet? if not publihs it pls"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-28T13:20:15Z",
+   "content": "deploy_site(site='goldentea.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_3xsulbepzluz",
+   "args": {
+    "site": "goldentea.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_t3kcm8u",
+    "status": "done",
+    "url": "https://goldentea.com"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-28T13:23:38Z",
+   "content": "goldentea.com is back up and running. Should I hold off until you've had a look?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T10:44:38Z",
+   "entity_type": "payout",
+   "entity_id": "po_2udy36q",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T10:45:59Z",
+   "entity_type": "payout",
+   "entity_id": "po_2udy36q",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T10:44:38Z",
+   "entity_type": "payout",
+   "entity_id": "po_2udy36q",
+   "field": "amount",
+   "value": 640.0
+  },
+  {
+   "ts": "2026-09-25T10:51:12Z",
+   "entity_type": "file",
+   "entity_id": "f_uvk27ka",
+   "field": "name",
+   "value": "headshot.jpg"
+  },
+  {
+   "ts": "2026-09-25T10:51:13Z",
+   "entity_type": "file",
+   "entity_id": "f_uvk27ka",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T10:51:12Z",
+   "entity_type": "file",
+   "entity_id": "f_uvk27ka",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T10:52:23Z",
+   "entity_type": "email",
+   "entity_id": "em_pgun3ap",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T10:52:23Z",
+   "entity_type": "email",
+   "entity_id": "em_pgun3ap",
+   "field": "subject",
+   "value": "We're live!"
+  },
+  {
+   "ts": "2026-09-25T10:52:23Z",
+   "entity_type": "email",
+   "entity_id": "em_pgun3ap",
+   "field": "to",
+   "value": "patb92@icloud.com"
+  },
+  {
+   "ts": "2026-09-25T10:52:24Z",
+   "entity_type": "email",
+   "entity_id": "em_pgun3ap",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T14:21:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_8y6wj4w",
+   "field": "customer_name",
+   "value": "Rafael Reyes"
+  },
+  {
+   "ts": "2026-09-27T14:21:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_8y6wj4w",
+   "field": "product",
+   "value": "Macrame Hanger"
+  },
+  {
+   "ts": "2026-09-27T14:21:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_8y6wj4w",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T14:21:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_8y6wj4w",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-27T14:21:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_8y6wj4w",
+   "field": "customer",
+   "value": "rafael_1989@gmail.com"
+  },
+  {
+   "ts": "2026-09-28T13:20:24Z",
+   "entity_type": "deploy",
+   "entity_id": "d_t3kcm8u",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T13:20:24Z",
+   "entity_type": "deploy",
+   "entity_id": "d_t3kcm8u",
+   "field": "url",
+   "value": "https://goldentea.com"
+  },
+  {
+   "ts": "2026-09-28T13:20:24Z",
+   "entity_type": "deploy",
+   "entity_id": "d_t3kcm8u",
+   "field": "commit",
+   "value": "7bf0761"
+  },
+  {
+   "ts": "2026-09-28T13:21:41Z",
+   "entity_type": "deploy",
+   "entity_id": "d_t3kcm8u",
+   "field": "status",
+   "value": "done"
+  }
+ ]
+}

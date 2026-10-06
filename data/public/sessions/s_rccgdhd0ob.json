@@ -1,0 +1,187 @@
+{
+ "session_id": "s_rccgdhd0ob",
+ "business_id": "biz_0143_mzj93",
+ "started_at": "2026-09-25T02:24:04Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-25T02:26:46Z",
+   "content": "my sister mentioned the site looks kinda off on her phone"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-25T02:28:10Z",
+   "content": "Hopefully that gives conversions a nudge.\n\nI'm aiming to refresh the pricing page later today."
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-25T02:31:40Z",
+   "content": "please include sizing-chart.png as an attachment"
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-25T02:31:44Z",
+   "content": "upload_file(name='sizing-chart.png', size_kb=4800) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_hsr6j1fdkafc",
+   "args": {
+    "name": "sizing-chart.png",
+    "size_kb": 4800
+   },
+   "result": {
+    "ok": true,
+    "id": "f_ud7zj6s",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0143_mzj93/sizing-chart.png"
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-25T02:31:59Z",
+   "content": "Welcome email draft is next. sizing-chart.png is uploaded and available."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-25T02:33:20Z",
+   "content": "can you write back to Rafael for me"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-25T02:33:31Z",
+   "content": "send_email(to='rrossi@proton.me', subject='Your Cold Brew Pack shipped') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_jj59jk91bvhp",
+   "args": {
+    "to": "rrossi@proton.me",
+    "subject": "Your Cold Brew Pack shipped"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_mekqku2",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-25T02:33:57Z",
+   "content": "Want an abandoned cart email set up too? The follow-up to Rafael has gone out."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-25T02:35:58Z",
+   "content": "put it up on TikTok"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-25T02:36:09Z",
+   "content": "post_social(platform='tiktok', caption='Launch day! 🎉') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_umjr266axajq",
+   "args": {
+    "platform": "tiktok",
+    "caption": "Launch day! 🎉"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_dyhk458",
+    "status": "done",
+    "url": "https://tiktok.com/cedardecals/p/143105011"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-25T02:40:34Z",
+   "content": "It's up on TikTok."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T02:31:49Z",
+   "entity_type": "file",
+   "entity_id": "f_ud7zj6s",
+   "field": "name",
+   "value": "sizing-chart.png"
+  },
+  {
+   "ts": "2026-09-25T02:31:49Z",
+   "entity_type": "file",
+   "entity_id": "f_ud7zj6s",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T02:31:57Z",
+   "entity_type": "file",
+   "entity_id": "f_ud7zj6s",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T02:33:43Z",
+   "entity_type": "email",
+   "entity_id": "em_mekqku2",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T02:33:43Z",
+   "entity_type": "email",
+   "entity_id": "em_mekqku2",
+   "field": "subject",
+   "value": "Your Cold Brew Pack shipped"
+  },
+  {
+   "ts": "2026-09-25T02:33:43Z",
+   "entity_type": "email",
+   "entity_id": "em_mekqku2",
+   "field": "to",
+   "value": "rrossi@proton.me"
+  },
+  {
+   "ts": "2026-09-25T02:33:52Z",
+   "entity_type": "email",
+   "entity_id": "em_mekqku2",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T02:36:40Z",
+   "entity_type": "post",
+   "entity_id": "post_dyhk458",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-25T02:36:40Z",
+   "entity_type": "post",
+   "entity_id": "post_dyhk458",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-25T02:36:40Z",
+   "entity_type": "post",
+   "entity_id": "post_dyhk458",
+   "field": "account",
+   "value": "@cedardecals"
+  },
+  {
+   "ts": "2026-09-25T02:39:30Z",
+   "entity_type": "post",
+   "entity_id": "post_dyhk458",
+   "field": "status",
+   "value": "published"
+  }
+ ]
+}

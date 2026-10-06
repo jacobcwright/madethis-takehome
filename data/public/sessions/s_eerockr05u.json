@@ -1,0 +1,339 @@
+{
+ "session_id": "s_eerockr05u",
+ "business_id": "biz_0113_cuse6",
+ "started_at": "2026-09-27T08:13:51Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T08:14:57Z",
+   "content": "sale post for TikTok pls"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T08:15:08Z",
+   "content": "post_social(platform='tiktok', caption='Back in stock') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_o2arsrnk1xpx",
+   "args": {
+    "platform": "tiktok",
+    "caption": "Back in stock"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://tiktok.com/olivesupplyco/p/577630927",
+    "platform": "TikTok",
+    "account": "@olivesupplyco"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T08:17:31Z",
+   "content": "Next I'll set up the discount code. TikTok now has the post."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T08:17:50Z",
+   "content": "ad check"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-27T08:17:59Z",
+   "content": "ad_status(ad_id='ad_g2ventc') -> ok",
+   "tool_name": "ad_status",
+   "call_id": "call_wjt0gu27b86j",
+   "args": {
+    "ad_id": "ad_g2ventc"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_g2ventc",
+    "status": "done",
+    "ad_status": "active",
+    "spend": 176.91,
+    "impressions": 6440,
+    "clicks": 30
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-27T08:27:24Z",
+   "content": "This ought to help conversions. The ad's still running."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-27T08:29:13Z",
+   "content": "total earnings so far?"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-27T08:29:23Z",
+   "content": "list_orders(status='paid', since='all') -> error",
+   "tool_name": "list_orders",
+   "call_id": "call_qhaiwbk2r1vz",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": false,
+    "error": "rate limited by payments provider"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-27T08:38:01Z",
+   "content": "Want me to pause the ad for the time being? I couldn't pull up your orders just now..."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-27T08:40:01Z",
+   "content": "X post, push it live"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-27T08:40:10Z",
+   "content": "post_social(platform='x', caption='New drop is live.') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_r6wl0l0umd77",
+   "args": {
+    "platform": "x",
+    "caption": "New drop is live."
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://x.com/olivesupplyco/p/741340405",
+    "platform": "X",
+    "account": "@olivesupplyco"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-27T08:40:40Z",
+   "content": "The post is now live."
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-09-27T08:41:27Z",
+   "content": "slow weekend, thoughts on what to do?"
+  },
+  {
+   "turn_index": 13,
+   "role": "agent",
+   "ts": "2026-09-27T08:43:41Z",
+   "content": "The copy's reading a lot cleaner now. Want me to pick up the .co version too?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T21:44:18Z",
+   "entity_type": "deploy",
+   "entity_id": "d_nsp2fbg",
+   "field": "commit",
+   "value": "af746cb"
+  },
+  {
+   "ts": "2026-09-25T21:44:18Z",
+   "entity_type": "deploy",
+   "entity_id": "d_nsp2fbg",
+   "field": "url",
+   "value": "https://olivesupplyco.com"
+  },
+  {
+   "ts": "2026-09-25T21:44:18Z",
+   "entity_type": "deploy",
+   "entity_id": "d_nsp2fbg",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T21:44:24Z",
+   "entity_type": "deploy",
+   "entity_id": "d_nsp2fbg",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-25T21:47:42Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-25T21:47:47Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-25T21:48:46Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "spend",
+   "value": 15.4
+  },
+  {
+   "ts": "2026-09-25T21:47:42Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T21:47:42Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "daily_budget",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-25T21:47:42Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-25T21:55:36Z",
+   "entity_type": "deploy",
+   "entity_id": "d_b9j5dg6",
+   "field": "commit",
+   "value": "3f095bc"
+  },
+  {
+   "ts": "2026-09-25T21:55:36Z",
+   "entity_type": "deploy",
+   "entity_id": "d_b9j5dg6",
+   "field": "url",
+   "value": "https://olivesupplyco.com"
+  },
+  {
+   "ts": "2026-09-25T21:55:36Z",
+   "entity_type": "deploy",
+   "entity_id": "d_b9j5dg6",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T21:57:33Z",
+   "entity_type": "deploy",
+   "entity_id": "d_b9j5dg6",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-25T22:04:31Z",
+   "entity_type": "email",
+   "entity_id": "em_x8cumju",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T22:04:31Z",
+   "entity_type": "email",
+   "entity_id": "em_x8cumju",
+   "field": "to",
+   "value": "theo.quinn@hotmail.com"
+  },
+  {
+   "ts": "2026-09-25T22:04:31Z",
+   "entity_type": "email",
+   "entity_id": "em_x8cumju",
+   "field": "subject",
+   "value": "A little thank you"
+  },
+  {
+   "ts": "2026-09-25T22:05:05Z",
+   "entity_type": "email",
+   "entity_id": "em_x8cumju",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T22:05:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "spend",
+   "value": 33.95
+  },
+  {
+   "ts": "2026-09-25T22:04:49Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g2ventc",
+   "field": "status",
+   "value": "paused"
+  },
+  {
+   "ts": "2026-09-27T08:15:15Z",
+   "entity_type": "post",
+   "entity_id": "post_5zhrpmb",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-27T08:15:15Z",
+   "entity_type": "post",
+   "entity_id": "post_5zhrpmb",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-27T08:16:40Z",
+   "entity_type": "post",
+   "entity_id": "post_5zhrpmb",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-27T08:15:15Z",
+   "entity_type": "post",
+   "entity_id": "post_5zhrpmb",
+   "field": "account",
+   "value": "@olivesupplyco"
+  },
+  {
+   "ts": "2026-09-27T08:40:18Z",
+   "entity_type": "post",
+   "entity_id": "post_4bh2zu2",
+   "field": "account",
+   "value": "@olivesupplyco"
+  },
+  {
+   "ts": "2026-09-27T08:40:18Z",
+   "entity_type": "post",
+   "entity_id": "post_4bh2zu2",
+   "field": "platform",
+   "value": "X"
+  },
+  {
+   "ts": "2026-09-27T08:40:18Z",
+   "entity_type": "post",
+   "entity_id": "post_4bh2zu2",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-27T08:40:21Z",
+   "entity_type": "post",
+   "entity_id": "post_4bh2zu2",
+   "field": "status",
+   "value": "published"
+  }
+ ]
+}

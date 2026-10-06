@@ -1,0 +1,511 @@
+{
+ "session_id": "s_j7r9mkkpzg",
+ "business_id": "biz_0127_twgus",
+ "started_at": "2026-09-30T19:35:48Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-30T19:38:00Z",
+   "content": "Facebook, something about the sale"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-30T19:38:09Z",
+   "content": "post_social(platform='facebook', caption='Weekend sale, 15% off') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_7x49kb7394wd",
+   "args": {
+    "platform": "facebook",
+    "caption": "Weekend sale, 15% off"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://facebook.com/olivesoap/p/806252803",
+    "platform": "Facebook",
+    "account": "@olivesoap"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-30T19:49:20Z",
+   "content": "Quick question: want me to raise the ad budget to $30/day? 📈 Your Facebook post went up and is out there running now."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-30T19:51:14Z",
+   "content": "was wondering, is the site online yet? can u publish it, sorry"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-30T19:51:21Z",
+   "content": "deploy_site(site='olivesoap.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_zj1zewld694z",
+   "args": {
+    "site": "olivesoap.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_qa5gh86",
+    "status": "done",
+    "url": "https://olivesoap.com"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-30T19:51:50Z",
+   "content": "You can see the site now at https://olivesoap.com, it's up! 📈 Should I do an Instagram post about it?"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-30T19:54:20Z",
+   "content": "other thing, status?"
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-30T19:56:32Z",
+   "content": "The deploy gets my eye for the next hour. Recapping: the post is live."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-30T19:57:01Z",
+   "content": "pls put product-1.jpg on the site 🙂"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-30T19:57:08Z",
+   "content": "upload_file(name='product-1.jpg', size_kb=7394) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_zriam1gdf0or",
+   "args": {
+    "name": "product-1.jpg",
+    "size_kb": 7394
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0127_twgus/product-1.jpg",
+    "name": "product-1.jpg"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-30T20:05:00Z",
+   "content": "product-1.jpg is uploaded."
+  },
+  {
+   "turn_index": 11,
+   "role": "owner",
+   "ts": "2026-09-30T20:05:37Z",
+   "content": "get Ivy their receipt pls"
+  },
+  {
+   "turn_index": 12,
+   "role": "tool",
+   "ts": "2026-09-30T20:05:40Z",
+   "content": "send_email(to='ivy.silva@icloud.com', subject='Your Wedding Template Bundle shipped') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_dw77rhfwyb9w",
+   "args": {
+    "to": "ivy.silva@icloud.com",
+    "subject": "Your Wedding Template Bundle shipped"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_nvsg357",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 13,
+   "role": "agent",
+   "ts": "2026-09-30T20:10:12Z",
+   "content": "I'll keep watching and tell you if anything changes. The customer email has gone out, nice."
+  },
+  {
+   "turn_index": 14,
+   "role": "owner",
+   "ts": "2026-09-30T20:12:59Z",
+   "content": "thx a ton!"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T21:24:39Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h3hhas4",
+   "field": "commit",
+   "value": "d09004f"
+  },
+  {
+   "ts": "2026-09-22T21:24:39Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h3hhas4",
+   "field": "url",
+   "value": "https://olivesoap.com"
+  },
+  {
+   "ts": "2026-09-22T21:24:59Z",
+   "entity_type": "payout",
+   "entity_id": "po_tghp6me",
+   "field": "amount",
+   "value": 1200.0
+  },
+  {
+   "ts": "2026-09-22T21:24:59Z",
+   "entity_type": "payout",
+   "entity_id": "po_tghp6me",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T21:24:39Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h3hhas4",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T21:30:22Z",
+   "entity_type": "payout",
+   "entity_id": "po_tghp6me",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T21:31:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h3hhas4",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T21:34:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pe7bej8",
+   "field": "platform",
+   "value": "Google"
+  },
+  {
+   "ts": "2026-09-22T21:35:28Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pe7bej8",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-22T21:34:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pe7bej8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T21:35:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pe7bej8",
+   "field": "spend",
+   "value": 59.4
+  },
+  {
+   "ts": "2026-09-22T21:34:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pe7bej8",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-22T21:34:59Z",
+   "entity_type": "ad",
+   "entity_id": "ad_pe7bej8",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-22T21:53:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m4qxuh8",
+   "field": "commit",
+   "value": "cf56db3"
+  },
+  {
+   "ts": "2026-09-22T21:53:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m4qxuh8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T21:53:16Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m4qxuh8",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T21:54:26Z",
+   "entity_type": "email",
+   "entity_id": "em_7j3j2a5",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T21:54:29Z",
+   "entity_type": "email",
+   "entity_id": "em_7j3j2a5",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T21:53:12Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m4qxuh8",
+   "field": "url",
+   "value": "https://olivesoap.com"
+  },
+  {
+   "ts": "2026-09-22T21:54:26Z",
+   "entity_type": "email",
+   "entity_id": "em_7j3j2a5",
+   "field": "to",
+   "value": "asilva@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T21:54:26Z",
+   "entity_type": "email",
+   "entity_id": "em_7j3j2a5",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T21:10:02Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h6syu74",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T21:10:02Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h6syu74",
+   "field": "url",
+   "value": "https://olivesoap.com"
+  },
+  {
+   "ts": "2026-09-25T21:10:02Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h6syu74",
+   "field": "commit",
+   "value": "b1311f0"
+  },
+  {
+   "ts": "2026-09-25T21:10:15Z",
+   "entity_type": "deploy",
+   "entity_id": "d_h6syu74",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-28T09:29:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rhgxf5",
+   "field": "commit",
+   "value": "e9490de"
+  },
+  {
+   "ts": "2026-09-28T09:29:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rhgxf5",
+   "field": "url",
+   "value": "https://olivesoap.com"
+  },
+  {
+   "ts": "2026-09-28T09:29:31Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rhgxf5",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-28T09:29:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_3rhgxf5",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T09:38:12Z",
+   "entity_type": "domain",
+   "entity_id": "dom_83qa3ey",
+   "field": "domain",
+   "value": "olivesoapshop.com"
+  },
+  {
+   "ts": "2026-09-28T09:38:12Z",
+   "entity_type": "domain",
+   "entity_id": "dom_83qa3ey",
+   "field": "price",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-28T09:38:12Z",
+   "entity_type": "domain",
+   "entity_id": "dom_83qa3ey",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T09:41:32Z",
+   "entity_type": "post",
+   "entity_id": "post_rj8j2ga",
+   "field": "account",
+   "value": "@olivesoap"
+  },
+  {
+   "ts": "2026-09-28T09:41:32Z",
+   "entity_type": "post",
+   "entity_id": "post_rj8j2ga",
+   "field": "platform",
+   "value": "Pinterest"
+  },
+  {
+   "ts": "2026-09-28T09:41:34Z",
+   "entity_type": "post",
+   "entity_id": "post_rj8j2ga",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-28T09:38:23Z",
+   "entity_type": "domain",
+   "entity_id": "dom_83qa3ey",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-28T09:41:32Z",
+   "entity_type": "post",
+   "entity_id": "post_rj8j2ga",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-30T19:38:53Z",
+   "entity_type": "post",
+   "entity_id": "post_r3pjhb9",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-30T19:38:53Z",
+   "entity_type": "post",
+   "entity_id": "post_r3pjhb9",
+   "field": "platform",
+   "value": "Facebook"
+  },
+  {
+   "ts": "2026-09-30T19:38:53Z",
+   "entity_type": "post",
+   "entity_id": "post_r3pjhb9",
+   "field": "account",
+   "value": "@olivesoap"
+  },
+  {
+   "ts": "2026-09-30T19:45:31Z",
+   "entity_type": "post",
+   "entity_id": "post_r3pjhb9",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-30T19:51:27Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qa5gh86",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-30T19:51:27Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qa5gh86",
+   "field": "url",
+   "value": "https://olivesoap.com"
+  },
+  {
+   "ts": "2026-09-30T19:51:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qa5gh86",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-30T19:51:27Z",
+   "entity_type": "deploy",
+   "entity_id": "d_qa5gh86",
+   "field": "commit",
+   "value": "7842523"
+  },
+  {
+   "ts": "2026-09-30T19:57:10Z",
+   "entity_type": "file",
+   "entity_id": "f_qrgzj8j",
+   "field": "name",
+   "value": "product-1.jpg"
+  },
+  {
+   "ts": "2026-09-30T19:57:10Z",
+   "entity_type": "file",
+   "entity_id": "f_qrgzj8j",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-30T20:03:11Z",
+   "entity_type": "file",
+   "entity_id": "f_qrgzj8j",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-30T20:06:10Z",
+   "entity_type": "email",
+   "entity_id": "em_nvsg357",
+   "field": "subject",
+   "value": "Your Wedding Template Bundle shipped"
+  },
+  {
+   "ts": "2026-09-30T20:06:10Z",
+   "entity_type": "email",
+   "entity_id": "em_nvsg357",
+   "field": "to",
+   "value": "ivy.silva@icloud.com"
+  },
+  {
+   "ts": "2026-09-30T20:06:42Z",
+   "entity_type": "email",
+   "entity_id": "em_nvsg357",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-30T20:06:10Z",
+   "entity_type": "email",
+   "entity_id": "em_nvsg357",
+   "field": "status",
+   "value": "queued"
+  }
+ ]
+}

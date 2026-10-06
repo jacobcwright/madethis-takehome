@@ -1,0 +1,369 @@
+{
+ "session_id": "s_5fg8ub7dob",
+ "business_id": "biz_0169_t64du",
+ "started_at": "2026-09-21T10:43:28Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-21T10:45:45Z",
+   "content": "thx, Andre needs the welcome email, pls send"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-21T10:45:56Z",
+   "content": "send_email(to='andre.tanaka@gmail.com', subject='Your receipt from Bright Threads Co.') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_glbhls7hdpy2",
+   "args": {
+    "to": "andre.tanaka@gmail.com",
+    "subject": "Your receipt from Bright Threads Co."
+   },
+   "result": {
+    "ok": true,
+    "id": "em_bsv9wqe",
+    "status": "pending"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-21T10:48:20Z",
+   "content": "Still pending: the email to andre.tanaka@gmail.com hasn't finished sending. Want the ad budget raised to $30/day?"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-21T10:48:57Z",
+   "content": "Instagram, pls announce the launch there"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-21T10:49:04Z",
+   "content": "post_social(platform='instagram', caption='Weekend sale, 15% off') -> error",
+   "tool_name": "post_social",
+   "call_id": "call_jjkowc91um0h",
+   "args": {
+    "platform": "instagram",
+    "caption": "Weekend sale, 15% off"
+   },
+   "result": {
+    "ok": false,
+    "status": "failed",
+    "error": "account not connected",
+    "platform": "Instagram",
+    "account": "@brightthreads"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-21T10:49:31Z",
+   "content": "The Instagram post didn't go through because the account isn't connected. I'll watch it and tell you if that changes."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-21T10:51:44Z",
+   "content": "hero.png is uploaded, add it pls"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-21T10:51:47Z",
+   "content": "upload_file(name='hero.png', size_kb=9630) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_k3qr2io3kgnk",
+   "args": {
+    "name": "hero.png",
+    "size_kb": 9630
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0169_t64du/hero.png",
+    "name": "hero.png"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-21T10:52:05Z",
+   "content": "hero.png is uploaded. Expect a summary from me tonight."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-21T10:52:57Z",
+   "content": "pls purchase bright-threads.shop"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-21T10:53:02Z",
+   "content": "buy_domain(domain='bright-threads.shop', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_g47unhxj7olz",
+   "args": {
+    "domain": "bright-threads.shop",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_abqbn4a",
+    "status": "done",
+    "domain": "bright-threads.shop",
+    "price": 9
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-21T10:56:06Z",
+   "content": "I picked up bright-threads.shop for $9. Welcome email draft is next on my list."
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-09-21T10:56:50Z",
+   "content": "shipping update to Pat, pls send"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-09-21T10:57:01Z",
+   "content": "send_email(to='pat.tanaka@proton.me', subject='Your receipt from Bright Threads Co.') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_liyspgxxu6mb",
+   "args": {
+    "to": "pat.tanaka@proton.me",
+    "subject": "Your receipt from Bright Threads Co."
+   },
+   "result": {
+    "ok": true,
+    "id": "em_sdcnqdu",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-09-21T10:57:20Z",
+   "content": "The \"Your receipt from Bright Threads Co.\" email is out the door to pat.tanaka@proton.me. Feels like a solid start to launch week."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T10:46:30Z",
+   "entity_type": "email",
+   "entity_id": "em_bsv9wqe",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T10:46:30Z",
+   "entity_type": "email",
+   "entity_id": "em_bsv9wqe",
+   "field": "to",
+   "value": "andre.tanaka@gmail.com"
+  },
+  {
+   "ts": "2026-09-21T10:46:30Z",
+   "entity_type": "email",
+   "entity_id": "em_bsv9wqe",
+   "field": "subject",
+   "value": "Your receipt from Bright Threads Co."
+  },
+  {
+   "ts": "2026-09-21T10:49:08Z",
+   "entity_type": "post",
+   "entity_id": "post_cqw6fq2",
+   "field": "account",
+   "value": "@brightthreads"
+  },
+  {
+   "ts": "2026-09-21T10:49:08Z",
+   "entity_type": "post",
+   "entity_id": "post_cqw6fq2",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-21T10:49:08Z",
+   "entity_type": "post",
+   "entity_id": "post_cqw6fq2",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-21T10:49:30Z",
+   "entity_type": "post",
+   "entity_id": "post_cqw6fq2",
+   "field": "status",
+   "value": "failed"
+  },
+  {
+   "ts": "2026-09-21T10:52:01Z",
+   "entity_type": "file",
+   "entity_id": "f_5ja3rv7",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-21T10:53:44Z",
+   "entity_type": "domain",
+   "entity_id": "dom_abqbn4a",
+   "field": "price",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-21T10:53:44Z",
+   "entity_type": "domain",
+   "entity_id": "dom_abqbn4a",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T10:51:51Z",
+   "entity_type": "file",
+   "entity_id": "f_5ja3rv7",
+   "field": "name",
+   "value": "hero.png"
+  },
+  {
+   "ts": "2026-09-21T10:51:51Z",
+   "entity_type": "file",
+   "entity_id": "f_5ja3rv7",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-21T10:54:31Z",
+   "entity_type": "domain",
+   "entity_id": "dom_abqbn4a",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-21T10:53:44Z",
+   "entity_type": "domain",
+   "entity_id": "dom_abqbn4a",
+   "field": "domain",
+   "value": "bright-threads.shop"
+  },
+  {
+   "ts": "2026-09-21T10:57:08Z",
+   "entity_type": "email",
+   "entity_id": "em_sdcnqdu",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-21T10:57:08Z",
+   "entity_type": "email",
+   "entity_id": "em_sdcnqdu",
+   "field": "to",
+   "value": "pat.tanaka@proton.me"
+  },
+  {
+   "ts": "2026-09-21T10:57:08Z",
+   "entity_type": "email",
+   "entity_id": "em_sdcnqdu",
+   "field": "subject",
+   "value": "Your receipt from Bright Threads Co."
+  },
+  {
+   "ts": "2026-09-21T10:57:09Z",
+   "entity_type": "email",
+   "entity_id": "em_sdcnqdu",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-21T12:15:38Z",
+   "entity_type": "email",
+   "entity_id": "em_bsv9wqe",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T20:47:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_dh76s7v",
+   "field": "amount",
+   "value": 49
+  },
+  {
+   "ts": "2026-09-22T20:47:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_dh76s7v",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-22T20:47:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_dh76s7v",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T20:47:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_dh76s7v",
+   "field": "customer",
+   "value": "eli_1985@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T20:47:34Z",
+   "entity_type": "order",
+   "entity_id": "ord_dh76s7v",
+   "field": "customer_name",
+   "value": "Eli Haddad"
+  },
+  {
+   "ts": "2026-09-23T09:35:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_dh76s7v",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-24T03:33:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_b69ppac",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-24T03:33:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_b69ppac",
+   "field": "customer",
+   "value": "eli_1985@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T03:33:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_b69ppac",
+   "field": "product",
+   "value": "Eucalyptus Soap Bar"
+  },
+  {
+   "ts": "2026-09-24T03:33:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_b69ppac",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T03:33:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_b69ppac",
+   "field": "customer_name",
+   "value": "Eli Haddad"
+  }
+ ]
+}

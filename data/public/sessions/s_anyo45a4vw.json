@@ -1,0 +1,399 @@
+{
+ "session_id": "s_anyo45a4vw",
+ "business_id": "biz_0025_9xvqk",
+ "started_at": "2026-09-27T12:54:17Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T12:54:44Z",
+   "content": "anything sold yet?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T12:54:50Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_vj851z5n9b6b",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 3,
+    "total": 74,
+    "orders": [
+     "ord_ax9jy7s",
+     "ord_gwkrdps",
+     "ord_hubxyqj"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T12:55:15Z",
+   "content": "Of course. Can you send over the new product photos when you get a chance? The Starter Kit has been the most popular over the past 7 days."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T12:56:37Z",
+   "content": "Luis needs his receipt, can u send it"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-27T12:56:47Z",
+   "content": "send_email(to='luis.bauer@gmail.com', subject='Order update') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_jlwcrga01v0j",
+   "args": {
+    "to": "luis.bauer@gmail.com",
+    "subject": "Order update"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_9jz5ccr",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-27T13:15:32Z",
+   "content": "Luis got his email. Should I set up an abandoned cart email too?"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-27T13:15:58Z",
+   "content": "go ahead n deploy"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-27T13:16:06Z",
+   "content": "deploy_site(site='coastal-candle.net', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_rfwmezvzvzv2",
+   "args": {
+    "site": "coastal-candle.net",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://coastal-candle.net"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-27T13:21:02Z",
+   "content": "Coastal-candle.net is up and reachable.\n\nGive the ad a couple of days before you judge it, I'd say."
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-27T13:24:39Z",
+   "content": "orders since yesterday? any?"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-27T13:24:51Z",
+   "content": "list_orders(status='paid', since='48h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_yv40fnc874oe",
+   "args": {
+    "status": "paid",
+    "since": "48h"
+   },
+   "result": {
+    "ok": true,
+    "count": 6,
+    "total": 158,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-27T13:43:42Z",
+   "content": "Later today I'm planning to reffresh the pricing page.\nSince yesterday, sales totaled under $180!"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-26T04:21:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_ax9jy7s",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-26T04:21:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_ax9jy7s",
+   "field": "customer",
+   "value": "ralvarez@me.com"
+  },
+  {
+   "ts": "2026-09-26T04:21:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_ax9jy7s",
+   "field": "product",
+   "value": "Leather Keychain"
+  },
+  {
+   "ts": "2026-09-26T04:21:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_ax9jy7s",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T04:21:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_ax9jy7s",
+   "field": "customer_name",
+   "value": "Reed Alvarez"
+  },
+  {
+   "ts": "2026-09-26T11:40:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_hubxyqj",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-26T11:40:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_hubxyqj",
+   "field": "customer",
+   "value": "rafaelb42@me.com"
+  },
+  {
+   "ts": "2026-09-26T11:40:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_hubxyqj",
+   "field": "customer_name",
+   "value": "Rafael Brooks"
+  },
+  {
+   "ts": "2026-09-26T11:40:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_hubxyqj",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-26T11:40:12Z",
+   "entity_type": "order",
+   "entity_id": "ord_hubxyqj",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T12:59:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_gwkrdps",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-26T12:59:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_gwkrdps",
+   "field": "customer_name",
+   "value": "Luis Bauer"
+  },
+  {
+   "ts": "2026-09-26T12:59:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_gwkrdps",
+   "field": "customer",
+   "value": "luis.bauer@gmail.com"
+  },
+  {
+   "ts": "2026-09-26T12:59:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_gwkrdps",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-26T12:59:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_gwkrdps",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T12:56:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_tudspn2",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-27T12:56:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_tudspn2",
+   "field": "customer",
+   "value": "luis.bauer@gmail.com"
+  },
+  {
+   "ts": "2026-09-27T12:56:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_tudspn2",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T12:56:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_tudspn2",
+   "field": "product",
+   "value": "Leather Keychain"
+  },
+  {
+   "ts": "2026-09-27T12:57:04Z",
+   "entity_type": "email",
+   "entity_id": "em_9jz5ccr",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T12:57:04Z",
+   "entity_type": "email",
+   "entity_id": "em_9jz5ccr",
+   "field": "to",
+   "value": "luis.bauer@gmail.com"
+  },
+  {
+   "ts": "2026-09-27T12:56:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_tudspn2",
+   "field": "customer_name",
+   "value": "Luis Bauer"
+  },
+  {
+   "ts": "2026-09-27T12:57:58Z",
+   "entity_type": "email",
+   "entity_id": "em_9jz5ccr",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T12:57:04Z",
+   "entity_type": "email",
+   "entity_id": "em_9jz5ccr",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-27T13:11:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_73pjpch",
+   "field": "customer",
+   "value": "hannah.ortiz@outlook.com"
+  },
+  {
+   "ts": "2026-09-27T13:11:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_73pjpch",
+   "field": "customer_name",
+   "value": "Hannah Ortiz"
+  },
+  {
+   "ts": "2026-09-27T13:11:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_73pjpch",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T13:11:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_73pjpch",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-27T13:15:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_2swpysp",
+   "field": "amount",
+   "value": 35
+  },
+  {
+   "ts": "2026-09-27T13:15:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_2swpysp",
+   "field": "customer",
+   "value": "luis.bauer@gmail.com"
+  },
+  {
+   "ts": "2026-09-27T13:15:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_2swpysp",
+   "field": "customer_name",
+   "value": "Luis Bauer"
+  },
+  {
+   "ts": "2026-09-27T13:15:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_2swpysp",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-27T13:15:55Z",
+   "entity_type": "order",
+   "entity_id": "ord_2swpysp",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T13:11:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_73pjpch",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-27T13:16:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ucbeps3",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T13:16:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ucbeps3",
+   "field": "url",
+   "value": "https://coastal-candle.net"
+  },
+  {
+   "ts": "2026-09-27T13:16:45Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ucbeps3",
+   "field": "commit",
+   "value": "09369b7"
+  },
+  {
+   "ts": "2026-09-27T13:19:18Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ucbeps3",
+   "field": "status",
+   "value": "done"
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "session_id": "s_wexw41wade",
+ "business_id": "biz_0124_rqw5p",
+ "started_at": "2026-09-30T13:44:05Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-30T13:48:02Z",
+   "content": "hey did anything sell so far today? curious how its going"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-30T13:48:14Z",
+   "content": "list_orders(status='paid', since='24h') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_ihbzn4iu9a33",
+   "args": {
+    "status": "paid",
+    "since": "24h"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-30T13:48:33Z",
+   "content": "Next I'll set up the ad audience. Bad news: nothing has come in over the past 24 hours, zero orders."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-30T13:50:55Z",
+   "content": "next: email diego.fischer@outlook.com"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-30T13:51:03Z",
+   "content": "send_email(to='diego.fischer@outlook.com', subject='Following up') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_x71gxh4flh7r",
+   "args": {
+    "to": "diego.fischer@outlook.com",
+    "subject": "Following up"
+   },
+   "result": {
+    "ok": true,
+    "status": "pending",
+    "to": "diego.fischer@outlook.com",
+    "subject": "Following up"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-30T14:09:42Z",
+   "content": "Still sending: the email to diego.fischer@outlook.com hasn't finished going out."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-30T14:11:52Z",
+   "content": "need the timing on the $500 payout, when'd u run it"
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-30T14:26:53Z",
+   "content": "The $500 payout got handled on Friday! 🚀 Orders get another look from me in a few hours."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-30T14:27:38Z",
+   "content": "order count rn? how many do i have"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-30T14:27:44Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_aqa1xxtdhc3z",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-30T14:27:55Z",
+   "content": "To test demand, I'd drop the price to $18. Zero new orders so far..."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3xurfe8",
+   "field": "subject",
+   "value": "Following up"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3xurfe8",
+   "field": "to",
+   "value": "dchen@gmail.com"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_86rakge",
+   "field": "batch",
+   "value": "emb_c4ztc6m"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_86rakge",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_86rakge",
+   "field": "to",
+   "value": "marcuso78@gmail.com"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_9a8chyz",
+   "field": "batch",
+   "value": "emb_c4ztc6m"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_9a8chyz",
+   "field": "subject",
+   "value": "Following up"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3xurfe8",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_9a8chyz",
+   "field": "to",
+   "value": "rosas12@hotmail.com"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_86rakge",
+   "field": "subject",
+   "value": "Following up"
+  },
+  {
+   "ts": "2026-09-25T07:22:42Z",
+   "entity_type": "email",
+   "entity_id": "em_9a8chyz",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_3xurfe8",
+   "field": "batch",
+   "value": "emb_c4ztc6m"
+  },
+  {
+   "ts": "2026-09-25T07:19:21Z",
+   "entity_type": "email",
+   "entity_id": "em_9a8chyz",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T07:24:07Z",
+   "entity_type": "email",
+   "entity_id": "em_3xurfe8",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T07:25:00Z",
+   "entity_type": "email",
+   "entity_id": "em_86rakge",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T07:44:43Z",
+   "entity_type": "post",
+   "entity_id": "post_ykv5dab",
+   "field": "account",
+   "value": "@copperlabs"
+  },
+  {
+   "ts": "2026-09-25T07:44:43Z",
+   "entity_type": "post",
+   "entity_id": "post_ykv5dab",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-25T07:44:43Z",
+   "entity_type": "post",
+   "entity_id": "post_ykv5dab",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-25T07:44:52Z",
+   "entity_type": "post",
+   "entity_id": "post_ykv5dab",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_9jwkgkp",
+   "field": "batch",
+   "value": "emb_7h7h9tp"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_9jwkgkp",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_9jwkgkp",
+   "field": "to",
+   "value": "olivia.osei@outlook.com"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_s8jm9uh",
+   "field": "batch",
+   "value": "emb_7h7h9tp"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_s8jm9uh",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_s8jm9uh",
+   "field": "subject",
+   "value": "Your Linen Tote shipped"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_x6sfuda",
+   "field": "batch",
+   "value": "emb_7h7h9tp"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_x6sfuda",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_x6sfuda",
+   "field": "subject",
+   "value": "Your Linen Tote shipped"
+  },
+  {
+   "ts": "2026-09-25T07:48:19Z",
+   "entity_type": "email",
+   "entity_id": "em_9jwkgkp",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T07:48:20Z",
+   "entity_type": "email",
+   "entity_id": "em_x6sfuda",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_9jwkgkp",
+   "field": "subject",
+   "value": "Your Linen Tote shipped"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_x6sfuda",
+   "field": "to",
+   "value": "diego.fischer@outlook.com"
+  },
+  {
+   "ts": "2026-09-25T07:50:22Z",
+   "entity_type": "payout",
+   "entity_id": "po_e9uq5gs",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T07:48:20Z",
+   "entity_type": "email",
+   "entity_id": "em_s8jm9uh",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T07:48:12Z",
+   "entity_type": "email",
+   "entity_id": "em_s8jm9uh",
+   "field": "to",
+   "value": "dchen@gmail.com"
+  },
+  {
+   "ts": "2026-09-25T07:50:22Z",
+   "entity_type": "payout",
+   "entity_id": "po_e9uq5gs",
+   "field": "amount",
+   "value": 500.0
+  },
+  {
+   "ts": "2026-09-25T07:58:05Z",
+   "entity_type": "payout",
+   "entity_id": "po_e9uq5gs",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T08:06:50Z",
+   "entity_type": "payout",
+   "entity_id": "po_wq7sfwm",
+   "field": "amount",
+   "value": 40.0
+  },
+  {
+   "ts": "2026-09-25T08:06:50Z",
+   "entity_type": "payout",
+   "entity_id": "po_wq7sfwm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T08:08:19Z",
+   "entity_type": "payout",
+   "entity_id": "po_wq7sfwm",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T08:12:33Z",
+   "entity_type": "email",
+   "entity_id": "em_95fxq22",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T08:12:33Z",
+   "entity_type": "email",
+   "entity_id": "em_95fxq22",
+   "field": "subject",
+   "value": "Your receipt from Copper Labs Collective"
+  },
+  {
+   "ts": "2026-09-25T08:13:00Z",
+   "entity_type": "email",
+   "entity_id": "em_95fxq22",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T08:12:33Z",
+   "entity_type": "email",
+   "entity_id": "em_95fxq22",
+   "field": "to",
+   "value": "rosas12@hotmail.com"
+  },
+  {
+   "ts": "2026-09-26T21:13:02Z",
+   "entity_type": "email",
+   "entity_id": "em_8fb3jqe",
+   "field": "subject",
+   "value": "A little thank you"
+  },
+  {
+   "ts": "2026-09-26T21:13:02Z",
+   "entity_type": "email",
+   "entity_id": "em_8fb3jqe",
+   "field": "to",
+   "value": "olivia.osei@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T21:13:02Z",
+   "entity_type": "email",
+   "entity_id": "em_8fb3jqe",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-26T21:25:23Z",
+   "entity_type": "deploy",
+   "entity_id": "d_tjhsurc",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T21:24:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_tjhsurc",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T21:24:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_tjhsurc",
+   "field": "commit",
+   "value": "47f8c2c"
+  },
+  {
+   "ts": "2026-09-26T21:24:58Z",
+   "entity_type": "deploy",
+   "entity_id": "d_tjhsurc",
+   "field": "url",
+   "value": "https://copperlabs.shop"
+  },
+  {
+   "ts": "2026-09-26T22:07:37Z",
+   "entity_type": "email",
+   "entity_id": "em_8fb3jqe",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-30T13:51:44Z",
+   "entity_type": "email",
+   "entity_id": "em_4qna89u",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-30T13:51:44Z",
+   "entity_type": "email",
+   "entity_id": "em_4qna89u",
+   "field": "subject",
+   "value": "Following up"
+  },
+  {
+   "ts": "2026-09-30T13:51:44Z",
+   "entity_type": "email",
+   "entity_id": "em_4qna89u",
+   "field": "to",
+   "value": "diego.fischer@outlook.com"
+  },
+  {
+   "ts": "2026-09-30T15:15:45Z",
+   "entity_type": "email",
+   "entity_id": "em_4qna89u",
+   "field": "status",
+   "value": "delivered"
+  }
+ ]
+}

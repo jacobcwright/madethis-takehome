@@ -1,0 +1,386 @@
+{
+ "session_id": "s_gtr6mknn3r",
+ "business_id": "biz_0043_34rcb",
+ "started_at": "2026-09-29T20:23:56Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-29T20:25:55Z",
+   "content": "sorry, random q - has anything sold?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-29T20:25:59Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_x5rb7lyd9bxe",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 9,
+    "orders": [
+     "ord_bkmz6pr"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-29T20:26:34Z",
+   "content": "Next up is the ad audience setup. First, though: sales over the past 7 days come to $9."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-29T20:28:55Z",
+   "content": "time to get the site live! 🎉"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-29T20:29:04Z",
+   "content": "deploy_site(site='rusty-woodworks.net', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_0r9dohe1er5p",
+   "args": {
+    "site": "rusty-woodworks.net",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://rusty-woodworks.net"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-29T20:29:37Z",
+   "content": "The fix is now up on your site, just so you know."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T05:01:11Z",
+   "entity_type": "order",
+   "entity_id": "ord_kqve32m",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-22T05:01:11Z",
+   "entity_type": "order",
+   "entity_id": "ord_kqve32m",
+   "field": "customer",
+   "value": "hannah_2003@me.com"
+  },
+  {
+   "ts": "2026-09-22T05:01:11Z",
+   "entity_type": "order",
+   "entity_id": "ord_kqve32m",
+   "field": "customer_name",
+   "value": "Hannah Silva"
+  },
+  {
+   "ts": "2026-09-22T05:01:11Z",
+   "entity_type": "order",
+   "entity_id": "ord_kqve32m",
+   "field": "product",
+   "value": "Macrame Hanger"
+  },
+  {
+   "ts": "2026-09-22T05:01:11Z",
+   "entity_type": "order",
+   "entity_id": "ord_kqve32m",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:25:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_2ws7gya",
+   "field": "customer",
+   "value": "ninap42@yahoo.com"
+  },
+  {
+   "ts": "2026-09-22T05:25:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_2ws7gya",
+   "field": "customer_name",
+   "value": "Nina Patel"
+  },
+  {
+   "ts": "2026-09-22T05:25:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_2ws7gya",
+   "field": "product",
+   "value": "Eucalyptus Soap Bar"
+  },
+  {
+   "ts": "2026-09-22T05:25:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_2ws7gya",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T05:25:19Z",
+   "entity_type": "order",
+   "entity_id": "ord_2ws7gya",
+   "field": "amount",
+   "value": 25
+  },
+  {
+   "ts": "2026-09-22T18:44:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_8mp3aag",
+   "field": "commit",
+   "value": "895b669"
+  },
+  {
+   "ts": "2026-09-22T18:44:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_8mp3aag",
+   "field": "url",
+   "value": "https://rusty-woodworks.net"
+  },
+  {
+   "ts": "2026-09-22T18:44:46Z",
+   "entity_type": "deploy",
+   "entity_id": "d_8mp3aag",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T18:59:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_8mp3aag",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-24T15:57:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkmz6pr",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-24T15:57:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkmz6pr",
+   "field": "product",
+   "value": "Macrame Hanger"
+  },
+  {
+   "ts": "2026-09-24T15:57:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkmz6pr",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T15:57:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkmz6pr",
+   "field": "customer",
+   "value": "aishak24@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T15:57:50Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkmz6pr",
+   "field": "customer_name",
+   "value": "Aisha Kim"
+  },
+  {
+   "ts": "2026-09-25T04:05:09Z",
+   "entity_type": "payout",
+   "entity_id": "po_8jtpfnr",
+   "field": "amount",
+   "value": 500.0
+  },
+  {
+   "ts": "2026-09-25T04:05:09Z",
+   "entity_type": "payout",
+   "entity_id": "po_8jtpfnr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T04:16:53Z",
+   "entity_type": "payout",
+   "entity_id": "po_8jtpfnr",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T04:26:08Z",
+   "entity_type": "file",
+   "entity_id": "f_awemhnk",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T04:26:08Z",
+   "entity_type": "file",
+   "entity_id": "f_awemhnk",
+   "field": "name",
+   "value": "pricing.csv"
+  },
+  {
+   "ts": "2026-09-25T04:26:24Z",
+   "entity_type": "file",
+   "entity_id": "f_awemhnk",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T04:34:56Z",
+   "entity_type": "payout",
+   "entity_id": "po_kdbqgqz",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T04:34:56Z",
+   "entity_type": "payout",
+   "entity_id": "po_kdbqgqz",
+   "field": "amount",
+   "value": 300.0
+  },
+  {
+   "ts": "2026-09-25T04:49:37Z",
+   "entity_type": "payout",
+   "entity_id": "po_kdbqgqz",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T16:34:36Z",
+   "entity_type": "email",
+   "entity_id": "em_3wfc48b",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-26T16:34:36Z",
+   "entity_type": "email",
+   "entity_id": "em_3wfc48b",
+   "field": "subject",
+   "value": "Your Macrame Hanger shipped"
+  },
+  {
+   "ts": "2026-09-26T16:34:36Z",
+   "entity_type": "email",
+   "entity_id": "em_3wfc48b",
+   "field": "to",
+   "value": "caleb.walsh@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T16:34:37Z",
+   "entity_type": "email",
+   "entity_id": "em_3wfc48b",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-26T16:40:28Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u5c88dr",
+   "field": "commit",
+   "value": "fc815e9"
+  },
+  {
+   "ts": "2026-09-26T16:40:28Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u5c88dr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T16:40:28Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u5c88dr",
+   "field": "url",
+   "value": "https://rusty-woodworks.net"
+  },
+  {
+   "ts": "2026-09-26T16:40:35Z",
+   "entity_type": "deploy",
+   "entity_id": "d_u5c88dr",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T16:43:14Z",
+   "entity_type": "ad",
+   "entity_id": "ad_tw65f8a",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-26T16:43:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_tw65f8a",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-26T16:43:14Z",
+   "entity_type": "ad",
+   "entity_id": "ad_tw65f8a",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T16:43:14Z",
+   "entity_type": "ad",
+   "entity_id": "ad_tw65f8a",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-26T16:43:14Z",
+   "entity_type": "ad",
+   "entity_id": "ad_tw65f8a",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-29T20:29:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cy6qsv2",
+   "field": "commit",
+   "value": "5133814"
+  },
+  {
+   "ts": "2026-09-29T20:29:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cy6qsv2",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-29T20:29:26Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cy6qsv2",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-29T20:29:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_cy6qsv2",
+   "field": "url",
+   "value": "https://rusty-woodworks.net"
+  }
+ ]
+}

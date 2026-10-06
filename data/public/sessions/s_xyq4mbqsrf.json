@@ -1,0 +1,267 @@
+{
+ "session_id": "s_xyq4mbqsrf",
+ "business_id": "biz_0013_zrqge",
+ "started_at": "2026-09-22T07:34:10Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T07:37:35Z",
+   "content": "cool, pls register shopcedarthreads.com"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T07:37:38Z",
+   "content": "buy_domain(domain='shopcedarthreads.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_clkvrmp1v2un",
+   "args": {
+    "domain": "shopcedarthreads.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_zbvfe6r",
+    "status": "done",
+    "domain": "shopcedarthreads.com",
+    "price": 19
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-22T07:54:27Z",
+   "content": "Next up is setting up the ad audience.\n\nshopcedarthreads.com is registered and it's all yours!"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-22T07:54:56Z",
+   "content": "cool, everyone who ordered needs the shipping update"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-22T07:55:07Z",
+   "content": "send_email(to=['omarh9@yahoo.com', 'luis.delgado@proton.me', 'noah.delgado@outlook.com'], subject='Your order is on the way') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_kh7454dgn7am",
+   "args": {
+    "to": [
+     "omarh9@yahoo.com",
+     "luis.delgado@proton.me",
+     "noah.delgado@outlook.com"
+    ],
+    "subject": "Your order is on the way"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_hu52u8k",
+    "status": "done",
+    "recipients": 3,
+    "subject": "Your order is on the way",
+    "delivered": 3,
+    "bounced": 0
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-22T07:56:09Z",
+   "content": "All 3 of them got the email"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-22T07:58:56Z",
+   "content": "hero should be IMG_2041.HEIC"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-22T07:59:02Z",
+   "content": "upload_file(name='IMG_2041.HEIC', size_kb=218) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_9gl40byqoqfm",
+   "args": {
+    "name": "IMG_2041.HEIC",
+    "size_kb": 218
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0013_zrqge/IMG_2041.HEIC",
+    "name": "IMG_2041.HEIC"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-22T08:11:00Z",
+   "content": "If you'd like, I can draft a follow-up sequence. IMG_2041.HEIC is uploaded!"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-22T08:14:36Z",
+   "content": "good stuff"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T07:38:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_zbvfe6r",
+   "field": "price",
+   "value": 19
+  },
+  {
+   "ts": "2026-09-22T07:38:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_zbvfe6r",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T07:38:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_zbvfe6r",
+   "field": "domain",
+   "value": "shopcedarthreads.com"
+  },
+  {
+   "ts": "2026-09-22T07:47:32Z",
+   "entity_type": "domain",
+   "entity_id": "dom_zbvfe6r",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ashp22z",
+   "field": "batch",
+   "value": "emb_hu52u8k"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ashp22z",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ashp22z",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ashp22z",
+   "field": "to",
+   "value": "omarh9@yahoo.com"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ks8dd6h",
+   "field": "batch",
+   "value": "emb_hu52u8k"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ks8dd6h",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ks8dd6h",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_ks8dd6h",
+   "field": "to",
+   "value": "luis.delgado@proton.me"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_udcfjwx",
+   "field": "batch",
+   "value": "emb_hu52u8k"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_udcfjwx",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_udcfjwx",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T07:55:56Z",
+   "entity_type": "email",
+   "entity_id": "em_udcfjwx",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T07:55:58Z",
+   "entity_type": "email",
+   "entity_id": "em_ashp22z",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T07:55:21Z",
+   "entity_type": "email",
+   "entity_id": "em_udcfjwx",
+   "field": "to",
+   "value": "noah.delgado@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T07:59:06Z",
+   "entity_type": "file",
+   "entity_id": "f_c2rf9tk",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-09-22T07:59:06Z",
+   "entity_type": "file",
+   "entity_id": "f_c2rf9tk",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-22T07:55:46Z",
+   "entity_type": "email",
+   "entity_id": "em_ks8dd6h",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T08:05:24Z",
+   "entity_type": "file",
+   "entity_id": "f_c2rf9tk",
+   "field": "status",
+   "value": "uploaded"
+  }
+ ]
+}

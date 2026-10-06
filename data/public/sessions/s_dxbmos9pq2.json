@@ -1,0 +1,342 @@
+{
+ "session_id": "s_dxbmos9pq2",
+ "business_id": "biz_0161_uf2gk",
+ "started_at": "2026-09-23T21:19:42Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-23T21:20:35Z",
+   "content": "need $850 paid out, can u do it"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-23T21:20:47Z",
+   "content": "request_payout(amount=850.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_kjow5nn7mwhz",
+   "args": {
+    "amount": 850.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_tdg6cqg",
+    "status": "done",
+    "amount": 850.0,
+    "arrival": "tomorrow"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-23T21:21:06Z",
+   "content": "The $850 payotu is on its way!"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-23T21:22:13Z",
+   "content": "whats my order toal"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-23T21:22:25Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_58i7pnoxbnx6",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 155,
+    "orders": [
+     "ord_ucrks5q",
+     "ord_resvp48",
+     "ord_vg9ctum",
+     "ord_h47t88d"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-23T21:22:46Z",
+   "content": "Four orders so far, adding up to $155."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-23T21:24:28Z",
+   "content": "pls get the newest changes live"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-23T21:24:36Z",
+   "content": "deploy_site(site='saltwaterroast.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_j6s3t8lhorjw",
+   "args": {
+    "site": "saltwaterroast.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_5rtxx7p",
+    "status": "done",
+    "url": "https://saltwaterroast.com"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-23T21:25:18Z",
+   "content": "Next up is the ad audience setup. Also, https://www.saltwaterroast.com is live and published!"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-23T21:25:41Z",
+   "content": "thanks"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T10:44:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_h47t88d",
+   "field": "customer",
+   "value": "hugo.kim@me.com"
+  },
+  {
+   "ts": "2026-09-22T10:44:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_h47t88d",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-22T10:44:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_h47t88d",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T10:44:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_h47t88d",
+   "field": "amount",
+   "value": 22
+  },
+  {
+   "ts": "2026-09-22T10:44:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_h47t88d",
+   "field": "customer_name",
+   "value": "Hugo Kim"
+  },
+  {
+   "ts": "2026-09-22T19:42:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_wmjcb6s",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-22T19:42:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_wmjcb6s",
+   "field": "customer",
+   "value": "theo.fischer@yahoo.com"
+  },
+  {
+   "ts": "2026-09-22T19:42:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_wmjcb6s",
+   "field": "product",
+   "value": "Notion Template"
+  },
+  {
+   "ts": "2026-09-22T19:42:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_wmjcb6s",
+   "field": "customer_name",
+   "value": "Theo Fischer"
+  },
+  {
+   "ts": "2026-09-22T19:42:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_wmjcb6s",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T22:32:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_vg9ctum",
+   "field": "amount",
+   "value": 22
+  },
+  {
+   "ts": "2026-09-22T22:32:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_vg9ctum",
+   "field": "customer_name",
+   "value": "Theo Fischer"
+  },
+  {
+   "ts": "2026-09-22T22:32:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_vg9ctum",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-22T22:32:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_vg9ctum",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T22:32:47Z",
+   "entity_type": "order",
+   "entity_id": "ord_vg9ctum",
+   "field": "customer",
+   "value": "theo.fischer@yahoo.com"
+  },
+  {
+   "ts": "2026-09-23T00:35:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_ucrks5q",
+   "field": "amount",
+   "value": 22
+  },
+  {
+   "ts": "2026-09-23T00:35:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_ucrks5q",
+   "field": "customer",
+   "value": "jordan.grant@gmail.com"
+  },
+  {
+   "ts": "2026-09-23T00:35:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_ucrks5q",
+   "field": "customer_name",
+   "value": "Jordan Grant"
+  },
+  {
+   "ts": "2026-09-23T00:35:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_ucrks5q",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T00:35:16Z",
+   "entity_type": "order",
+   "entity_id": "ord_ucrks5q",
+   "field": "product",
+   "value": "Starter Kit"
+  },
+  {
+   "ts": "2026-09-23T01:20:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_wmjcb6s",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-23T20:32:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_resvp48",
+   "field": "customer",
+   "value": "biancal20@yahoo.com"
+  },
+  {
+   "ts": "2026-09-23T20:32:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_resvp48",
+   "field": "customer_name",
+   "value": "Bianca Lopez"
+  },
+  {
+   "ts": "2026-09-23T20:32:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_resvp48",
+   "field": "product",
+   "value": "Notion Template"
+  },
+  {
+   "ts": "2026-09-23T20:32:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_resvp48",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-23T20:32:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_resvp48",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T21:20:49Z",
+   "entity_type": "payout",
+   "entity_id": "po_tdg6cqg",
+   "field": "amount",
+   "value": 850.0
+  },
+  {
+   "ts": "2026-09-23T21:20:49Z",
+   "entity_type": "payout",
+   "entity_id": "po_tdg6cqg",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T21:20:55Z",
+   "entity_type": "payout",
+   "entity_id": "po_tdg6cqg",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T21:24:54Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5rtxx7p",
+   "field": "commit",
+   "value": "ef03619"
+  },
+  {
+   "ts": "2026-09-23T21:24:54Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5rtxx7p",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T21:24:54Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5rtxx7p",
+   "field": "url",
+   "value": "https://saltwaterroast.com"
+  },
+  {
+   "ts": "2026-09-23T21:25:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5rtxx7p",
+   "field": "status",
+   "value": "done"
+  }
+ ]
+}

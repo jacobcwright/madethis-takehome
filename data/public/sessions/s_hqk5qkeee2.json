@@ -1,0 +1,182 @@
+{
+ "session_id": "s_hqk5qkeee2",
+ "business_id": "biz_0100_drutq",
+ "started_at": "2026-09-26T23:14:02Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-26T23:14:50Z",
+   "content": "need blue-soapshop.com bought, my brand depends on that name"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-26T23:15:01Z",
+   "content": "buy_domain(domain='blue-soapshop.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_0h048m0ywlw6",
+   "args": {
+    "domain": "blue-soapshop.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "blue-soapshop.com",
+    "price": 49
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-26T23:15:05Z",
+   "content": "🔥 Should I email your list? blue-soapshop.com is bought and yours."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-26T23:18:02Z",
+   "content": "timeline for ad results?"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-26T23:32:33Z",
+   "content": "That testimonial is a strong one, so we should feature it."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-26T23:34:45Z",
+   "content": "blue-soap.com deploy, day it happened?"
+  },
+  {
+   "turn_index": 6,
+   "role": "agent",
+   "ts": "2026-09-26T23:37:50Z",
+   "content": "Wednesday was when I got the blue-soap.com deploy handled. Shall I add a discount code for launch week?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "amount",
+   "value": 45
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "customer",
+   "value": "chloe.silva@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-22T18:54:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_bgz38mf",
+   "field": "customer_name",
+   "value": "Chloe Silva"
+  },
+  {
+   "ts": "2026-09-23T13:48:09Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-23T13:48:09Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "to",
+   "value": "ivyo98@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T13:48:37Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-23T13:50:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "commit",
+   "value": "e4afb2f"
+  },
+  {
+   "ts": "2026-09-23T13:50:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "url",
+   "value": "https://blue-soap.com"
+  },
+  {
+   "ts": "2026-09-23T13:50:06Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-23T13:48:09Z",
+   "entity_type": "email",
+   "entity_id": "em_t7k5mmg",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T13:51:19Z",
+   "entity_type": "deploy",
+   "entity_id": "d_5wdh8zr",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T23:15:03Z",
+   "entity_type": "domain",
+   "entity_id": "dom_pdeywhm",
+   "field": "domain",
+   "value": "blue-soapshop.com"
+  },
+  {
+   "ts": "2026-09-26T23:15:03Z",
+   "entity_type": "domain",
+   "entity_id": "dom_pdeywhm",
+   "field": "price",
+   "value": 49
+  },
+  {
+   "ts": "2026-09-26T23:15:03Z",
+   "entity_type": "domain",
+   "entity_id": "dom_pdeywhm",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-26T23:15:03Z",
+   "entity_type": "domain",
+   "entity_id": "dom_pdeywhm",
+   "field": "status",
+   "value": "pending"
+  }
+ ]
+}

@@ -1,0 +1,404 @@
+{
+ "session_id": "s_25qqbme1r0",
+ "business_id": "biz_0034_wtdqv",
+ "started_at": "2026-09-22T22:10:31Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T22:13:53Z",
+   "content": "pls get it deployed"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T22:14:02Z",
+   "content": "deploy_site(site='maplestudio.io', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_w231p7d7e8st",
+   "args": {
+    "site": "maplestudio.io",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://maplestudio.io"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-22T22:14:21Z",
+   "content": "The site is deployed and up."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-22T22:16:41Z",
+   "content": "send an email to rafaelm68@outlook.com pls"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-22T22:16:49Z",
+   "content": "send_email(to='rafaelm68@outlook.com', subject='Your Monthly Box shipped') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_tb0phqbtjeiy",
+   "args": {
+    "to": "rafaelm68@outlook.com",
+    "subject": "Your Monthly Box shipped"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "rafaelm68@outlook.com",
+    "subject": "Your Monthly Box shipped"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-22T22:20:44Z",
+   "content": "Rafael's message landed, all good 🥳 product descriptions are next for me."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-22T22:21:58Z",
+   "content": "morning! can u move my balance to my bank"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-22T22:22:07Z",
+   "content": "request_payout(amount=150.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_sts4sv5ccveo",
+   "args": {
+    "amount": 150.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_byguycm",
+    "status": "done",
+    "amount": 150.0,
+    "arrival": "by end of week"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-22T22:23:50Z",
+   "content": "Payout's done, and the $150 sohuld land by end of week"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-22T22:26:21Z",
+   "content": "can u email leah.patel@proton.me pls"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-22T22:26:26Z",
+   "content": "send_email(to='leah.patel@proton.me', subject='Quick question about your order') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_s868wvxozlz4",
+   "args": {
+    "to": "leah.patel@proton.me",
+    "subject": "Quick question about your order"
+   },
+   "result": {
+    "ok": true,
+    "id": "em_9cp75ew",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-22T22:28:15Z",
+   "content": "Leah got the email. Want me to chase it up with them?"
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-09-22T22:32:13Z",
+   "content": "hero.png needs to go on the site pls"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-09-22T22:32:19Z",
+   "content": "upload_file(name='hero.png', size_kb=1168) -> error",
+   "tool_name": "upload_file",
+   "call_id": "call_0gixz1c9vwzg",
+   "args": {
+    "name": "hero.png",
+    "size_kb": 1168
+   },
+   "result": {
+    "ok": false,
+    "error": "rate limited, retry later"
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "tool",
+   "ts": "2026-09-22T22:32:47Z",
+   "content": "upload_file(name='hero.png', size_kb=22408) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_pgf2093kg7j1",
+   "args": {
+    "name": "hero.png",
+    "size_kb": 22408
+   },
+   "result": {
+    "ok": true,
+    "id": "f_6qr6dr8",
+    "status": "pending",
+    "url": "https://files.madethis.app/biz_0034_wtdqv/hero.png"
+   }
+  },
+  {
+   "turn_index": 15,
+   "role": "agent",
+   "ts": "2026-09-22T22:52:08Z",
+   "content": "The upload hasn't finished yet, it's still going."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T22:14:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ufjz6a7",
+   "field": "commit",
+   "value": "68e25ab"
+  },
+  {
+   "ts": "2026-09-22T22:14:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ufjz6a7",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T22:14:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ufjz6a7",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-22T22:14:05Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ufjz6a7",
+   "field": "url",
+   "value": "https://maplestudio.io"
+  },
+  {
+   "ts": "2026-09-22T22:17:07Z",
+   "entity_type": "email",
+   "entity_id": "em_w8qwhnq",
+   "field": "subject",
+   "value": "Your Monthly Box shipped"
+  },
+  {
+   "ts": "2026-09-22T22:17:07Z",
+   "entity_type": "email",
+   "entity_id": "em_w8qwhnq",
+   "field": "to",
+   "value": "rafaelm68@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T22:20:02Z",
+   "entity_type": "email",
+   "entity_id": "em_w8qwhnq",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T22:17:07Z",
+   "entity_type": "email",
+   "entity_id": "em_w8qwhnq",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T22:22:07Z",
+   "entity_type": "payout",
+   "entity_id": "po_byguycm",
+   "field": "amount",
+   "value": 150.0
+  },
+  {
+   "ts": "2026-09-22T22:22:07Z",
+   "entity_type": "payout",
+   "entity_id": "po_byguycm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T22:26:30Z",
+   "entity_type": "email",
+   "entity_id": "em_9cp75ew",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T22:26:30Z",
+   "entity_type": "email",
+   "entity_id": "em_9cp75ew",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-22T22:26:30Z",
+   "entity_type": "email",
+   "entity_id": "em_9cp75ew",
+   "field": "to",
+   "value": "leah.patel@proton.me"
+  },
+  {
+   "ts": "2026-09-22T22:23:40Z",
+   "entity_type": "payout",
+   "entity_id": "po_byguycm",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T22:27:41Z",
+   "entity_type": "email",
+   "entity_id": "em_9cp75ew",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T22:33:04Z",
+   "entity_type": "file",
+   "entity_id": "f_6qr6dr8",
+   "field": "name",
+   "value": "hero.png"
+  },
+  {
+   "ts": "2026-09-22T22:33:04Z",
+   "entity_type": "file",
+   "entity_id": "f_6qr6dr8",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-22T23:47:17Z",
+   "entity_type": "file",
+   "entity_id": "f_6qr6dr8",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T11:57:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_maruu72",
+   "field": "customer",
+   "value": "jordan.kim@me.com"
+  },
+  {
+   "ts": "2026-09-25T11:57:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_maruu72",
+   "field": "customer_name",
+   "value": "Jordan Kim"
+  },
+  {
+   "ts": "2026-09-25T11:57:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_maruu72",
+   "field": "product",
+   "value": "Monthly Box"
+  },
+  {
+   "ts": "2026-09-25T11:57:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_maruu72",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T11:57:27Z",
+   "entity_type": "order",
+   "entity_id": "ord_maruu72",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-26T04:11:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_6uemwx3",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-26T04:11:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_6uemwx3",
+   "field": "customer",
+   "value": "rafael.brooks@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T04:11:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_6uemwx3",
+   "field": "customer_name",
+   "value": "Rafael Brooks"
+  },
+  {
+   "ts": "2026-09-26T04:11:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_6uemwx3",
+   "field": "product",
+   "value": "Monthly Box"
+  },
+  {
+   "ts": "2026-09-26T04:11:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_6uemwx3",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T18:09:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_gvcg2s4",
+   "field": "customer_name",
+   "value": "Jordan Kim"
+  },
+  {
+   "ts": "2026-09-26T18:09:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_gvcg2s4",
+   "field": "product",
+   "value": "Sourdough Class"
+  },
+  {
+   "ts": "2026-09-26T18:09:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_gvcg2s4",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T18:09:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_gvcg2s4",
+   "field": "amount",
+   "value": 9
+  },
+  {
+   "ts": "2026-09-26T18:09:48Z",
+   "entity_type": "order",
+   "entity_id": "ord_gvcg2s4",
+   "field": "customer",
+   "value": "jordan.kim@me.com"
+  }
+ ]
+}

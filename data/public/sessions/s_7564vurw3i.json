@@ -1,0 +1,209 @@
+{
+ "session_id": "s_7564vurw3i",
+ "business_id": "biz_0016_29gjz",
+ "started_at": "2026-09-25T09:15:39Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-25T09:18:26Z",
+   "content": "pls upload IMG_2041.HEIC"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-25T09:18:34Z",
+   "content": "upload_file(name='IMG_2041.HEIC', size_kb=13839) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_7zxihzeogc16",
+   "args": {
+    "name": "IMG_2041.HEIC",
+    "size_kb": 13839
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0016_29gjz/IMG_2041.HEIC",
+    "name": "IMG_2041.HEIC"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-25T09:20:34Z",
+   "content": "IMG_2041.HEIC finished uploading. Apologies in advance if I pester you, but I'll watch it and flag anything that changes."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-25T09:22:08Z",
+   "content": "got a sec to chat strategy?"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-25T09:22:40Z",
+   "content": "Give the ad a couple of days before you judge it, I'd say."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-25T09:25:48Z",
+   "content": "newsletter ideas? drawing a blank lol"
+  },
+  {
+   "turn_index": 6,
+   "role": "agent",
+   "ts": "2026-09-25T09:26:20Z",
+   "content": "More light would help the product photos. Should I set up an abandoned cart email?"
+  },
+  {
+   "turn_index": 7,
+   "role": "owner",
+   "ts": "2026-09-25T09:27:56Z",
+   "content": "can u answer Amara for me, im swamped"
+  },
+  {
+   "turn_index": 8,
+   "role": "tool",
+   "ts": "2026-09-25T09:27:58Z",
+   "content": "send_email(to='aokafor@hotmail.com', subject='Order update') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_ltfnceu7l7dh",
+   "args": {
+    "to": "aokafor@hotmail.com",
+    "subject": "Order update"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "aokafor@hotmail.com",
+    "subject": "Order update"
+   }
+  },
+  {
+   "turn_index": 9,
+   "role": "agent",
+   "ts": "2026-09-25T09:29:41Z",
+   "content": "Consider it handled: Amara Okafor's been emailed about it. 👍"
+  },
+  {
+   "turn_index": 10,
+   "role": "owner",
+   "ts": "2026-09-25T09:33:09Z",
+   "content": "get the ad running"
+  },
+  {
+   "turn_index": 11,
+   "role": "tool",
+   "ts": "2026-09-25T09:33:17Z",
+   "content": "launch_ad(platform='meta', daily_budget=10) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_kkxlsijjgzie",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 10,
+    "objective": "sales"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "platform": "Meta",
+    "daily_budget": 10,
+    "spend": 0.0
+   }
+  },
+  {
+   "turn_index": 12,
+   "role": "agent",
+   "ts": "2026-09-25T09:38:45Z",
+   "content": "Big one: the ad campaign is live on Meta!\n\nWant me to pause the ad for now?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T09:19:00Z",
+   "entity_type": "file",
+   "entity_id": "f_ab2zuqt",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-09-25T09:20:22Z",
+   "entity_type": "file",
+   "entity_id": "f_ab2zuqt",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-25T09:19:00Z",
+   "entity_type": "file",
+   "entity_id": "f_ab2zuqt",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-25T09:28:41Z",
+   "entity_type": "email",
+   "entity_id": "em_saa8bhc",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-25T09:28:41Z",
+   "entity_type": "email",
+   "entity_id": "em_saa8bhc",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-25T09:28:41Z",
+   "entity_type": "email",
+   "entity_id": "em_saa8bhc",
+   "field": "to",
+   "value": "aokafor@hotmail.com"
+  },
+  {
+   "ts": "2026-09-25T09:28:48Z",
+   "entity_type": "email",
+   "entity_id": "em_saa8bhc",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-25T09:34:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h7zcuge",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-25T09:34:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h7zcuge",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-25T09:34:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h7zcuge",
+   "field": "daily_budget",
+   "value": 10
+  },
+  {
+   "ts": "2026-09-25T09:35:25Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h7zcuge",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-25T09:34:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_h7zcuge",
+   "field": "status",
+   "value": "pending"
+  }
+ ]
+}

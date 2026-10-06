@@ -1,0 +1,138 @@
+{
+ "session_id": "s_vwwji6h4zi",
+ "business_id": "biz_0141_33dtz",
+ "started_at": "2026-09-22T21:13:50Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T21:16:57Z",
+   "content": "grab the domain copperbeadshq.com"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T21:17:04Z",
+   "content": "buy_domain(domain='copperbeadshq.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_w70ehn388o5b",
+   "args": {
+    "domain": "copperbeadshq.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_nvdvjct",
+    "status": "done",
+    "domain": "copperbeadshq.com",
+    "price": 49
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-22T21:17:26Z",
+   "content": "Whenever you have the new product photos, send them my way. copperbeadshq.com is registered and belonggs to you now."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-22T21:20:57Z",
+   "content": "how's things"
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-22T21:26:03Z",
+   "content": "Strong testimonial. We should feature it."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-22T21:28:01Z",
+   "content": "Eli needs the shipping udate, can u send"
+  },
+  {
+   "turn_index": 6,
+   "role": "tool",
+   "ts": "2026-09-22T21:28:04Z",
+   "content": "send_email(to='eli.fischer@hotmail.com', subject='Your order is on the way') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_hil3v7qgx88h",
+   "args": {
+    "to": "eli.fischer@hotmail.com",
+    "subject": "Your order is on the way"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "eli.fischer@hotmail.com",
+    "subject": "Your order is on the way"
+   }
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-22T21:28:35Z",
+   "content": "Setting up the ad audience is next. I double-checked and the email to Eli did go out."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T21:17:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nvdvjct",
+   "field": "domain",
+   "value": "copperbeadshq.com"
+  },
+  {
+   "ts": "2026-09-22T21:17:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nvdvjct",
+   "field": "price",
+   "value": 49
+  },
+  {
+   "ts": "2026-09-22T21:17:25Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nvdvjct",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-22T21:17:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nvdvjct",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T21:28:10Z",
+   "entity_type": "email",
+   "entity_id": "em_fc3dj7v",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-22T21:28:10Z",
+   "entity_type": "email",
+   "entity_id": "em_fc3dj7v",
+   "field": "to",
+   "value": "eli.fischer@hotmail.com"
+  },
+  {
+   "ts": "2026-09-22T21:28:14Z",
+   "entity_type": "email",
+   "entity_id": "em_fc3dj7v",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T21:28:10Z",
+   "entity_type": "email",
+   "entity_id": "em_fc3dj7v",
+   "field": "status",
+   "value": "queued"
+  }
+ ]
+}

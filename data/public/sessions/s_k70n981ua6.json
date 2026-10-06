@@ -1,0 +1,418 @@
+{
+ "session_id": "s_k70n981ua6",
+ "business_id": "biz_0120_q4sn4",
+ "started_at": "2026-09-29T00:00:12Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-29T00:02:24Z",
+   "content": "can I get a payout requested? 🙂"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-29T00:02:27Z",
+   "content": "request_payout(amount=640.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_k5htd2m3hrx5",
+   "args": {
+    "amount": 640.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_4rjmpuj",
+    "status": "done",
+    "amount": 640.0,
+    "arrival": "by Thursday"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-29T00:06:13Z",
+   "content": "The $640 payout went through."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-29T00:09:32Z",
+   "content": "hi, let's send it out, awesome! 🎉"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-29T00:09:39Z",
+   "content": "deploy_site(site='littlejournalshop.shop', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_0ttecdf4o0g9",
+   "args": {
+    "site": "littlejournalshop.shop",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_fkqz8tm",
+    "status": "done",
+    "url": "https://littlejournalshop.shop"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-29T00:11:04Z",
+   "content": "Want a discount code for launch week? I can add one. littlejournalshop.shop is up and live now."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-29T00:12:30Z",
+   "content": "love it"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-27T13:22:25Z",
+   "entity_type": "email",
+   "entity_id": "em_gpcqpez",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T13:22:25Z",
+   "entity_type": "email",
+   "entity_id": "em_gpcqpez",
+   "field": "to",
+   "value": "jade.patel@proton.me"
+  },
+  {
+   "ts": "2026-09-27T13:22:25Z",
+   "entity_type": "email",
+   "entity_id": "em_gpcqpez",
+   "field": "subject",
+   "value": "Quick question about your order"
+  },
+  {
+   "ts": "2026-09-27T13:25:21Z",
+   "entity_type": "email",
+   "entity_id": "em_gpcqpez",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T13:31:41Z",
+   "entity_type": "payout",
+   "entity_id": "po_ztpg2gr",
+   "field": "amount",
+   "value": 640.0
+  },
+  {
+   "ts": "2026-09-27T13:31:41Z",
+   "entity_type": "payout",
+   "entity_id": "po_ztpg2gr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T13:31:47Z",
+   "entity_type": "payout",
+   "entity_id": "po_ztpg2gr",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_rb8qrmm",
+   "field": "batch",
+   "value": "emb_5qrx7rz"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_rb8qrmm",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_rb8qrmm",
+   "field": "subject",
+   "value": "Following up"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_rb8qrmm",
+   "field": "to",
+   "value": "rsato@yahoo.com"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_swamxas",
+   "field": "batch",
+   "value": "emb_5qrx7rz"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_swamxas",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_swamxas",
+   "field": "subject",
+   "value": "Following up"
+  },
+  {
+   "ts": "2026-09-27T13:35:55Z",
+   "entity_type": "email",
+   "entity_id": "em_swamxas",
+   "field": "to",
+   "value": "edelgado@icloud.com"
+  },
+  {
+   "ts": "2026-09-27T13:38:39Z",
+   "entity_type": "email",
+   "entity_id": "em_swamxas",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T13:37:08Z",
+   "entity_type": "email",
+   "entity_id": "em_rb8qrmm",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T13:48:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sxj9rak",
+   "field": "daily_budget",
+   "value": 50
+  },
+  {
+   "ts": "2026-09-27T13:48:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sxj9rak",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-27T13:48:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sxj9rak",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-27T13:48:16Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sxj9rak",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T13:48:33Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sxj9rak",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-27T13:51:00Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sxj9rak",
+   "field": "spend",
+   "value": 29.74
+  },
+  {
+   "ts": "2026-09-27T13:59:04Z",
+   "entity_type": "post",
+   "entity_id": "post_jqw4a53",
+   "field": "platform",
+   "value": "Instagram"
+  },
+  {
+   "ts": "2026-09-27T13:59:04Z",
+   "entity_type": "post",
+   "entity_id": "post_jqw4a53",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-27T14:03:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_khjx2e4",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-27T14:03:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_khjx2e4",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-27T14:03:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_khjx2e4",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T14:03:29Z",
+   "entity_type": "ad",
+   "entity_id": "ad_khjx2e4",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-27T13:59:04Z",
+   "entity_type": "post",
+   "entity_id": "post_jqw4a53",
+   "field": "account",
+   "value": "@littlejournalsh"
+  },
+  {
+   "ts": "2026-09-27T14:00:56Z",
+   "entity_type": "post",
+   "entity_id": "post_jqw4a53",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-27T14:03:15Z",
+   "entity_type": "ad",
+   "entity_id": "ad_khjx2e4",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-29T00:03:02Z",
+   "entity_type": "payout",
+   "entity_id": "po_4rjmpuj",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-29T00:03:02Z",
+   "entity_type": "payout",
+   "entity_id": "po_4rjmpuj",
+   "field": "amount",
+   "value": 640.0
+  },
+  {
+   "ts": "2026-09-29T00:05:38Z",
+   "entity_type": "payout",
+   "entity_id": "po_4rjmpuj",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T00:10:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fkqz8tm",
+   "field": "commit",
+   "value": "a3f6f8f"
+  },
+  {
+   "ts": "2026-09-29T00:10:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fkqz8tm",
+   "field": "url",
+   "value": "https://littlejournalshop.shop"
+  },
+  {
+   "ts": "2026-09-29T00:10:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fkqz8tm",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-29T00:10:08Z",
+   "entity_type": "deploy",
+   "entity_id": "d_fkqz8tm",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-10-02T05:10:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_jxy8btg",
+   "field": "amount",
+   "value": 35
+  },
+  {
+   "ts": "2026-10-02T05:10:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_jxy8btg",
+   "field": "customer",
+   "value": "jade.patel@proton.me"
+  },
+  {
+   "ts": "2026-10-02T05:10:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_jxy8btg",
+   "field": "customer_name",
+   "value": "Jade Patel"
+  },
+  {
+   "ts": "2026-10-02T05:10:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_jxy8btg",
+   "field": "product",
+   "value": "Meal Prep Guide"
+  },
+  {
+   "ts": "2026-10-02T05:10:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_jxy8btg",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-10-02T19:50:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_77rfpps",
+   "field": "amount",
+   "value": 35
+  },
+  {
+   "ts": "2026-10-02T19:50:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_77rfpps",
+   "field": "customer",
+   "value": "jade.patel@proton.me"
+  },
+  {
+   "ts": "2026-10-02T19:50:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_77rfpps",
+   "field": "product",
+   "value": "Meal Prep Guide"
+  },
+  {
+   "ts": "2026-10-02T19:50:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_77rfpps",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-10-02T19:50:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_77rfpps",
+   "field": "customer_name",
+   "value": "Jade Patel"
+  }
+ ]
+}

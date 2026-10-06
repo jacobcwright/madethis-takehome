@@ -1,0 +1,290 @@
+{
+ "session_id": "s_99jx2fufo1",
+ "business_id": "biz_0050_tynd9",
+ "started_at": "2026-09-22T07:17:10Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T07:19:17Z",
+   "content": "hey, can u put it up on Facebook"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T07:19:29Z",
+   "content": "post_social(platform='facebook', caption='Weekend sale, 15% off') -> error",
+   "tool_name": "post_social",
+   "call_id": "call_ho196t12w3m3",
+   "args": {
+    "platform": "facebook",
+    "caption": "Weekend sale, 15% off"
+   },
+   "result": {
+    "ok": false,
+    "error": "gateway error (502)",
+    "id": "post_5ggm6jk",
+    "status": "failed"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "tool",
+   "ts": "2026-09-22T07:20:09Z",
+   "content": "post_social(platform='facebook', caption='Weekend sale, 15% off') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_hvxupgrgltwg",
+   "args": {
+    "platform": "facebook",
+    "caption": "Weekend sale, 15% off"
+   },
+   "result": {
+    "ok": true,
+    "id": "post_tf3zupy",
+    "status": "done",
+    "url": "https://facebook.com/tinypantryco/p/709183430"
+   }
+  },
+  {
+   "turn_index": 3,
+   "role": "agent",
+   "ts": "2026-09-22T07:31:23Z",
+   "content": "Yep, the post is up on Facebook. Should I do an Instagram post about it too?"
+  },
+  {
+   "turn_index": 4,
+   "role": "owner",
+   "ts": "2026-09-22T07:32:35Z",
+   "content": "any sales come in? can u check"
+  },
+  {
+   "turn_index": 5,
+   "role": "tool",
+   "ts": "2026-09-22T07:32:39Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_vmhj9nr92876",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 1,
+    "total": 24,
+    "orders": [
+     "ord_uszux3h"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 6,
+   "role": "agent",
+   "ts": "2026-09-22T07:35:16Z",
+   "content": "You've earned $24 up to now! ✅"
+  },
+  {
+   "turn_index": 7,
+   "role": "owner",
+   "ts": "2026-09-22T07:37:21Z",
+   "content": "can u write back to Ivy for me pls"
+  },
+  {
+   "turn_index": 8,
+   "role": "tool",
+   "ts": "2026-09-22T07:37:25Z",
+   "content": "send_email(to='ivy.byrne@gmail.com', subject='Your receipt from Tiny Pantry') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_fai22genn4j0",
+   "args": {
+    "to": "ivy.byrne@gmail.com",
+    "subject": "Your receipt from Tiny Pantry"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "to": "ivy.byrne@gmail.com",
+    "subject": "Your receipt from Tiny Pantry"
+   }
+  },
+  {
+   "turn_index": 9,
+   "role": "agent",
+   "ts": "2026-09-22T07:37:57Z",
+   "content": "Understood. The email to Ivy Byrne has gone out, perfect. Shall I also post about it on Instagram?"
+  },
+  {
+   "turn_index": 10,
+   "role": "owner",
+   "ts": "2026-09-22T07:40:32Z",
+   "content": "ads, pls turn them on"
+  },
+  {
+   "turn_index": 11,
+   "role": "tool",
+   "ts": "2026-09-22T07:40:42Z",
+   "content": "launch_ad(platform='google', daily_budget=30) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_g3gy55k8u841",
+   "args": {
+    "platform": "google",
+    "daily_budget": 30,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "platform": "Google",
+    "daily_budget": 30,
+    "spend": 0.0
+   }
+  },
+  {
+   "turn_index": 12,
+   "role": "agent",
+   "ts": "2026-09-22T07:41:12Z",
+   "content": "Sure thing.\nYour Google campaign is running now, just so you know."
+  },
+  {
+   "turn_index": 13,
+   "role": "owner",
+   "ts": "2026-09-22T07:42:18Z",
+   "content": "all good?"
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-09-22T07:55:37Z",
+   "content": "I'll recheck orders in a few hours. Confirmed: the campaign has laucnhed and is running."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T10:52:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_uszux3h",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-21T10:52:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_uszux3h",
+   "field": "customer",
+   "value": "crossi@me.com"
+  },
+  {
+   "ts": "2026-09-21T10:52:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_uszux3h",
+   "field": "customer_name",
+   "value": "Chloe Rossi"
+  },
+  {
+   "ts": "2026-09-21T10:52:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_uszux3h",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T10:52:30Z",
+   "entity_type": "order",
+   "entity_id": "ord_uszux3h",
+   "field": "product",
+   "value": "Mini Print Set"
+  },
+  {
+   "ts": "2026-09-22T07:20:15Z",
+   "entity_type": "post",
+   "entity_id": "post_tf3zupy",
+   "field": "account",
+   "value": "@tinypantryco"
+  },
+  {
+   "ts": "2026-09-22T07:20:15Z",
+   "entity_type": "post",
+   "entity_id": "post_tf3zupy",
+   "field": "platform",
+   "value": "Facebook"
+  },
+  {
+   "ts": "2026-09-22T07:20:15Z",
+   "entity_type": "post",
+   "entity_id": "post_tf3zupy",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-22T07:25:08Z",
+   "entity_type": "post",
+   "entity_id": "post_tf3zupy",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-22T07:37:34Z",
+   "entity_type": "email",
+   "entity_id": "em_cubj5fs",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-22T07:37:34Z",
+   "entity_type": "email",
+   "entity_id": "em_cubj5fs",
+   "field": "subject",
+   "value": "Your receipt from Tiny Pantry"
+  },
+  {
+   "ts": "2026-09-22T07:37:37Z",
+   "entity_type": "email",
+   "entity_id": "em_cubj5fs",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-22T07:40:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_372y89p",
+   "field": "platform",
+   "value": "Google"
+  },
+  {
+   "ts": "2026-09-22T07:40:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_372y89p",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-22T07:41:03Z",
+   "entity_type": "ad",
+   "entity_id": "ad_372y89p",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-22T07:37:34Z",
+   "entity_type": "email",
+   "entity_id": "em_cubj5fs",
+   "field": "to",
+   "value": "ivy.byrne@gmail.com"
+  },
+  {
+   "ts": "2026-09-22T07:40:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_372y89p",
+   "field": "daily_budget",
+   "value": 30
+  },
+  {
+   "ts": "2026-09-22T07:40:50Z",
+   "entity_type": "ad",
+   "entity_id": "ad_372y89p",
+   "field": "status",
+   "value": "pending"
+  }
+ ]
+}

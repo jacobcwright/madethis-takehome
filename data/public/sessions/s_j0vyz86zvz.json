@@ -1,0 +1,586 @@
+{
+ "session_id": "s_j0vyz86zvz",
+ "business_id": "biz_0086_2x2tn",
+ "started_at": "2026-09-28T22:11:03Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T22:11:39Z",
+   "content": "mind checking whether any sales came in?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-28T22:11:42Z",
+   "content": "list_orders(status='paid', since='7d') -> error",
+   "tool_name": "list_orders",
+   "call_id": "call_g6ec04dd7jhn",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": false,
+    "error": "rate limited by payments provider"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-28T22:13:50Z",
+   "content": "The next hour I'll be watching the deploy.\nI couldn't read your orders at the moment."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-28T22:15:48Z",
+   "content": "Threads post: hit publish pls"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-28T22:16:00Z",
+   "content": "post_social(platform='threads', caption='Back in stock') -> ok",
+   "tool_name": "post_social",
+   "call_id": "call_a9bsw2dtsp0b",
+   "args": {
+    "platform": "threads",
+    "caption": "Back in stock"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://threads.com/honestgoods/p/994818273",
+    "platform": "Threads",
+    "account": "@honestgoods"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-28T22:20:49Z",
+   "content": "Later today I plan to refresh the pricing page. Understood. I posted it on Threads from @honestgoods."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T23:16:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_b6fsrmx",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-21T23:16:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_b6fsrmx",
+   "field": "customer_name",
+   "value": "Jade Sato"
+  },
+  {
+   "ts": "2026-09-21T23:16:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_b6fsrmx",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T23:16:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_b6fsrmx",
+   "field": "product",
+   "value": "Beginner Course"
+  },
+  {
+   "ts": "2026-09-21T23:16:57Z",
+   "entity_type": "order",
+   "entity_id": "ord_b6fsrmx",
+   "field": "customer",
+   "value": "jade.sato@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T02:11:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_6gftw2m",
+   "field": "customer",
+   "value": "andre.dubois@hotmail.com"
+  },
+  {
+   "ts": "2026-09-22T02:11:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_6gftw2m",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-22T02:11:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_6gftw2m",
+   "field": "customer_name",
+   "value": "Andre Dubois"
+  },
+  {
+   "ts": "2026-09-22T02:11:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_6gftw2m",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-22T02:11:04Z",
+   "entity_type": "order",
+   "entity_id": "ord_6gftw2m",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T16:32:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_td9r5gg",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-22T16:32:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_td9r5gg",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-22T16:32:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_td9r5gg",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T16:32:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_td9r5gg",
+   "field": "customer",
+   "value": "jade.sato@outlook.com"
+  },
+  {
+   "ts": "2026-09-22T16:32:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_td9r5gg",
+   "field": "customer_name",
+   "value": "Jade Sato"
+  },
+  {
+   "ts": "2026-09-23T02:04:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_gav3aq5",
+   "field": "amount",
+   "value": 14
+  },
+  {
+   "ts": "2026-09-23T02:04:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_gav3aq5",
+   "field": "product",
+   "value": "Mini Print Set"
+  },
+  {
+   "ts": "2026-09-23T02:04:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_gav3aq5",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T02:04:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_gav3aq5",
+   "field": "customer",
+   "value": "lmoreau@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T02:04:14Z",
+   "entity_type": "order",
+   "entity_id": "ord_gav3aq5",
+   "field": "customer_name",
+   "value": "Leah Moreau"
+  },
+  {
+   "ts": "2026-09-23T03:43:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_vj7j776",
+   "field": "customer",
+   "value": "lmoreau@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T03:43:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_vj7j776",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T03:43:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_vj7j776",
+   "field": "product",
+   "value": "Beginner Course"
+  },
+  {
+   "ts": "2026-09-23T03:43:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_vj7j776",
+   "field": "customer_name",
+   "value": "Leah Moreau"
+  },
+  {
+   "ts": "2026-09-23T03:43:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_vj7j776",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-23T11:14:46Z",
+   "entity_type": "file",
+   "entity_id": "f_hp9w4ef",
+   "field": "name",
+   "value": "IMG_2041.HEIC"
+  },
+  {
+   "ts": "2026-09-23T11:14:46Z",
+   "entity_type": "file",
+   "entity_id": "f_hp9w4ef",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-23T11:16:26Z",
+   "entity_type": "file",
+   "entity_id": "f_hp9w4ef",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-23T11:20:14Z",
+   "entity_type": "post",
+   "entity_id": "post_e4bdw5y",
+   "field": "account",
+   "value": "@honestgoods"
+  },
+  {
+   "ts": "2026-09-23T11:20:14Z",
+   "entity_type": "post",
+   "entity_id": "post_e4bdw5y",
+   "field": "platform",
+   "value": "TikTok"
+  },
+  {
+   "ts": "2026-09-23T11:20:14Z",
+   "entity_type": "post",
+   "entity_id": "post_e4bdw5y",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-23T11:22:36Z",
+   "entity_type": "post",
+   "entity_id": "post_e4bdw5y",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-23T11:28:00Z",
+   "entity_type": "email",
+   "entity_id": "em_mudmgz3",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-23T11:28:00Z",
+   "entity_type": "email",
+   "entity_id": "em_mudmgz3",
+   "field": "subject",
+   "value": "We're live!"
+  },
+  {
+   "ts": "2026-09-23T11:28:00Z",
+   "entity_type": "email",
+   "entity_id": "em_mudmgz3",
+   "field": "to",
+   "value": "andre.dubois@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T11:28:11Z",
+   "entity_type": "email",
+   "entity_id": "em_mudmgz3",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-26T00:00:00Z",
+   "entity_type": "order",
+   "entity_id": "ord_rkg9e2g",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-26T00:00:00Z",
+   "entity_type": "order",
+   "entity_id": "ord_rkg9e2g",
+   "field": "customer_name",
+   "value": "Theo Moreau"
+  },
+  {
+   "ts": "2026-09-26T00:00:00Z",
+   "entity_type": "order",
+   "entity_id": "ord_rkg9e2g",
+   "field": "product",
+   "value": "Beginner Course"
+  },
+  {
+   "ts": "2026-09-26T00:00:00Z",
+   "entity_type": "order",
+   "entity_id": "ord_rkg9e2g",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T00:00:00Z",
+   "entity_type": "order",
+   "entity_id": "ord_rkg9e2g",
+   "field": "customer",
+   "value": "theo.moreau@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T00:23:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5yfy4h",
+   "field": "customer",
+   "value": "theo.moreau@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T00:23:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5yfy4h",
+   "field": "customer_name",
+   "value": "Theo Moreau"
+  },
+  {
+   "ts": "2026-09-26T00:23:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5yfy4h",
+   "field": "product",
+   "value": "Mini Print Set"
+  },
+  {
+   "ts": "2026-09-26T00:23:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5yfy4h",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T00:23:33Z",
+   "entity_type": "order",
+   "entity_id": "ord_s5yfy4h",
+   "field": "amount",
+   "value": 14
+  },
+  {
+   "ts": "2026-09-26T07:08:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_8jxw6dn",
+   "field": "amount",
+   "value": 120
+  },
+  {
+   "ts": "2026-09-26T07:08:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_8jxw6dn",
+   "field": "customer",
+   "value": "andre.dubois@hotmail.com"
+  },
+  {
+   "ts": "2026-09-26T07:08:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_8jxw6dn",
+   "field": "customer_name",
+   "value": "Andre Dubois"
+  },
+  {
+   "ts": "2026-09-26T07:08:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_8jxw6dn",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T07:08:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_8jxw6dn",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-26T07:10:29Z",
+   "entity_type": "order",
+   "entity_id": "ord_8jxw6dn",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-26T07:11:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jcmpnqa",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T07:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_y6b8x5p",
+   "field": "amount",
+   "value": 120
+  },
+  {
+   "ts": "2026-09-26T07:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_y6b8x5p",
+   "field": "customer",
+   "value": "andre.dubois@hotmail.com"
+  },
+  {
+   "ts": "2026-09-26T07:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_y6b8x5p",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-26T07:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_y6b8x5p",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T07:11:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jcmpnqa",
+   "field": "url",
+   "value": "https://honest-goods.shop"
+  },
+  {
+   "ts": "2026-09-26T07:11:56Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jcmpnqa",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T07:11:30Z",
+   "entity_type": "deploy",
+   "entity_id": "d_jcmpnqa",
+   "field": "commit",
+   "value": "dc0dcdc"
+  },
+  {
+   "ts": "2026-09-26T07:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_y6b8x5p",
+   "field": "customer_name",
+   "value": "Andre Dubois"
+  },
+  {
+   "ts": "2026-09-26T07:21:13Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m9zxeug",
+   "field": "commit",
+   "value": "62e7f48"
+  },
+  {
+   "ts": "2026-09-26T07:21:17Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m9zxeug",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-26T07:21:13Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m9zxeug",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T07:21:13Z",
+   "entity_type": "deploy",
+   "entity_id": "d_m9zxeug",
+   "field": "url",
+   "value": "https://honest-goods.shop"
+  },
+  {
+   "ts": "2026-09-28T06:15:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_2vbaxmx",
+   "field": "amount",
+   "value": 120
+  },
+  {
+   "ts": "2026-09-28T06:15:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_2vbaxmx",
+   "field": "customer",
+   "value": "lmoreau@hotmail.com"
+  },
+  {
+   "ts": "2026-09-28T06:15:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_2vbaxmx",
+   "field": "customer_name",
+   "value": "Leah Moreau"
+  },
+  {
+   "ts": "2026-09-28T06:15:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_2vbaxmx",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-28T06:15:20Z",
+   "entity_type": "order",
+   "entity_id": "ord_2vbaxmx",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T22:16:00Z",
+   "entity_type": "post",
+   "entity_id": "post_jgtc67q",
+   "field": "account",
+   "value": "@honestgoods"
+  },
+  {
+   "ts": "2026-09-28T22:16:00Z",
+   "entity_type": "post",
+   "entity_id": "post_jgtc67q",
+   "field": "platform",
+   "value": "Threads"
+  },
+  {
+   "ts": "2026-09-28T22:16:00Z",
+   "entity_type": "post",
+   "entity_id": "post_jgtc67q",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-28T22:19:28Z",
+   "entity_type": "post",
+   "entity_id": "post_jgtc67q",
+   "field": "status",
+   "value": "published"
+  }
+ ]
+}

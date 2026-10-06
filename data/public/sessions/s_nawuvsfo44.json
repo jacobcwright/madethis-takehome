@@ -1,0 +1,167 @@
+{
+ "session_id": "s_nawuvsfo44",
+ "business_id": "biz_0024_43dgw",
+ "started_at": "2026-09-30T15:23:35Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-30T15:24:08Z",
+   "content": "grab thelittlebakery.co for me"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-30T15:24:11Z",
+   "content": "buy_domain(domain='thelittlebakery.co', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_9h3hjkzj09xc",
+   "args": {
+    "domain": "thelittlebakery.co",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "thelittlebakery.co",
+    "price": 89
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-30T15:24:45Z",
+   "content": "thelittlebakery.co is registered, and it cost $89 🎉 Which of the two taglines do you like better?"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-30T15:28:28Z",
+   "content": "any new orders"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-30T15:28:39Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_g8nuiryh7me7",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 0,
+    "total": 0,
+    "orders": [],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-30T15:32:52Z",
+   "content": "Nothing has sold so far.\n\n🙏"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-30T15:35:06Z",
+   "content": "thx a lot"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-26T18:47:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_78edp69",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-26T18:47:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_78edp69",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-26T18:47:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_78edp69",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-26T18:48:45Z",
+   "entity_type": "ad",
+   "entity_id": "ad_78edp69",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-26T18:47:02Z",
+   "entity_type": "ad",
+   "entity_id": "ad_78edp69",
+   "field": "daily_budget",
+   "value": 40
+  },
+  {
+   "ts": "2026-09-26T19:02:50Z",
+   "entity_type": "email",
+   "entity_id": "em_tgm2sjk",
+   "field": "subject",
+   "value": "Your order is on the way"
+  },
+  {
+   "ts": "2026-09-26T19:02:50Z",
+   "entity_type": "email",
+   "entity_id": "em_tgm2sjk",
+   "field": "to",
+   "value": "jade.larsen@yahoo.com"
+  },
+  {
+   "ts": "2026-09-26T19:05:39Z",
+   "entity_type": "email",
+   "entity_id": "em_tgm2sjk",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-26T19:02:50Z",
+   "entity_type": "email",
+   "entity_id": "em_tgm2sjk",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-30T15:24:15Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yf4h7mf",
+   "field": "domain",
+   "value": "thelittlebakery.co"
+  },
+  {
+   "ts": "2026-09-30T15:24:15Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yf4h7mf",
+   "field": "price",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-30T15:24:15Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yf4h7mf",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-30T15:24:17Z",
+   "entity_type": "domain",
+   "entity_id": "dom_yf4h7mf",
+   "field": "status",
+   "value": "registered"
+  }
+ ]
+}

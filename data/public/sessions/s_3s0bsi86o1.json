@@ -1,0 +1,284 @@
+{
+ "session_id": "s_3s0bsi86o1",
+ "business_id": "biz_0079_9us9n",
+ "started_at": "2026-09-27T06:29:09Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T06:32:31Z",
+   "content": "Push live the changes from our chat. Thx."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T06:32:35Z",
+   "content": "deploy_site(site='goldentutoring.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_7o27ed1698mv",
+   "args": {
+    "site": "goldentutoring.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_vzdfaq8",
+    "status": "done",
+    "url": "https://goldentutoring.com"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T06:34:21Z",
+   "content": "The deploy succeeded and the site is online. Another orders check from me in a few hours."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T06:34:44Z",
+   "content": "tell all 3 of them pls"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-27T06:34:47Z",
+   "content": "send_email(to=['reed.moreau@yahoo.com', 'luis.kim@me.com', 'andre.rossi@me.com'], subject='Welcome to Golden Tutoring!') -> ok",
+   "tool_name": "send_email",
+   "call_id": "call_mfm7hppgqj2m",
+   "args": {
+    "to": [
+     "reed.moreau@yahoo.com",
+     "luis.kim@me.com",
+     "andre.rossi@me.com"
+    ],
+    "subject": "Welcome to Golden Tutoring!"
+   },
+   "result": {
+    "ok": true,
+    "id": "emb_v2gs7xk",
+    "status": "done",
+    "recipients": 3,
+    "subject": "Welcome to Golden Tutoring!",
+    "delivered": 3,
+    "bounced": 0
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-27T06:49:28Z",
+   "content": "Got it. The update has gone out to all 3 of your customers. Want anything adjusted?"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-27T06:49:51Z",
+   "content": "goldentutoring.com deploy, when was it"
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-27T06:50:19Z",
+   "content": "Friday's post gets scheduled as soon as you sign off on the caption. goldentutoring.com is live, with the deploy completing earrlier today."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-27T06:53:14Z",
+   "content": "sorry, could u remind me what day goldentutoring.com was deployed? ty!"
+  },
+  {
+   "turn_index": 9,
+   "role": "agent",
+   "ts": "2026-09-27T06:55:08Z",
+   "content": "Next up is a tweak to the hero copy. Today the goldentutoring.com deplloy wrapped up successfully."
+  },
+  {
+   "turn_index": 10,
+   "role": "owner",
+   "ts": "2026-09-27T06:56:34Z",
+   "content": "logo-final.svg, upload pls"
+  },
+  {
+   "turn_index": 11,
+   "role": "tool",
+   "ts": "2026-09-27T06:56:37Z",
+   "content": "upload_file(name='logo-final.svg', size_kb=20164) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_vmx1ltwf9a9p",
+   "args": {
+    "name": "logo-final.svg",
+    "size_kb": 20164
+   },
+   "result": {
+    "ok": true,
+    "id": "f_qq5e79p",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0079_9us9n/logo-final.svg"
+   }
+  },
+  {
+   "turn_index": 12,
+   "role": "agent",
+   "ts": "2026-09-27T07:01:31Z",
+   "content": "logo-final.svg is now in your assets."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-27T06:32:42Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vzdfaq8",
+   "field": "commit",
+   "value": "4e5efe9"
+  },
+  {
+   "ts": "2026-09-27T06:33:38Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vzdfaq8",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_desht3t",
+   "field": "batch",
+   "value": "emb_v2gs7xk"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_desht3t",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_desht3t",
+   "field": "subject",
+   "value": "Welcome to Golden Tutoring!"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_desht3t",
+   "field": "to",
+   "value": "reed.moreau@yahoo.com"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_tkjp73a",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_tkjp73a",
+   "field": "subject",
+   "value": "Welcome to Golden Tutoring!"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_tkjp73a",
+   "field": "to",
+   "value": "andre.rossi@me.com"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_zsca7sp",
+   "field": "batch",
+   "value": "emb_v2gs7xk"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_zsca7sp",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_zsca7sp",
+   "field": "subject",
+   "value": "Welcome to Golden Tutoring!"
+  },
+  {
+   "ts": "2026-09-27T06:32:42Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vzdfaq8",
+   "field": "url",
+   "value": "https://goldentutoring.com"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_tkjp73a",
+   "field": "batch",
+   "value": "emb_v2gs7xk"
+  },
+  {
+   "ts": "2026-09-27T06:32:42Z",
+   "entity_type": "deploy",
+   "entity_id": "d_vzdfaq8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T06:35:14Z",
+   "entity_type": "email",
+   "entity_id": "em_zsca7sp",
+   "field": "to",
+   "value": "luis.kim@me.com"
+  },
+  {
+   "ts": "2026-09-27T06:43:48Z",
+   "entity_type": "email",
+   "entity_id": "em_desht3t",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T06:46:00Z",
+   "entity_type": "email",
+   "entity_id": "em_tkjp73a",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T06:47:34Z",
+   "entity_type": "email",
+   "entity_id": "em_zsca7sp",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-27T06:56:53Z",
+   "entity_type": "file",
+   "entity_id": "f_qq5e79p",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-27T06:59:28Z",
+   "entity_type": "file",
+   "entity_id": "f_qq5e79p",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-27T06:56:53Z",
+   "entity_type": "file",
+   "entity_id": "f_qq5e79p",
+   "field": "name",
+   "value": "logo-final.svg"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "session_id": "s_example000",
+ "claims": [
+  {"turn_index": 2, "span": [0, 27], "text": "Your site is live at x.com!", "category": "site", "verdict": "premature", "attribution": "agent", "evidence": ["call_ab12cd34ef56", "d_rthvhre"], "confidence": 0.85},
+  {"turn_index": 5, "span": [14, 39], "text": "you have 2 new orders", "category": "money", "verdict": "true", "attribution": null, "evidence": ["call_zz99yy88xx77"], "confidence": 0.95}
+ ]
+}

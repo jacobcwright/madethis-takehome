@@ -1,0 +1,565 @@
+{
+ "session_id": "s_rs686njuco",
+ "business_id": "biz_0151_fftmd",
+ "started_at": "2026-09-28T17:45:40Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T17:46:02Z",
+   "content": "any chance u can see if i got any sales?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-28T17:46:06Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_xzz0r4gzia3h",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 190,
+    "orders": [
+     "ord_hdqj8cs",
+     "ord_yzdb5tv",
+     "ord_amb8hva",
+     "ord_uhh6gyf"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-28T17:49:43Z",
+   "content": "Want an Instagram post about it? Altogether you took in $190."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-28T17:53:38Z",
+   "content": "do a payout"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-28T17:53:42Z",
+   "content": "request_payout(amount=75.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_d9yk00gnxzod",
+   "args": {
+    "amount": 75.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_ktq4sx8",
+    "status": "done",
+    "amount": 75.0,
+    "arrival": "tomorrow"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-28T17:58:20Z",
+   "content": "I've sent $75 to your bank as the payout. I'll watch it and tell you if anything shifts."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T19:07:17Z",
+   "entity_type": "payout",
+   "entity_id": "po_kvk8sed",
+   "field": "amount",
+   "value": 1200.0
+  },
+  {
+   "ts": "2026-09-21T19:07:17Z",
+   "entity_type": "payout",
+   "entity_id": "po_kvk8sed",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T19:14:39Z",
+   "entity_type": "payout",
+   "entity_id": "po_kvk8sed",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T19:21:07Z",
+   "entity_type": "post",
+   "entity_id": "post_45tzjyu",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-21T19:21:07Z",
+   "entity_type": "post",
+   "entity_id": "post_45tzjyu",
+   "field": "platform",
+   "value": "Pinterest"
+  },
+  {
+   "ts": "2026-09-21T19:21:07Z",
+   "entity_type": "post",
+   "entity_id": "post_45tzjyu",
+   "field": "account",
+   "value": "@freshworkshop"
+  },
+  {
+   "ts": "2026-09-21T19:42:10Z",
+   "entity_type": "post",
+   "entity_id": "post_jj4tjau",
+   "field": "account",
+   "value": "@freshworkshop"
+  },
+  {
+   "ts": "2026-09-21T19:42:10Z",
+   "entity_type": "post",
+   "entity_id": "post_jj4tjau",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-21T19:42:40Z",
+   "entity_type": "post",
+   "entity_id": "post_jj4tjau",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-21T19:44:35Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ak89h2t",
+   "field": "commit",
+   "value": "9b5b109"
+  },
+  {
+   "ts": "2026-09-21T19:44:35Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ak89h2t",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-21T19:44:35Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ak89h2t",
+   "field": "url",
+   "value": "https://freshworkshop.com"
+  },
+  {
+   "ts": "2026-09-21T19:42:10Z",
+   "entity_type": "post",
+   "entity_id": "post_jj4tjau",
+   "field": "platform",
+   "value": "Facebook"
+  },
+  {
+   "ts": "2026-09-21T19:46:34Z",
+   "entity_type": "deploy",
+   "entity_id": "d_ak89h2t",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-21T21:36:30Z",
+   "entity_type": "post",
+   "entity_id": "post_45tzjyu",
+   "field": "status",
+   "value": "rejected"
+  },
+  {
+   "ts": "2026-09-24T01:17:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_hdqj8cs",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-24T01:17:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_hdqj8cs",
+   "field": "customer",
+   "value": "nquinn@me.com"
+  },
+  {
+   "ts": "2026-09-24T01:17:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_hdqj8cs",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-24T01:17:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_hdqj8cs",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T01:17:10Z",
+   "entity_type": "order",
+   "entity_id": "ord_hdqj8cs",
+   "field": "customer_name",
+   "value": "Noah Quinn"
+  },
+  {
+   "ts": "2026-09-24T13:20:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_uhh6gyf",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-24T13:20:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_uhh6gyf",
+   "field": "customer",
+   "value": "nchen@me.com"
+  },
+  {
+   "ts": "2026-09-24T13:20:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_uhh6gyf",
+   "field": "customer_name",
+   "value": "Nina Chen"
+  },
+  {
+   "ts": "2026-09-24T13:20:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_uhh6gyf",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-24T13:20:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_uhh6gyf",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T15:16:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_yzdb5tv",
+   "field": "amount",
+   "value": 42
+  },
+  {
+   "ts": "2026-09-24T15:16:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_yzdb5tv",
+   "field": "customer",
+   "value": "ninaw22@hotmail.com"
+  },
+  {
+   "ts": "2026-09-24T15:16:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_yzdb5tv",
+   "field": "customer_name",
+   "value": "Nina Walsh"
+  },
+  {
+   "ts": "2026-09-24T15:16:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_yzdb5tv",
+   "field": "product",
+   "value": "Monthly Box"
+  },
+  {
+   "ts": "2026-09-24T15:16:26Z",
+   "entity_type": "order",
+   "entity_id": "ord_yzdb5tv",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T17:40:31Z",
+   "entity_type": "payout",
+   "entity_id": "po_h898mnf",
+   "field": "amount",
+   "value": 150.0
+  },
+  {
+   "ts": "2026-09-24T17:40:31Z",
+   "entity_type": "payout",
+   "entity_id": "po_h898mnf",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T17:41:13Z",
+   "entity_type": "payout",
+   "entity_id": "po_h898mnf",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T17:43:59Z",
+   "entity_type": "domain",
+   "entity_id": "dom_grm9fhr",
+   "field": "domain",
+   "value": "getfreshworkshop.com"
+  },
+  {
+   "ts": "2026-09-24T17:43:59Z",
+   "entity_type": "domain",
+   "entity_id": "dom_grm9fhr",
+   "field": "price",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-24T17:43:59Z",
+   "entity_type": "domain",
+   "entity_id": "dom_grm9fhr",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T17:44:24Z",
+   "entity_type": "post",
+   "entity_id": "post_krbwgxn",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-24T17:44:24Z",
+   "entity_type": "post",
+   "entity_id": "post_krbwgxn",
+   "field": "account",
+   "value": "@freshworkshop"
+  },
+  {
+   "ts": "2026-09-24T17:44:24Z",
+   "entity_type": "post",
+   "entity_id": "post_krbwgxn",
+   "field": "platform",
+   "value": "Threads"
+  },
+  {
+   "ts": "2026-09-24T17:48:36Z",
+   "entity_type": "domain",
+   "entity_id": "dom_grm9fhr",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-24T17:47:18Z",
+   "entity_type": "post",
+   "entity_id": "post_krbwgxn",
+   "field": "status",
+   "value": "published"
+  },
+  {
+   "ts": "2026-09-27T00:29:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_amb8hva",
+   "field": "amount",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-27T00:29:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_amb8hva",
+   "field": "customer",
+   "value": "nchen@me.com"
+  },
+  {
+   "ts": "2026-09-27T00:29:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_amb8hva",
+   "field": "customer_name",
+   "value": "Nina Chen"
+  },
+  {
+   "ts": "2026-09-27T00:29:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_amb8hva",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-27T00:29:03Z",
+   "entity_type": "order",
+   "entity_id": "ord_amb8hva",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T17:54:02Z",
+   "entity_type": "payout",
+   "entity_id": "po_ktq4sx8",
+   "field": "amount",
+   "value": 75.0
+  },
+  {
+   "ts": "2026-09-28T17:54:49Z",
+   "entity_type": "payout",
+   "entity_id": "po_ktq4sx8",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T17:54:02Z",
+   "entity_type": "payout",
+   "entity_id": "po_ktq4sx8",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T22:44:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_5naevzh",
+   "field": "amount",
+   "value": 42
+  },
+  {
+   "ts": "2026-09-28T22:44:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_5naevzh",
+   "field": "customer",
+   "value": "sienna.chen@hotmail.com"
+  },
+  {
+   "ts": "2026-09-28T22:44:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_5naevzh",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-28T22:44:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_5naevzh",
+   "field": "customer_name",
+   "value": "Sienna Chen"
+  },
+  {
+   "ts": "2026-09-28T22:44:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_5naevzh",
+   "field": "product",
+   "value": "Monthly Box"
+  },
+  {
+   "ts": "2026-09-29T09:34:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_qpchm5b",
+   "field": "customer",
+   "value": "nquinn@me.com"
+  },
+  {
+   "ts": "2026-09-29T09:34:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_qpchm5b",
+   "field": "product",
+   "value": "Sticker Pack"
+  },
+  {
+   "ts": "2026-09-29T09:34:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_qpchm5b",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T09:34:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_qpchm5b",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-29T09:34:52Z",
+   "entity_type": "order",
+   "entity_id": "ord_qpchm5b",
+   "field": "customer_name",
+   "value": "Noah Quinn"
+  },
+  {
+   "ts": "2026-09-29T20:43:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkegfea",
+   "field": "customer",
+   "value": "omar.moreau@yahoo.com"
+  },
+  {
+   "ts": "2026-09-29T20:43:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkegfea",
+   "field": "customer_name",
+   "value": "Omar Moreau"
+  },
+  {
+   "ts": "2026-09-29T20:43:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkegfea",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-29T20:43:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkegfea",
+   "field": "amount",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-29T20:43:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_bkegfea",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T23:59:13Z",
+   "entity_type": "order",
+   "entity_id": "ord_n42akec",
+   "field": "amount",
+   "value": 27
+  },
+  {
+   "ts": "2026-09-29T23:59:13Z",
+   "entity_type": "order",
+   "entity_id": "ord_n42akec",
+   "field": "customer",
+   "value": "nquinn@me.com"
+  },
+  {
+   "ts": "2026-09-29T23:59:13Z",
+   "entity_type": "order",
+   "entity_id": "ord_n42akec",
+   "field": "product",
+   "value": "Sticker Pack"
+  },
+  {
+   "ts": "2026-09-29T23:59:13Z",
+   "entity_type": "order",
+   "entity_id": "ord_n42akec",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T23:59:13Z",
+   "entity_type": "order",
+   "entity_id": "ord_n42akec",
+   "field": "customer_name",
+   "value": "Noah Quinn"
+  },
+  {
+   "ts": "2026-09-30T07:34:53Z",
+   "entity_type": "order",
+   "entity_id": "ord_n42akec",
+   "field": "status",
+   "value": "refunded"
+  }
+ ]
+}

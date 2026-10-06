@@ -1,0 +1,429 @@
+{
+ "session_id": "s_g3vpvrq2pt",
+ "business_id": "biz_0035_6ctwq",
+ "started_at": "2026-09-30T07:01:08Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-30T07:01:51Z",
+   "content": "have any orders come in since yesterday?"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-30T07:02:01Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_3qsdkg54odwd",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 2,
+    "total": 188,
+    "orders": [
+     "ord_8pasgnd",
+     "ord_npfma9a"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-30T07:02:31Z",
+   "content": "Revenue stands at $188 across 2 orders. Setting up the ad audience is next."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-30T07:05:20Z",
+   "content": "quick one: juniperlabs.net, please purchase it"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-30T07:05:26Z",
+   "content": "buy_domain(domain='juniperlabs.net', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_y5dcc9arqcup",
+   "args": {
+    "domain": "juniperlabs.net",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "juniperlabs.net",
+    "price": 35
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-30T07:19:11Z",
+   "content": "juniperlabs.net is yours now, official. ✨ Summary from me tonight."
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-30T07:20:52Z",
+   "content": "sorry, were there any new orders after yesterday?"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-30T07:20:54Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_7z3f1cwhl06m",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 2,
+    "total": 188,
+    "orders": [
+     "ord_8pasgnd",
+     "ord_npfma9a"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-30T07:21:11Z",
+   "content": "2 orders landed, $188 in total."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-24T10:55:23Z",
+   "entity_type": "file",
+   "entity_id": "f_vjdp7h2",
+   "field": "name",
+   "value": "launch-video.mp4"
+  },
+  {
+   "ts": "2026-09-24T10:55:23Z",
+   "entity_type": "file",
+   "entity_id": "f_vjdp7h2",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-24T10:56:30Z",
+   "entity_type": "file",
+   "entity_id": "f_vjdp7h2",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_28up2xh",
+   "field": "batch",
+   "value": "emb_gfht9qb"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_28up2xh",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_28up2xh",
+   "field": "to",
+   "value": "elin9@icloud.com"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_68t62yk",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_68t62yk",
+   "field": "subject",
+   "value": "Order update"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_68t62yk",
+   "field": "to",
+   "value": "dlarsen@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_68t62yk",
+   "field": "batch",
+   "value": "emb_gfht9qb"
+  },
+  {
+   "ts": "2026-09-24T11:01:15Z",
+   "entity_type": "email",
+   "entity_id": "em_28up2xh",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T11:00:48Z",
+   "entity_type": "email",
+   "entity_id": "em_28up2xh",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T11:05:24Z",
+   "entity_type": "email",
+   "entity_id": "em_68t62yk",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T11:08:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_shvjbpx",
+   "field": "domain",
+   "value": "juniperlabs.net"
+  },
+  {
+   "ts": "2026-09-24T11:08:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_shvjbpx",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T11:09:05Z",
+   "entity_type": "domain",
+   "entity_id": "dom_shvjbpx",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-24T11:08:54Z",
+   "entity_type": "domain",
+   "entity_id": "dom_shvjbpx",
+   "field": "price",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-24T11:12:47Z",
+   "entity_type": "post",
+   "entity_id": "post_5tbd2cz",
+   "field": "platform",
+   "value": "Threads"
+  },
+  {
+   "ts": "2026-09-24T11:12:47Z",
+   "entity_type": "post",
+   "entity_id": "post_5tbd2cz",
+   "field": "status",
+   "value": "scheduled"
+  },
+  {
+   "ts": "2026-09-24T11:12:47Z",
+   "entity_type": "post",
+   "entity_id": "post_5tbd2cz",
+   "field": "account",
+   "value": "@juniperlabs"
+  },
+  {
+   "ts": "2026-09-24T11:13:53Z",
+   "entity_type": "post",
+   "entity_id": "post_5tbd2cz",
+   "field": "status",
+   "value": "rejected"
+  },
+  {
+   "ts": "2026-09-28T03:29:18Z",
+   "entity_type": "email",
+   "entity_id": "em_72jupv2",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-28T03:29:18Z",
+   "entity_type": "email",
+   "entity_id": "em_72jupv2",
+   "field": "subject",
+   "value": "Your Sticker Pack shipped"
+  },
+  {
+   "ts": "2026-09-28T03:29:18Z",
+   "entity_type": "email",
+   "entity_id": "em_72jupv2",
+   "field": "to",
+   "value": "dlarsen@outlook.com"
+  },
+  {
+   "ts": "2026-09-28T03:34:04Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "daily_budget",
+   "value": 40
+  },
+  {
+   "ts": "2026-09-28T03:34:04Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-28T03:34:04Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-28T03:34:13Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-28T03:37:22Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "status",
+   "value": "paused"
+  },
+  {
+   "ts": "2026-09-28T03:34:04Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-28T03:38:07Z",
+   "entity_type": "ad",
+   "entity_id": "ad_r7hhk9d",
+   "field": "spend",
+   "value": 28.8
+  },
+  {
+   "ts": "2026-09-28T03:45:26Z",
+   "entity_type": "email",
+   "entity_id": "em_72jupv2",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-29T03:11:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_8pasgnd",
+   "field": "customer_name",
+   "value": "Dana Larsen"
+  },
+  {
+   "ts": "2026-09-29T03:11:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_8pasgnd",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T03:11:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_8pasgnd",
+   "field": "amount",
+   "value": 99
+  },
+  {
+   "ts": "2026-09-29T03:11:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_8pasgnd",
+   "field": "customer",
+   "value": "dlarsen@outlook.com"
+  },
+  {
+   "ts": "2026-09-29T03:11:41Z",
+   "entity_type": "order",
+   "entity_id": "ord_8pasgnd",
+   "field": "product",
+   "value": "Sticker Pack"
+  },
+  {
+   "ts": "2026-09-29T12:32:37Z",
+   "entity_type": "order",
+   "entity_id": "ord_npfma9a",
+   "field": "customer",
+   "value": "aishab49@gmail.com"
+  },
+  {
+   "ts": "2026-09-29T12:32:37Z",
+   "entity_type": "order",
+   "entity_id": "ord_npfma9a",
+   "field": "customer_name",
+   "value": "Aisha Brooks"
+  },
+  {
+   "ts": "2026-09-29T12:32:37Z",
+   "entity_type": "order",
+   "entity_id": "ord_npfma9a",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-29T12:32:37Z",
+   "entity_type": "order",
+   "entity_id": "ord_npfma9a",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-29T12:32:37Z",
+   "entity_type": "order",
+   "entity_id": "ord_npfma9a",
+   "field": "product",
+   "value": "Notion Template"
+  },
+  {
+   "ts": "2026-09-30T07:05:48Z",
+   "entity_type": "domain",
+   "entity_id": "dom_bze923b",
+   "field": "domain",
+   "value": "juniperlabs.net"
+  },
+  {
+   "ts": "2026-09-30T07:05:48Z",
+   "entity_type": "domain",
+   "entity_id": "dom_bze923b",
+   "field": "price",
+   "value": 35
+  },
+  {
+   "ts": "2026-09-30T07:05:48Z",
+   "entity_type": "domain",
+   "entity_id": "dom_bze923b",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-30T07:12:37Z",
+   "entity_type": "domain",
+   "entity_id": "dom_bze923b",
+   "field": "status",
+   "value": "registered"
+  }
+ ]
+}

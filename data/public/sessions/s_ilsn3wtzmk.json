@@ -1,0 +1,78 @@
+{
+ "session_id": "s_ilsn3wtzmk",
+ "business_id": "biz_0093_wr56t",
+ "started_at": "2026-09-22T22:10:48Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T22:13:55Z",
+   "content": "$29, too much?"
+  },
+  {
+   "turn_index": 1,
+   "role": "agent",
+   "ts": "2026-09-22T22:14:11Z",
+   "content": "Pricing looks about right to me."
+  },
+  {
+   "turn_index": 2,
+   "role": "owner",
+   "ts": "2026-09-22T22:15:02Z",
+   "content": "i need my payout sent over, thx"
+  },
+  {
+   "turn_index": 3,
+   "role": "tool",
+   "ts": "2026-09-22T22:15:05Z",
+   "content": "request_payout(amount=120.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_ak4rdmqp1gyq",
+   "args": {
+    "amount": 120.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_we9dmnu",
+    "status": "done",
+    "amount": 120.0,
+    "arrival": "tomorrow"
+   }
+  },
+  {
+   "turn_index": 4,
+   "role": "agent",
+   "ts": "2026-09-22T22:17:42Z",
+   "content": "Orders get another look from me in a few hours. $120 is headed to your account."
+  },
+  {
+   "turn_index": 5,
+   "role": "owner",
+   "ts": "2026-09-22T22:20:43Z",
+   "content": "thanks a bunch"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T22:15:25Z",
+   "entity_type": "payout",
+   "entity_id": "po_we9dmnu",
+   "field": "amount",
+   "value": 120.0
+  },
+  {
+   "ts": "2026-09-22T22:16:30Z",
+   "entity_type": "payout",
+   "entity_id": "po_we9dmnu",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T22:15:25Z",
+   "entity_type": "payout",
+   "entity_id": "po_we9dmnu",
+   "field": "status",
+   "value": "pending"
+  }
+ ]
+}

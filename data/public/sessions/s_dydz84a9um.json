@@ -1,0 +1,623 @@
+{
+ "session_id": "s_dydz84a9um",
+ "business_id": "biz_0030_hdsx2",
+ "started_at": "2026-09-27T13:22:49Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-27T13:25:22Z",
+   "content": "perfect, now deploy it"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-27T13:25:33Z",
+   "content": "deploy_site(site='sunday-garden.com', branch='main') -> ok",
+   "tool_name": "deploy_site",
+   "call_id": "call_826ix62p4vq1",
+   "args": {
+    "site": "sunday-garden.com",
+    "branch": "main"
+   },
+   "result": {
+    "ok": true,
+    "id": "d_hf3x353",
+    "status": "done",
+    "url": "https://sunday-garden.com"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-27T13:26:02Z",
+   "content": "Should I post about it on Instagram? The site's depolyed and reachable now."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-27T13:27:04Z",
+   "content": "can u purchase sunday-garden.com"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-27T13:27:16Z",
+   "content": "buy_domain(domain='sunday-garden.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_3fnipkxrc78z",
+   "args": {
+    "domain": "sunday-garden.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "domain": "sunday-garden.com",
+    "price": 29
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-27T13:27:25Z",
+   "content": "sunday-garden.com is all yours now, officially!"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-27T13:29:50Z",
+   "content": "can i get a payout pls"
+  },
+  {
+   "turn_index": 7,
+   "role": "tool",
+   "ts": "2026-09-27T13:30:01Z",
+   "content": "request_payout(amount=250.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_v2ux3ldsvo4f",
+   "args": {
+    "amount": 250.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_qvutab9",
+    "status": "done",
+    "amount": 250.0,
+    "arrival": "within 2 days"
+   }
+  },
+  {
+   "turn_index": 8,
+   "role": "agent",
+   "ts": "2026-09-27T13:34:21Z",
+   "content": "Your bank has the $250 payout on its way from me 🎉 Should the headline be shoter?"
+  },
+  {
+   "turn_index": 9,
+   "role": "owner",
+   "ts": "2026-09-27T13:37:13Z",
+   "content": "oh and make pricing.csv the one for the hero"
+  },
+  {
+   "turn_index": 10,
+   "role": "tool",
+   "ts": "2026-09-27T13:37:24Z",
+   "content": "upload_file(name='pricing.csv', size_kb=3396) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_l88habhil4j6",
+   "args": {
+    "name": "pricing.csv",
+    "size_kb": 3396
+   },
+   "result": {
+    "ok": true,
+    "id": "f_zwvz56r",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0030_hdsx2/pricing.csv"
+   }
+  },
+  {
+   "turn_index": 11,
+   "role": "agent",
+   "ts": "2026-09-27T13:41:39Z",
+   "content": "Weekends tend to run slower for this kind of product. pricing.csv has landed in your files"
+  },
+  {
+   "turn_index": 12,
+   "role": "owner",
+   "ts": "2026-09-27T13:44:01Z",
+   "content": "hey, need a hand. switch the ads on pls"
+  },
+  {
+   "turn_index": 13,
+   "role": "tool",
+   "ts": "2026-09-27T13:44:03Z",
+   "content": "launch_ad(platform='meta', daily_budget=40) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_fnw8vu7j3h34",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 40,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "platform": "Meta",
+    "daily_budget": 40,
+    "spend": 0.0
+   }
+  },
+  {
+   "turn_index": 14,
+   "role": "agent",
+   "ts": "2026-09-27T13:50:15Z",
+   "content": "Should the headline be shorter? The ad got approved and is running."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-23T06:00:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_vbj7btr",
+   "field": "amount",
+   "value": 49
+  },
+  {
+   "ts": "2026-09-23T06:00:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_vbj7btr",
+   "field": "customer_name",
+   "value": "Marcus Moreau"
+  },
+  {
+   "ts": "2026-09-23T06:00:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_vbj7btr",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T06:00:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_vbj7btr",
+   "field": "product",
+   "value": "Beard Oil"
+  },
+  {
+   "ts": "2026-09-23T06:00:44Z",
+   "entity_type": "order",
+   "entity_id": "ord_vbj7btr",
+   "field": "customer",
+   "value": "mmoreau@hotmail.com"
+  },
+  {
+   "ts": "2026-09-23T16:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_9sbev8h",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-23T16:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_9sbev8h",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-23T16:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_9sbev8h",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T16:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_9sbev8h",
+   "field": "customer_name",
+   "value": "Theo Kim"
+  },
+  {
+   "ts": "2026-09-23T16:18:17Z",
+   "entity_type": "order",
+   "entity_id": "ord_9sbev8h",
+   "field": "customer",
+   "value": "theok83@icloud.com"
+  },
+  {
+   "ts": "2026-09-23T17:52:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_qcvt63s",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-23T17:52:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_qcvt63s",
+   "field": "customer",
+   "value": "tara.mensah@outlook.com"
+  },
+  {
+   "ts": "2026-09-23T17:52:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_qcvt63s",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-23T17:52:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_qcvt63s",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-23T17:52:32Z",
+   "entity_type": "order",
+   "entity_id": "ord_qcvt63s",
+   "field": "customer_name",
+   "value": "Tara Mensah"
+  },
+  {
+   "ts": "2026-09-24T15:09:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_5xmb7k5",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-24T15:09:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_5xmb7k5",
+   "field": "customer",
+   "value": "jade.tanaka@yahoo.com"
+  },
+  {
+   "ts": "2026-09-24T15:09:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_5xmb7k5",
+   "field": "customer_name",
+   "value": "Jade Tanaka"
+  },
+  {
+   "ts": "2026-09-24T15:09:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_5xmb7k5",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-24T15:09:06Z",
+   "entity_type": "order",
+   "entity_id": "ord_5xmb7k5",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-24T16:02:46Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-24T16:02:46Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-24T16:02:46Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-24T16:03:01Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-24T16:03:30Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "spend",
+   "value": 51.55
+  },
+  {
+   "ts": "2026-09-24T16:02:46Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_e7bapdj",
+   "field": "batch",
+   "value": "emb_phkn2mn"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_e7bapdj",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_e7bapdj",
+   "field": "to",
+   "value": "gracer64@icloud.com"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_gezcz2s",
+   "field": "batch",
+   "value": "emb_phkn2mn"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_gezcz2s",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_gezcz2s",
+   "field": "subject",
+   "value": "Thanks for your order"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_j3rzad2",
+   "field": "status",
+   "value": "queued"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_j3rzad2",
+   "field": "to",
+   "value": "maya.hughes@proton.me"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_j3rzad2",
+   "field": "subject",
+   "value": "Thanks for your order"
+  },
+  {
+   "ts": "2026-09-24T16:25:19Z",
+   "entity_type": "email",
+   "entity_id": "em_j3rzad2",
+   "field": "status",
+   "value": "bounced"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_gezcz2s",
+   "field": "to",
+   "value": "leah.bauer@outlook.com"
+  },
+  {
+   "ts": "2026-09-24T16:25:43Z",
+   "entity_type": "email",
+   "entity_id": "em_e7bapdj",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_j3rzad2",
+   "field": "batch",
+   "value": "emb_phkn2mn"
+  },
+  {
+   "ts": "2026-09-24T16:25:34Z",
+   "entity_type": "email",
+   "entity_id": "em_gezcz2s",
+   "field": "status",
+   "value": "delivered"
+  },
+  {
+   "ts": "2026-09-24T16:25:05Z",
+   "entity_type": "email",
+   "entity_id": "em_e7bapdj",
+   "field": "subject",
+   "value": "Thanks for your order"
+  },
+  {
+   "ts": "2026-09-27T13:25:36Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hf3x353",
+   "field": "commit",
+   "value": "12450e0"
+  },
+  {
+   "ts": "2026-09-27T13:25:36Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hf3x353",
+   "field": "url",
+   "value": "https://sunday-garden.com"
+  },
+  {
+   "ts": "2026-09-27T13:25:52Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hf3x353",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-27T13:25:36Z",
+   "entity_type": "deploy",
+   "entity_id": "d_hf3x353",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T13:27:17Z",
+   "entity_type": "domain",
+   "entity_id": "dom_r7bgxey",
+   "field": "domain",
+   "value": "sunday-garden.com"
+  },
+  {
+   "ts": "2026-09-27T13:27:17Z",
+   "entity_type": "domain",
+   "entity_id": "dom_r7bgxey",
+   "field": "price",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-27T13:27:17Z",
+   "entity_type": "domain",
+   "entity_id": "dom_r7bgxey",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T13:27:20Z",
+   "entity_type": "domain",
+   "entity_id": "dom_r7bgxey",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-27T13:30:17Z",
+   "entity_type": "payout",
+   "entity_id": "po_qvutab9",
+   "field": "amount",
+   "value": 250.0
+  },
+  {
+   "ts": "2026-09-27T13:30:17Z",
+   "entity_type": "payout",
+   "entity_id": "po_qvutab9",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T13:33:49Z",
+   "entity_type": "payout",
+   "entity_id": "po_qvutab9",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T13:38:02Z",
+   "entity_type": "file",
+   "entity_id": "f_zwvz56r",
+   "field": "name",
+   "value": "pricing.csv"
+  },
+  {
+   "ts": "2026-09-27T13:38:02Z",
+   "entity_type": "file",
+   "entity_id": "f_zwvz56r",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-27T13:40:53Z",
+   "entity_type": "file",
+   "entity_id": "f_zwvz56r",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-27T13:44:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_fq3yj72",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-27T13:44:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_fq3yj72",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-27T13:46:21Z",
+   "entity_type": "ad",
+   "entity_id": "ad_fq3yj72",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-27T13:44:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_fq3yj72",
+   "field": "daily_budget",
+   "value": 40
+  },
+  {
+   "ts": "2026-09-27T13:44:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_fq3yj72",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-27T16:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_44w7tqj",
+   "field": "customer",
+   "value": "jkhan@me.com"
+  },
+  {
+   "ts": "2026-09-27T16:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_44w7tqj",
+   "field": "customer_name",
+   "value": "Jordan Khan"
+  },
+  {
+   "ts": "2026-09-27T16:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_44w7tqj",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-27T16:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_44w7tqj",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T16:12:02Z",
+   "entity_type": "order",
+   "entity_id": "ord_44w7tqj",
+   "field": "amount",
+   "value": 29
+  },
+  {
+   "ts": "2026-09-29T16:08:51Z",
+   "entity_type": "ad",
+   "entity_id": "ad_sb4aqkx",
+   "field": "spend",
+   "value": 65.96
+  }
+ ]
+}

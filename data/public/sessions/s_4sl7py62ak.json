@@ -1,0 +1,119 @@
+{
+ "session_id": "s_4sl7py62ak",
+ "business_id": "biz_0046_un487",
+ "started_at": "2026-09-22T02:41:07Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T02:41:40Z",
+   "content": "Need that cash in my bank! pls do a payout 😊"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T02:41:50Z",
+   "content": "request_payout(amount=200.0) -> ok",
+   "tool_name": "request_payout",
+   "call_id": "call_3p658j441cfk",
+   "args": {
+    "amount": 200.0
+   },
+   "result": {
+    "ok": true,
+    "id": "po_jtxe2y5",
+    "status": "done",
+    "amount": 200.0,
+    "arrival": "by Thursday"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-22T02:43:04Z",
+   "content": "Your bank has the $200 payout on its way from me.\nThe product photos could use more light."
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-22T02:45:33Z",
+   "content": "sorry, also could u get getindigo-woodworks.com registered?"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-22T02:45:36Z",
+   "content": "buy_domain(domain='getindigo-woodworks.com', years=1) -> ok",
+   "tool_name": "buy_domain",
+   "call_id": "call_ugjim03bz00y",
+   "args": {
+    "domain": "getindigo-woodworks.com",
+    "years": 1
+   },
+   "result": {
+    "ok": true,
+    "id": "dom_6ru5kpb",
+    "status": "done",
+    "domain": "getindigo-woodworks.com",
+    "price": 42
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-22T02:52:41Z",
+   "content": "Sure thing. getindigo-woodworks.com is locked in! 👍 Should I hold off until you've had a look?"
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-22T02:42:05Z",
+   "entity_type": "payout",
+   "entity_id": "po_jtxe2y5",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T02:42:05Z",
+   "entity_type": "payout",
+   "entity_id": "po_jtxe2y5",
+   "field": "amount",
+   "value": 200.0
+  },
+  {
+   "ts": "2026-09-22T02:42:19Z",
+   "entity_type": "payout",
+   "entity_id": "po_jtxe2y5",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T02:45:45Z",
+   "entity_type": "domain",
+   "entity_id": "dom_6ru5kpb",
+   "field": "domain",
+   "value": "getindigo-woodworks.com"
+  },
+  {
+   "ts": "2026-09-22T02:45:45Z",
+   "entity_type": "domain",
+   "entity_id": "dom_6ru5kpb",
+   "field": "price",
+   "value": 42
+  },
+  {
+   "ts": "2026-09-22T02:45:45Z",
+   "entity_type": "domain",
+   "entity_id": "dom_6ru5kpb",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T02:51:15Z",
+   "entity_type": "domain",
+   "entity_id": "dom_6ru5kpb",
+   "field": "status",
+   "value": "registered"
+  }
+ ]
+}

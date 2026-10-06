@@ -1,0 +1,364 @@
+{
+ "session_id": "s_f5f5d60n4j",
+ "business_id": "biz_0133_dedy9",
+ "started_at": "2026-09-22T00:30:58Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-22T00:34:24Z",
+   "content": "Another thing: please begin advertising."
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-22T00:34:26Z",
+   "content": "launch_ad(platform='meta', daily_budget=15) -> ok",
+   "tool_name": "launch_ad",
+   "call_id": "call_3j1wylo2ihqv",
+   "args": {
+    "platform": "meta",
+    "daily_budget": 15,
+    "objective": "leads"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_g6cv3uh",
+    "status": "done"
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-22T00:37:21Z",
+   "content": "The new ad set's active now! Want me to buy the .co version as well?"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-22T00:38:09Z",
+   "content": "sizing-chart.png, pls upload"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-22T00:38:15Z",
+   "content": "upload_file(name='sizing-chart.png', size_kb=13221) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_uobdv8pk5t3v",
+   "args": {
+    "name": "sizing-chart.png",
+    "size_kb": 13221
+   },
+   "result": {
+    "ok": true,
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0133_dedy9/sizing-chart.png",
+    "name": "sizing-chart.png"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-22T00:41:22Z",
+   "content": "Want me to set up an abandoned cart email? sizing-chart.png finished uploading"
+  },
+  {
+   "turn_index": 6,
+   "role": "owner",
+   "ts": "2026-09-22T00:44:31Z",
+   "content": "Please confirm."
+  },
+  {
+   "turn_index": 7,
+   "role": "agent",
+   "ts": "2026-09-22T00:53:52Z",
+   "content": "Happy to draft a follow-up sequence if you want. The ad campaign is running on Meta."
+  },
+  {
+   "turn_index": 8,
+   "role": "owner",
+   "ts": "2026-09-22T00:54:40Z",
+   "content": "order count?"
+  },
+  {
+   "turn_index": 9,
+   "role": "tool",
+   "ts": "2026-09-22T00:54:49Z",
+   "content": "list_orders(status='paid', since='all') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_ep004860m7gi",
+   "args": {
+    "status": "paid",
+    "since": "all"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 256,
+    "orders": [
+     "ord_zu2zyva",
+     "ord_6d7bmsb",
+     "ord_kmjvsy9",
+     "ord_ynnwssn"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 10,
+   "role": "agent",
+   "ts": "2026-09-22T00:55:09Z",
+   "content": "You've brought in $256 across 4 orders!\n\nGreen button conevrts better, honestly, from what I've seen."
+  },
+  {
+   "turn_index": 11,
+   "role": "owner",
+   "ts": "2026-09-22T00:56:39Z",
+   "content": "Attaching logo-final.svg, please place it in the assets."
+  },
+  {
+   "turn_index": 12,
+   "role": "tool",
+   "ts": "2026-09-22T00:56:45Z",
+   "content": "upload_file(name='logo-final.svg', size_kb=23907) -> ok",
+   "tool_name": "upload_file",
+   "call_id": "call_dz3a8useujlr",
+   "args": {
+    "name": "logo-final.svg",
+    "size_kb": 23907
+   },
+   "result": {
+    "ok": true,
+    "id": "f_enzzbuz",
+    "status": "done",
+    "url": "https://files.madethis.app/biz_0133_dedy9/logo-final.svg"
+   }
+  },
+  {
+   "turn_index": 13,
+   "role": "agent",
+   "ts": "2026-09-22T01:03:47Z",
+   "content": "The logo-final.svg upload is done. I'll watch it and flag anything that changes."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-21T03:59:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_kmjvsy9",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-21T03:59:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_kmjvsy9",
+   "field": "customer",
+   "value": "omar_1993@icloud.com"
+  },
+  {
+   "ts": "2026-09-21T03:59:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_kmjvsy9",
+   "field": "customer_name",
+   "value": "Omar Lopez"
+  },
+  {
+   "ts": "2026-09-21T03:59:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_kmjvsy9",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-21T03:59:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_kmjvsy9",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T21:33:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_zu2zyva",
+   "field": "amount",
+   "value": 39
+  },
+  {
+   "ts": "2026-09-21T21:33:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_zu2zyva",
+   "field": "customer",
+   "value": "wen.quinn@gmail.com"
+  },
+  {
+   "ts": "2026-09-21T21:33:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_zu2zyva",
+   "field": "customer_name",
+   "value": "Wen Quinn"
+  },
+  {
+   "ts": "2026-09-21T21:33:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_zu2zyva",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-21T21:33:31Z",
+   "entity_type": "order",
+   "entity_id": "ord_zu2zyva",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T21:36:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_ynnwssn",
+   "field": "amount",
+   "value": 89
+  },
+  {
+   "ts": "2026-09-21T21:36:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_ynnwssn",
+   "field": "customer_name",
+   "value": "Wen Fischer"
+  },
+  {
+   "ts": "2026-09-21T21:36:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_ynnwssn",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-21T21:36:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_ynnwssn",
+   "field": "customer",
+   "value": "wen.fischer@me.com"
+  },
+  {
+   "ts": "2026-09-21T21:36:24Z",
+   "entity_type": "order",
+   "entity_id": "ord_ynnwssn",
+   "field": "product",
+   "value": "Hoodie"
+  },
+  {
+   "ts": "2026-09-21T22:45:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_6d7bmsb",
+   "field": "amount",
+   "value": 39
+  },
+  {
+   "ts": "2026-09-21T22:45:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_6d7bmsb",
+   "field": "customer",
+   "value": "nina.ortiz@proton.me"
+  },
+  {
+   "ts": "2026-09-21T22:45:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_6d7bmsb",
+   "field": "customer_name",
+   "value": "Nina Ortiz"
+  },
+  {
+   "ts": "2026-09-21T22:45:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_6d7bmsb",
+   "field": "product",
+   "value": "Resume Template"
+  },
+  {
+   "ts": "2026-09-21T22:45:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_6d7bmsb",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-22T00:35:08Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g6cv3uh",
+   "field": "daily_budget",
+   "value": 15
+  },
+  {
+   "ts": "2026-09-22T00:35:08Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g6cv3uh",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-22T00:35:08Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g6cv3uh",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-22T00:36:32Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g6cv3uh",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-22T00:35:08Z",
+   "entity_type": "ad",
+   "entity_id": "ad_g6cv3uh",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-22T00:38:30Z",
+   "entity_type": "file",
+   "entity_id": "f_7f7zb3e",
+   "field": "name",
+   "value": "sizing-chart.png"
+  },
+  {
+   "ts": "2026-09-22T00:40:40Z",
+   "entity_type": "file",
+   "entity_id": "f_7f7zb3e",
+   "field": "status",
+   "value": "uploaded"
+  },
+  {
+   "ts": "2026-09-22T00:38:30Z",
+   "entity_type": "file",
+   "entity_id": "f_7f7zb3e",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-22T00:57:18Z",
+   "entity_type": "file",
+   "entity_id": "f_enzzbuz",
+   "field": "name",
+   "value": "logo-final.svg"
+  },
+  {
+   "ts": "2026-09-22T00:57:18Z",
+   "entity_type": "file",
+   "entity_id": "f_enzzbuz",
+   "field": "status",
+   "value": "uploading"
+  },
+  {
+   "ts": "2026-09-22T01:01:16Z",
+   "entity_type": "file",
+   "entity_id": "f_enzzbuz",
+   "field": "status",
+   "value": "uploaded"
+  }
+ ]
+}

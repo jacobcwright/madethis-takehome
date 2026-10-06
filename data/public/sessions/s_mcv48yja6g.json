@@ -1,0 +1,462 @@
+{
+ "session_id": "s_mcv48yja6g",
+ "business_id": "biz_0009_mabky",
+ "started_at": "2026-09-28T01:25:52Z",
+ "turns": [
+  {
+   "turn_index": 0,
+   "role": "owner",
+   "ts": "2026-09-28T01:28:11Z",
+   "content": "that ad from earlier, where's it at"
+  },
+  {
+   "turn_index": 1,
+   "role": "tool",
+   "ts": "2026-09-28T01:28:23Z",
+   "content": "ad_status(ad_id='ad_7ghpcrn') -> ok",
+   "tool_name": "ad_status",
+   "call_id": "call_h2prqfphf0xn",
+   "args": {
+    "ad_id": "ad_7ghpcrn"
+   },
+   "result": {
+    "ok": true,
+    "id": "ad_7ghpcrn",
+    "status": "done",
+    "ad_status": "active",
+    "spend": 31.39,
+    "impressions": 4976,
+    "clicks": 107
+   }
+  },
+  {
+   "turn_index": 2,
+   "role": "agent",
+   "ts": "2026-09-28T01:28:29Z",
+   "content": "The ad's still running. So far it has spent $31.39, which is a good sign. 💪 Which of the two taglines is your pick?"
+  },
+  {
+   "turn_index": 3,
+   "role": "owner",
+   "ts": "2026-09-28T01:31:46Z",
+   "content": "appreciate it, how are sales doing"
+  },
+  {
+   "turn_index": 4,
+   "role": "tool",
+   "ts": "2026-09-28T01:31:56Z",
+   "content": "list_orders(status='paid', since='7d') -> ok",
+   "tool_name": "list_orders",
+   "call_id": "call_qttwviwna94z",
+   "args": {
+    "status": "paid",
+    "since": "7d"
+   },
+   "result": {
+    "ok": true,
+    "count": 4,
+    "total": 137,
+    "orders": [
+     "ord_rps42ss",
+     "ord_f7f7rra",
+     "ord_s7bnaga",
+     "ord_c5nkh99"
+    ],
+    "currency": "USD"
+   }
+  },
+  {
+   "turn_index": 5,
+   "role": "agent",
+   "ts": "2026-09-28T01:45:27Z",
+   "content": "I'll follow up with the supplier tomorrow. As for numbers, 4 orders have brought in $137 in revenue."
+  }
+ ],
+ "state": [
+  {
+   "ts": "2026-09-25T12:40:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_rps42ss",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-25T12:40:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_rps42ss",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-25T12:40:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_rps42ss",
+   "field": "customer",
+   "value": "kwame.novak@me.com"
+  },
+  {
+   "ts": "2026-09-25T12:40:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_rps42ss",
+   "field": "customer_name",
+   "value": "Kwame Novak"
+  },
+  {
+   "ts": "2026-09-25T12:40:25Z",
+   "entity_type": "order",
+   "entity_id": "ord_rps42ss",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T18:11:37Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nmkkpjk",
+   "field": "domain",
+   "value": "getharborcandle.com"
+  },
+  {
+   "ts": "2026-09-25T18:11:37Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nmkkpjk",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:12:39Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nmkkpjk",
+   "field": "status",
+   "value": "registered"
+  },
+  {
+   "ts": "2026-09-25T18:11:37Z",
+   "entity_type": "domain",
+   "entity_id": "dom_nmkkpjk",
+   "field": "price",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-25T18:23:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jgd2555",
+   "field": "daily_budget",
+   "value": 50
+  },
+  {
+   "ts": "2026-09-25T18:23:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jgd2555",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-25T18:23:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jgd2555",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:24:23Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jgd2555",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-25T18:23:05Z",
+   "entity_type": "ad",
+   "entity_id": "ad_jgd2555",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-25T18:31:10Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7v73d4h",
+   "field": "commit",
+   "value": "f5c19ee"
+  },
+  {
+   "ts": "2026-09-25T18:31:10Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7v73d4h",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:31:10Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7v73d4h",
+   "field": "url",
+   "value": "https://harborcandle.com"
+  },
+  {
+   "ts": "2026-09-25T18:32:25Z",
+   "entity_type": "deploy",
+   "entity_id": "d_7v73d4h",
+   "field": "status",
+   "value": "done"
+  },
+  {
+   "ts": "2026-09-25T18:47:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "daily_budget",
+   "value": 20
+  },
+  {
+   "ts": "2026-09-25T18:47:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "platform",
+   "value": "Meta"
+  },
+  {
+   "ts": "2026-09-25T18:47:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:47:38Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "status",
+   "value": "active"
+  },
+  {
+   "ts": "2026-09-25T18:47:37Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "spend",
+   "value": 0.0
+  },
+  {
+   "ts": "2026-09-25T18:50:02Z",
+   "entity_type": "payout",
+   "entity_id": "po_z7rjc5w",
+   "field": "amount",
+   "value": 300.0
+  },
+  {
+   "ts": "2026-09-25T18:50:02Z",
+   "entity_type": "payout",
+   "entity_id": "po_z7rjc5w",
+   "field": "status",
+   "value": "pending"
+  },
+  {
+   "ts": "2026-09-25T18:50:13Z",
+   "entity_type": "payout",
+   "entity_id": "po_z7rjc5w",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-25T20:19:35Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "spend",
+   "value": 31.39
+  },
+  {
+   "ts": "2026-09-26T07:02:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_c5nkh99",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-26T07:02:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_c5nkh99",
+   "field": "customer",
+   "value": "andre_2004@icloud.com"
+  },
+  {
+   "ts": "2026-09-26T07:02:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_c5nkh99",
+   "field": "customer_name",
+   "value": "Andre Khan"
+  },
+  {
+   "ts": "2026-09-26T07:02:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_c5nkh99",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-26T07:02:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_c5nkh99",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T12:51:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_hu5tttr",
+   "field": "amount",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-26T12:51:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_hu5tttr",
+   "field": "customer",
+   "value": "elena.hughes@gmail.com"
+  },
+  {
+   "ts": "2026-09-26T12:51:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_hu5tttr",
+   "field": "customer_name",
+   "value": "Elena Hughes"
+  },
+  {
+   "ts": "2026-09-26T12:51:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_hu5tttr",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T12:51:38Z",
+   "entity_type": "order",
+   "entity_id": "ord_hu5tttr",
+   "field": "product",
+   "value": "Cold Brew Pack"
+  },
+  {
+   "ts": "2026-09-26T15:12:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_f7f7rra",
+   "field": "amount",
+   "value": 24
+  },
+  {
+   "ts": "2026-09-26T15:12:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_f7f7rra",
+   "field": "customer",
+   "value": "diego.byrne@outlook.com"
+  },
+  {
+   "ts": "2026-09-26T15:12:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_f7f7rra",
+   "field": "product",
+   "value": "Hot Sauce Trio"
+  },
+  {
+   "ts": "2026-09-26T15:12:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_f7f7rra",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-26T15:12:15Z",
+   "entity_type": "order",
+   "entity_id": "ord_f7f7rra",
+   "field": "customer_name",
+   "value": "Diego Byrne"
+  },
+  {
+   "ts": "2026-09-26T23:23:45Z",
+   "entity_type": "order",
+   "entity_id": "ord_hu5tttr",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-27T03:42:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_xkwuaa5",
+   "field": "customer",
+   "value": "diego.byrne@outlook.com"
+  },
+  {
+   "ts": "2026-09-27T03:42:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_xkwuaa5",
+   "field": "product",
+   "value": "Cold Brew Pack"
+  },
+  {
+   "ts": "2026-09-27T03:42:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_xkwuaa5",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T03:42:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_xkwuaa5",
+   "field": "amount",
+   "value": 18
+  },
+  {
+   "ts": "2026-09-27T03:42:28Z",
+   "entity_type": "order",
+   "entity_id": "ord_xkwuaa5",
+   "field": "customer_name",
+   "value": "Diego Byrne"
+  },
+  {
+   "ts": "2026-09-27T10:32:42Z",
+   "entity_type": "order",
+   "entity_id": "ord_xkwuaa5",
+   "field": "status",
+   "value": "refunded"
+  },
+  {
+   "ts": "2026-09-27T14:53:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_s7bnaga",
+   "field": "customer",
+   "value": "andre_2004@icloud.com"
+  },
+  {
+   "ts": "2026-09-27T14:53:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_s7bnaga",
+   "field": "status",
+   "value": "paid"
+  },
+  {
+   "ts": "2026-09-27T14:53:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_s7bnaga",
+   "field": "amount",
+   "value": 65
+  },
+  {
+   "ts": "2026-09-27T14:53:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_s7bnaga",
+   "field": "customer_name",
+   "value": "Andre Khan"
+  },
+  {
+   "ts": "2026-09-27T14:53:59Z",
+   "entity_type": "order",
+   "entity_id": "ord_s7bnaga",
+   "field": "product",
+   "value": "Tea Sampler"
+  },
+  {
+   "ts": "2026-09-28T17:08:39Z",
+   "entity_type": "ad",
+   "entity_id": "ad_7ghpcrn",
+   "field": "spend",
+   "value": 36.88
+  }
+ ]
+}
