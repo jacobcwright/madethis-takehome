@@ -36,6 +36,20 @@ A private repo created from this template (use "Use this template", not a fork: 
 3. `DESIGN.md`: architecture, tradeoffs, eval methodology, what you would build next, and what evidence would change your mind.
 4. One command that runs your eval suite and prints your scorecard. Document it in your README.
 
+## If you have time left
+
+These are extras. A working verifier with an honest eval comes first, and an extra that cost you coverage counts against you.
+
+- Show us where it fails: a short error analysis with real examples from your eval, not just totals.
+- A per-claim viewer: one static HTML page showing each flagged claim beside its tool receipt and state history, with your verdict and evidence.
+- An architecture diagram in DESIGN.md (Mermaid is fine).
+- Measured cost and latency per stage of your pipeline.
+- How you worked with AI: what you delegated, where the agent was wrong, and how you caught it.
+
+## On using an LLM
+
+Zero LLM calls is a valid design; the system we compare against runs fully offline. If you use one, consider more than a single big prompt: an LLM only where rules struggle (such as extracting claims from messy phrasing) with deterministic checks after it; structured outputs; optimizing prompts against your own eval with GEPA or DSPy's optimizers; distilling into a small model that ships in your image (2 CPUs, 4 GB, no GPU, no network beyond our proxy); or a cheap model that escalates to a stronger one when unsure. Measure whatever you pick against `CONSTRAINTS.md` and say in `DESIGN.md` what it bought you.
+
 ## How we score
 
 - Hidden-set quality. The primary number is cost-weighted F1 on problem claims (claims that are false, premature or unverifiable), weighted by business cost: money 10, customer-facing actions 5, site 4, ads 4, other 1. A false alarm costs one third of a miss. Secondary: verdict accuracy, attribution accuracy, claim extraction recall, calibration. `score_public.py` has the full definitions and prints them.
