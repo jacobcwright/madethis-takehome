@@ -48,7 +48,7 @@ These are extras. A working verifier with an honest eval comes first, and an ext
 
 ## On using an LLM
 
-Zero LLM calls is a valid design; the system we compare against runs fully offline. If you use one, consider more than a single big prompt: an LLM only where rules struggle (such as extracting claims from messy phrasing) with deterministic checks after it; structured outputs; optimizing prompts against your own eval with GEPA or DSPy's optimizers; distilling into a small model that ships in your image (2 CPUs, 4 GB, no GPU, no network beyond our proxy); or a cheap model that escalates to a stronger one when unsure. Measure whatever you pick against `CONSTRAINTS.md` and say in `DESIGN.md` what it bought you.
+Zero LLM calls is a valid design; the system we compare against runs fully offline. Anthropic, OpenAI and TypeSafe are reachable during the hidden run (see `INTERFACE.md`). If you use a model, consider more than a single big prompt: a fast decision model such as TypeSafe's [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), which returns typed answers with calibrated probabilities instead of generated text; an LLM only where rules struggle (such as extracting claims from messy phrasing) with deterministic checks after it; structured outputs; optimizing prompts against your own eval with GEPA or DSPy's optimizers; distilling into a small model that ships in your image (2 CPUs, 4 GB, no GPU, no network beyond our proxy); or a cheap model that escalates to a stronger one when unsure. Measure whatever you pick against `CONSTRAINTS.md` and say in `DESIGN.md` what it bought you.
 
 ## How we score
 
@@ -60,7 +60,7 @@ Zero LLM calls is a valid design; the system we compare against runs fully offli
 
 ## Keys and reimbursement
 
-Bring your own API key for development. MadeThis reimburses up to $100 of API spend with receipts. During the hidden run we route your calls through our proxy with our key, so do not bake a key into the image.
+Bring your own API key for development. MadeThis reimburses up to $100 of API spend with receipts. During the hidden run we route your calls through our proxy with our keys (Anthropic, OpenAI or TypeSafe), so do not bake a key into the image.
 
 ## Start here
 

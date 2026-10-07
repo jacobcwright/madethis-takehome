@@ -6,14 +6,15 @@
 docker build -t your-verifier .
 docker run --rm \
   -v /path/to/sessions:/input:ro -v /path/to/out:/output \
-  -e ANTHROPIC_API_KEY -e OPENAI_API_KEY -e ANTHROPIC_BASE_URL -e OPENAI_BASE_URL \
+  -e ANTHROPIC_API_KEY -e OPENAI_API_KEY -e TYPESAFE_API_KEY \
+  -e ANTHROPIC_BASE_URL -e OPENAI_BASE_URL -e TYPESAFE_BASE_URL \
   your-verifier verify /input /output
 ```
 
 - Your image must contain an executable named `verify` on `PATH`. Do not set an `ENTRYPOINT` that swallows the `verify` argument. `examples/empty-verifier/` shows the simplest working layout.
 - `/input` holds one JSON file per session (`<session_id>.json`). The `state` log IS included; labels are not.
 - Write `/output/<session_id>.json` for every input session. A session with no output file counts as a crash.
-- Environment passed through: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_BASE_URL`, `OPENAI_BASE_URL`. During the hidden run the base URLs point at our metering proxy and the keys are placeholders the proxy accepts. Honor the base URLs (the official SDKs do by default). There is no other network access.
+- Environment passed through: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `TYPESAFE_API_KEY`, `ANTHROPIC_BASE_URL`, `OPENAI_BASE_URL`, `TYPESAFE_BASE_URL`. Three providers are reachable during the hidden run: Anthropic, OpenAI, and TypeSafe (Jev). The base URLs point at our metering proxy and the keys are placeholders the proxy accepts. Honor the base URLs (the official SDKs, including `typesafe-sdk`, do by default). There is no other network access.
 - Resources: 2 CPUs, 4 GB RAM, no GPU. Each batch of hidden sessions (a few hundred) runs in a fresh container with a 60-minute wall-clock cap. Sessions still missing when the cap hits count as crashes.
 
 ## Input: a session
